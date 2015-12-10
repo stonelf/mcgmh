@@ -1,0 +1,804 @@
+﻿#myGallery, 
+#myGallerySet,
+#flickrGallery,
+#myGallery_1,
+#myGallery_2,
+#myGallery_3,
+#myGallery_4
+{
+	width: 600px;
+	height: 450px;
+	z-index:5;
+	border: 1px solid #ccc;
+}
+.content
+{
+	position:relative;
+	/*background-color:;*/
+	width:920px;
+	height:560px;
+}
+#gallerySet
+{
+	position:absolute;
+	width:700px;
+	height:450px;
+	margin-left:130px;
+	background-color:#ba5f3f;
+	overflow:hidden;
+	top:0px;
+}
+.gallerySetSummary
+{
+	position:absolute;
+	top:470px;
+	left:660px;
+	font-size:14px;
+	color:#aaa;
+}
+.pictureTitle
+{
+	height: 32px;
+	width:601px;
+	text-align:center;
+	color: #aaaaaa;
+	font-size: 9pt;
+	padding-top: 13px;
+	border-right: #000 1px solid;
+	border-top: #000 1px solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000;
+	border-left: #000 1px solid;
+	float:left;
+}
+.playElement
+{
+	position:relative;
+	top:3px;
+}
+.playText
+{
+	font-size:18px;
+	font-family:@宋体;
+	cursor:pointer;
+}
+.pauseText
+{
+	font-size: 15px;
+	letter-spacing: -8px;
+	cursor: pointer;
+	position: relative;
+	top: 2px;
+}
+.gallery_leftBar
+{
+	width: 131px;
+	height: 494px;
+	background-color: #B04023;
+	float: left;
+	overflow: hidden;
+	text-align: center;
+	
+	float:left;
+}
+.gallery_leftBar .thumbCurrent
+{
+	background-color:#000;
+	width: 94px;
+	height: 69px;
+	border-right: #434343 10px solid;
+	border-top: #434343 10px solid;
+	border-left: #434343 10px solid;
+	border-bottom: #434343 10px solid;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.gallery_leftBar .thumbIdle
+{
+	background-color:#000;
+	width: 94px;
+	height: 69px;
+	border-right: #333333 10px solid;
+	border-top: #333333 10px solid;
+	border-left: #333333 10px solid;
+	border-bottom: #333333 10px solid;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.gallery_rightBar
+{	
+	background-color: #B04023;
+    color: #ddd;
+    float: left;
+    font-size: 12px;
+    height: 484px;
+    left: 734px;
+    line-height: 24px;
+    overflow: hidden;
+    padding-left: 28px;
+    padding-right: 20px;
+    padding-top: 10px;
+    position: absolute;
+    text-align: left;
+    top: 62px;
+    width: 138px;
+	
+}
+.albumTitle
+{
+	background-color: #B04023;
+	color: #fff;
+	font-size: 16px;
+	/*font-weight:bold;*/
+	height: 32px;
+	overflow: hidden;
+	padding:20px 20px 10px 10px;
+	text-align: left;
+	
+}
+.albumTitleBack
+{
+	float:right;
+	font-size:9pt;
+	font-weight:normal;
+	padding:2px 5px;
+	background-color:#BA5F3F;
+	border:#000 0px solid;
+	color:#fff;
+}
+.albumSubTitle
+{
+	float:left;
+}
+#flickrGallery
+{
+	width: 500px;
+	height: 334px;
+}
+
+#myGallery img.thumbnail, #myGallerySet img.thumbnail
+{
+	display: none;
+}
+
+.galley_jdGallery
+{
+	overflow: hidden;
+	position: relative;
+}
+.topLink
+{
+	height:20px;
+	width: 600px;
+	color:#666666;
+	text-align:right;
+	font-size:12px;
+}
+.topLink .left
+{
+	height:20px;
+	width: 65px;
+	padding-left:20px;
+	color:#666666;
+	text-align:left;
+	font-size:12px;
+	float:left;
+	text-align:center;
+}
+.topLink .right
+{
+	height:20px;
+	width:480px;
+	padding-right:20px;
+	color:#666666;
+	text-align:right;
+	font-size:12px;
+	float:left;
+}
+.bottomLink
+{
+	background-color: #B04023;
+    color: #ddd;
+    float: left;
+    font-size: 11px;
+    height: 32px;
+    padding-top: 10px;
+    text-align: right;
+    vertical-align: bottom;
+    width: 603px;
+}
+.bottomLink .left
+{
+	padding-left:20px;
+	height:30px;
+	width:65px;
+	color:#666666;
+	text-align:left;
+	font-size:12px;
+	float:left;
+	text-align:center;
+}
+.bottomLink .right
+{
+	height:30px;
+	width:480px;
+	padding-right:20px;
+	color:#666666;
+	text-align:right;
+	font-size:12px;
+	float:left;
+}
+
+.gallerySetBottomLink
+{
+	width: 100%;
+	height:25px;
+	position:absolute;
+	top:460px;
+	left:-200px;
+	padding-top:8px;
+	padding-right:15px;
+	vertical-align:bottom;
+	color:#aaaaaa;
+	text-align:right;
+	font-size:12px;
+}
+.onError
+{
+	height:225px !important;
+	padding-top:220px;
+	color: #666666;
+	text-align: center;
+	font-size: 12px;
+	vertical-align: middle;
+}
+.galley_jdGallery img
+{
+	border: 0;
+	margin: 0;
+}
+
+.galley_jdGallery .slideElement
+{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url('img/5-1.gif');
+}
+
+.galley_jdGallery .loadingElement
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #ddd;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url('img/5-1.gif');
+}
+.galley_jdGallery .slideInfoZone
+{
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	margin: 0px;
+	left: 0;
+	bottom: 0;
+	height: 40px;
+	background: #333;
+	color: #fff;
+	text-indent: 0;
+	overflow: hidden;
+}
+
+* html .galley_jdGallery .slideInfoZone
+{
+	bottom: -1px;
+}
+
+.galley_jdGallery .slideInfoZone h2
+{
+	padding: 0;
+	font-size: 80%;
+	margin: 0;
+	margin: 2px 5px;
+	font-weight: bold;
+	color: inherit;
+}
+
+.galley_jdGallery .slideInfoZone p
+{
+	padding: 0;
+	font-size: 60%;
+	margin: 2px 5px;
+	color: #eee;
+}
+
+.galley_jdGallery div.carouselContainer
+{
+	position: absolute;
+	height: 135px;
+	width: 100%;
+	z-index: 10;
+	margin: 0px;
+	left: 0;
+	top: 0;
+}
+
+.galley_jdGallery a.carouselBtn
+{
+	position: absolute;
+	bottom: 0;
+	right: 30px;
+	height: 20px;
+	/*width: 100px; background: url('img/carousel_btn.gif') no-repeat;*/
+	text-align: center;
+	padding: 0 10px;
+	font-size: 13px;
+	background: #333;
+	color: #fff;
+	cursor: pointer;
+}
+
+.galley_jdGallery .carousel
+{
+	position: absolute;
+	width: 100%;
+	margin: 0px;
+	left: 0;
+	top: 0;
+	height: 115px;
+	background: #333;
+	color: #fff;
+	text-indent: 0;
+	overflow: hidden;
+}
+
+.jdExtCarousel
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.galley_jdGallery .carousel .carouselWrapper, .jdExtCarousel .carouselWrapper
+{
+	position: absolute;
+	width: 100%;
+	height: 78px;
+	top: 10px;
+	left: 0;
+	overflow: hidden;
+}
+
+.galley_jdGallery .carousel .carouselInner, .jdExtCarousel .carouselInner
+{
+	position: relative;
+}
+
+.galley_jdGallery .carousel .carouselInner .thumbnail, .jdExtCarousel .carouselInner .thumbnail
+{
+	cursor: pointer;
+	background: #000;
+	background-position: center center;
+	float: left;
+	border: solid 1px #fff;
+}
+
+.galley_jdGallery .wall .thumbnail, .jdExtCarousel .wall .thumbnail
+{
+	margin-bottom: 10px;
+}
+
+.galley_jdGallery .carousel .label, .jdExtCarousel .label
+{
+	font-size: 13px;
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+	padding: 0;
+	margin: 0;
+}
+
+.galley_jdGallery .carousel .wallButton, .jdExtCarousel .wallButton
+{
+	font-size: 10px;
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+	padding: 1px 2px;
+	margin: 0;
+	background: #222;
+	border: 1px solid #888;
+	cursor: pointer;
+}
+
+.galley_jdGallery .carousel .label .number, .jdExtCarousel .label .number
+{
+	color: #b5b5b5;
+}
+
+.galley_jdGallery a
+{
+	font-size: 100%;
+	text-decoration: none;
+	color: inherit;
+}
+
+.content a
+{
+	color:#aaa;
+}
+
+.galley_jdGallery a.right, .galley_jdGallery a.left
+{
+	position: absolute;
+	height: 99%;
+	width: 25%;
+	cursor: pointer;
+	z-index:10;
+	filter:alpha(opacity=20);
+	-moz-opacity:0.2;
+	-khtml-opacity: 0.2;
+	opacity: 0.2;
+}
+
+* html .galley_jdGallery a.right, * html .galley_jdGallery a.left
+{
+	filter:alpha(opacity=50);
+}
+
+.galley_jdGallery a.right:hover, .galley_jdGallery a.left:hover
+{
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}
+
+.galley_jdGallery a.left
+{
+	left: 0;
+	top: 0;
+	background: url('img/fleche1.png') no-repeat center left;
+}
+
+* html .galley_jdGallery a.left { background: url('img/fleche1.gif') no-repeat center left; }
+
+.galley_jdGallery a.right
+{
+	right: 0;
+	top: 0;
+	background: url('img/fleche2.png') no-repeat center right;
+}
+
+* html .galley_jdGallery a.right { background: url('img/fleche2.gif') no-repeat center right; }
+
+.galley_jdGallery a.open
+{
+	top: 0;
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	z-index:100;
+}
+
+.withArrows a.open
+{
+	position: absolute;
+	top: 0;
+	left: 25%;
+	height: 99%;
+	width: 50%;
+	cursor: pointer;
+	z-index: 10;
+	background: none;
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}
+
+.withArrows a.open:hover { background: url('img/open.png') no-repeat center center; }
+
+* html .withArrows a.open:hover { background: url('img/open.gif') no-repeat center center;
+	filter:alpha(opacity=80); }
+	
+	
+/* Gallery Sets */
+
+.galley_jdGallery a.gallerySelectorBtn
+{
+	z-index: 15;
+	position: absolute;
+	top: 0;
+	left: 30px;
+	height: 20px;
+	/*width: 100px; background: url('img/carousel_btn.gif') no-repeat;*/
+	text-align: center;
+	padding: 0 10px;
+	font-size: 13px;
+	background: #333;
+	color: #fff;
+	cursor: pointer;
+	opacity: .4;
+	-moz-opacity: .4;
+	-khtml-opacity: 0.4;
+	filter:alpha(opacity=40);
+}
+
+.galley_jdGallery .gallerySelector
+{
+	z-index: 20;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000;
+}
+
+.galley_jdGallery .gallerySelector h2
+{
+	margin: 0;
+	padding: 10px 20px 10px 20px;
+	font-size: 20px;
+	line-height: 30px;
+	color: #fff;
+}
+
+.galley_jdGallery .gallerySelector .gallerySelectorWrapper
+{
+	overflow: hidden;
+}
+
+.galley_jdGallery .gallerySelector .gallerySelectorInner div.galleryButton
+{
+	margin-left: 10px;
+	margin-top: 10px;
+	border: 1px solid #888;
+	padding: 5px;
+	height: 40px;
+	color: #fff;
+	cursor: pointer;
+	float: left;
+}
+
+.galley_jdGallery .gallerySelector .gallerySelectorInner div.hover
+{
+	background: #333;
+}
+
+.galley_jdGallery .gallerySelector .gallerySelectorInner div.galleryButton div.preview
+{
+	background: #000;
+	background-position: center center;
+	float: left;
+	border: none;
+	width: 40px;
+	height: 40px;
+	margin-right: 5px;
+}
+
+.galley_jdGallery .gallerySelector .gallerySelectorInner div.galleryButton h3
+{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.galley_jdGallery .gallerySelector .gallerySelectorInner div.galleryButton p.info
+{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-weight: normal;
+	color: #aaa;
+}
+.galleryButton
+{
+	 margin-left:25px;
+	 margin-top:50px;
+	/*margin-top: 100px;/*初始10px*/
+	border: 0px solid #888;
+	/*padding: 5px;*/
+	width:250px;
+	height: 55px;/*初始40px*/
+	color: #fff;
+	cursor: pointer;
+	float: left;
+	background-color:#b04023;
+}
+div.galleryButton div.preview
+{
+	background: #000;
+	background-position: center center;
+	float: left;
+	border: none;
+	width: 55px;
+	height: 55px;
+	margin-right: 5px;
+}
+
+div.galleryButton h3
+{
+	font-size: 12px;
+	font-weight: normal;
+	margin-top:10px;
+	margin-bottom:5px;
+	line-height:19px;
+	color:#ffffff;
+}
+div.galleryButton p.info
+{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-weight: normal;
+	color: #aaa;
+	line-height:10px;
+}
+.galleryImagesList
+{
+	width: 100px;
+	height: 75px;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+.clear
+{
+	clear:both;
+}
+
+
+/*新相册*/
+.galleria-lightbox-overlay
+{
+	background: none repeat scroll 0 0 #0B0B0B;
+	display: none;
+	height: 100%;
+	left: 0;
+	opacity: 0.85;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99990;
+}
+.galleria-lightbox-box
+{
+	display: none;
+	height: 400px;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -200px;
+	position: fixed;
+	top: 50%;
+	width: 400px;
+	z-index: 99991;
+}
+.galleria-lightbox-shadow
+{
+	background: none repeat scroll 0 0 #000000;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+.galleria-lightbox-content
+{
+	background: url("img/loader_pos.gif") no-repeat scroll 50% 50% transparent;
+}
+.galleria-lightbox-content
+{
+	background-color: #FFFFFF;
+	bottom: 10px;
+	left: 10px;
+	overflow: hidden;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.galleria-lightbox-info
+{
+	bottom: 10px;
+	color: #444444;
+	font: 11px/13px arial,sans-serif;
+	height: 13px;
+	left: 10px;
+	position: absolute;
+	right: 10px;
+}
+.galleria-lightbox-close
+{
+	background: none repeat scroll 0 0 #FFFFFF;
+	color: #444444;
+	cursor: pointer;
+	font: 16px/22px arial,sans-serif;
+	height: 20px;
+	position: absolute;
+	right: 10px;
+	text-align: center;
+	top: 10px;
+	width: 20px;
+	z-index: 99999;
+}
+.galleria-lightbox-image
+{
+	bottom: 30px;
+	display: block;
+	left: 10px;
+	overflow: hidden;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.galleria-lightbox-prevholder
+{
+	bottom: 40px;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	width: 50%;
+	background-image: url("img/1px.gif");
+}
+.galleria-lightbox-nextholder
+{
+	bottom: 40px;
+	cursor: pointer;
+	position: absolute;
+	right: -1px;
+	top: 0;
+	width: 50%;
+	background-image: url("img/1px.gif");
+}
+.galleria-lightbox-prev
+{
+	background: none repeat scroll 0 0 #FFFFFF;
+	color: #000000;
+	display: none;
+	font: bold 16px/36px arial,sans-serif;
+	height: 40px;
+	left: 20px;
+	margin-top: -20px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: 30px;
+}
+.galleria-lightbox-next
+{
+	background: none repeat scroll 0 0 #FFFFFF;
+	color: #000000;
+	display: none;
+	font: bold 16px/36px arial,sans-serif;
+	height: 40px;
+	left: auto;
+	margin-top: -20px;
+	position: absolute;
+	right: 20px;
+	text-align: center;
+	top: 50%;
+	width: 30px;
+}
+.galleria-lightbox-title
+{
+	float: left;
+}
+.galleria-lightbox-counter
+{
+	float: right;
+	margin-left: 8px;
+}
+.galleria-tooltip
+{
+	background: none repeat scroll 0 0 #FFFFEE;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+	color: #000000;
+	font-size: 11px;
+	max-width: 50%;
+	padding: 3px 8px;
+	position: absolute;
+	z-index: 3;
+}

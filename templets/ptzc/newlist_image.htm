@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<META content=IE=7 http-equiv=X-UA-Compatible>
+<LINK rel=stylesheet href="{dede:global.cfg_templets_skin/}/css/common_v.css">
+<LINK rel=stylesheet href="{dede:global.cfg_templets_skin/}/css/list_v.css">
+</HEAD>
+<BODY><!--header start-->
+{dede:include filename="head.htm"/}<!--header end-->
+<DIV class=wrap960>
+<DIV class=wrap648>
+<DIV class=cur_one>{dede:field name='position'/}</DIV>
+<DIV class="pic_listwo imgs_height">
+{dede:list pagesize='30'}
+<A title="[field:title/]" href="[field:arcurl/]" target=_blank><IMG alt="[field:title/]" src="[field:litpic/]">[field:title/]</A>
+ {/dede:list}
+</DIV>
+<DIV class=new_page>{dede:pagelist listitem="index,end,pre,next,pageno" listsize="5"/}
+</DIV></DIV>
+<DIV class=wrap300>
+    <DIV class=list_rad>
+     <script src='/plus/ad_js.php?aid=5' language='javascript'></script>
+    </DIV>
+    <H2 class=news_tit>最新更新</H2>
+    <DIV class=news_list>
+     {dede:arclist limit='0,1' titlelen='48' orderby='pubdate' flag='c'}
+	  <H3><A title=[field:title/] href="[field:arcurl/]" target=_blank>[field:title/]</A></H3>
+{/dede:arclist}
+      <UL class=list_item>
+	  {dede:arclist limit='0,5' titlelen='48' orderby='pubdate' noflag='c'}
+        <LI><A title="[field:title/]" href="[field:arcurl/]" target=_blank>[field:title/]</A></LI>
+     {/dede:arclist}
+      </UL>
+	 {dede:arclist limit='1,1' titlelen='48' orderby='pubdate' flag='c'}
+	  <H3><A title=[field:title/] href="[field:arcurl/]" target=_blank>[field:title/]</A></H3>
+{/dede:arclist}
+      <UL class=list_item>
+	  {dede:arclist limit='5,5' titlelen='48' orderby='pubdate' noflag='c'}
+        <LI><A title="[field:title/]" href="[field:arcurl/]" target=_blank>[field:title/]</A></LI>
+     {/dede:arclist}
+      </UL>
+    </DIV>
+    <H2 class=news_tit>视觉焦点</H2>
+    <DIV class="clearfix list_photo">
+	{dede:arclist row='4' titlelen='48' orderby='rand' flag='p'}
+	<A href="[field:arcurl/]" target=_blank><IMG border=0 alt=[field:title/] src="[field:litpic/]" width=140 height=99>[field:title/]</A>
+{/dede:arclist}
+</DIV>
+    <DIV class=news_tabs>
+      <H2>新闻排行</H2>
+      <UL id=labels_id04 class=news_tab_tit>
+        <LI class=current><A href="/news/zhongguojunshi">国内</A> </LI>
+        <LI><A href="/news/huanqiujunshi">国际</A> </LI>
+        <LI><A href="/lishi">历史</A> </LI>
+        <LI><A href="/baitai">社会</A> </LI>
+      </UL>
+    </DIV>
+    <DIV id=labels_con04 class=add_border>
+      <OL class=list_olitem>
+{dede:arclist row='10' titlelen='48' orderby='pubdate' typeid='2'}
+<li><a href="[field:arcurl/]" title="[field:fulltitle/]" target="_blank">[field:title/]</a></li>
+{/dede:arclist}
+      </OL>
+      <OL class="list_olitem hidden">
+       {dede:arclist row='10' titlelen='48' orderby='pubdate' typeid='4'}
+<li><a href="[field:arcurl/]" title="[field:fulltitle/]" target="_blank">[field:title/]</a></li>
+{/dede:arclist}
+      </OL>
+      <OL class="list_olitem hidden">
+      {dede:arclist row='10' titlelen='48' orderby='pubdate' typeid='8'}
+<li><a href="[field:arcurl/]" title="[field:fulltitle/]" target="_blank">[field:title/]</a></li>
+{/dede:arclist}
+      </OL>
+      <OL class="list_olitem hidden">
+      {dede:arclist row='10' titlelen='48' orderby='pubdate' typeid='30'}
+<li><a href="[field:arcurl/]" title="[field:fulltitle/]" target="_blank">[field:title/]</a></li>
+{/dede:arclist}
+      </OL>
+    </DIV>
+  </DIV>
+</DIV>
+<DIV class=foot_pictwo>
+<script src='/plus/ad_js.php?aid=3' language='javascript'></script>
+</DIV>
+<H4 id=links_t>网友热点关注</H4>
+<DIV id=links_main>{dede:channel type='sun' typeid='1' row='3'}<a href="[field:typelink/]">[field:typename/]</a>{/dede:channel}{dede:channel type='sun' typeid='8' row='7'}<a href="[field:typelink/]">[field:typename/]</a>{/dede:channel}{dede:channel type='sun' typeid='15' row='3'}<a href="[field:typelink/]">[field:typename/]</a>{/dede:channel}{dede:channel type='sun' typeid='21' row='3'}<a href="[field:typelink/]">[field:typename/]</a>{/dede:channel}{dede:channel type='sun' typeid='25' row='5'}<a href="[field:typelink/]">[field:typename/]</a>{/dede:channel}{dede:channel type='sun' typeid='30' row='3'}<a href="[field:typelink/]">[field:typename/]</a>{/dede:channel}{dede:channel type='sun' typeid='35' row='6'}<a href="[field:typelink/]">[field:typename/]</a>{/dede:channel} 
+</DIV>
+<!--footer start-->
+ {dede:include filename="footer.htm"/}
+<!--footer end-->
+ 
+<SCRIPT src="{dede:global.cfg_templets_skin/}/js/jquery-1.4.2.min.js"></SCRIPT>
+<SCRIPT src="{dede:global.cfg_templets_skin/}/js/common_v.js"></SCRIPT>
+</BODY>
+</HTML>

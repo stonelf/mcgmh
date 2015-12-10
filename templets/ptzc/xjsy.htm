@@ -1,0 +1,1625 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+<title>{dede:global.cfg_webname/}</title>
+<meta name="Keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+
+    
+    
+    <link href="{dede:global.cfg_templets_skin/}/style/css/globalV3.css" rel="stylesheet" type="text/css" /><link id="ctl00_indexcss" href="{dede:global.cfg_templets_skin/}/style/css/indexV3.css" rel="stylesheet" type="text/css" />
+
+	<script src="{dede:global.cfg_templets_skin/}/style/js/jquery-1.5.2.min.js" type="text/javascript"></script>
+
+	<script src="{dede:global.cfg_templets_skin/}/style/js/MSClass.js" type="text/javascript"></script>
+
+	<script src="{dede:global.cfg_templets_skin/}/style/js/ptz.js" type="text/javascript"></script>
+	
+	<script src="{dede:global.cfg_templets_skin/}/style/js/scroll_image.js" type="text/javascript"></script>
+
+	<!--[if IE 6]>
+<script src="{dede:global.cfg_templets_skin/}/style/js/DD_belatedPNG.js" mce_src="{dede:global.cfg_templets_skin/}/style/js/DD_belatedPNG.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.dl_btn , .bfqBg2 , div, ul, img, li, input , a , i , span , .xmwkBox dd , p');
+</script>
+<style>
+/* IE6 fix */	
+.nav .current,.nav .current a,.nav .current:hover{
+	_background-image: none;  
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src="{dede:global.cfg_templets_skin/}/style/images/nav_currentL.png"); 
+}
+.nav .currentR,.nav .currentR a,.nav .currentR:hover{
+	_background-image: none;  
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src="/page/images/nav_currentR.png"); 
+}
+</style>
+<![endif]-->
+
+	<script type="text/javascript">
+		//导航二级菜单
+		$j(document).ready(function() {
+			$j(".nrbanC_nav li").click(function() {
+				$j(".nrbanC_nav .cur").children(".subNav").slideUp();
+				$j(".nrbanC_nav .cur").removeClass("cur");
+				$j(this).addClass("cur");
+				$j(this).children(".subNav").slideDown();
+			}).mouseover(function(e) {
+				var d = $(this).children(".subNav");
+				var r = e.relatedTarget;
+				if (r !== d[0]) {
+					$j(".nrbanC_nav li").removerClass("cur");
+					d.slideUp();
+				}
+			})
+		})
+
+		//tab选项卡
+		function setTab(name, cursel, n) {
+			for (i = 1; i <= n; i++) {
+				var menu = $j("#" + name + i);
+				var con = $j("#con_" + name + "_" + i);
+				if (i == cursel) {
+					menu.addClass("hover");
+				} else {
+					menu.removeClass("hover");
+				}
+				con.css("display", i == cursel ? "block" : "none");
+			}
+		}
+	</script>
+
+	<!-- for iPad begin -->
+
+	<script type="text/javascript">
+		(function() {
+			var head = document.getElementsByTagName('head');
+			if (!/\((iPhone|iPad|iPod)/i.test(navigator.userAgent)) { return };
+			var iPadScript = document.createElement('script');
+			iPadScript.src = 'http://www.ptz.cc/page/js/ipadreset.js';
+			head[0].appendChild(iPadScript);
+		})();
+	</script>
+
+	<!-- for iPad end -->
+</head>
+<body>
+	<a name="top"></a>
+	
+	
+	<div id="main">
+		
+	<div id="hd" style="overflow: visible">
+		</div>
+		</div>
+	</div>
+	<div id="topbg">
+		<div id="hd">
+
+			</div>
+		</div>
+	</div>
+
+		
+	<div id="nrbox">
+		<div class="nrban">
+			<div class="nrbanL">
+				</div>
+			<div class="nrbanR">
+				</div>
+			<div class="nrbanC_line">
+			</div>
+			<div class="nrbanC">
+				<div class="nrbanC_nav">
+					<ul>
+{dede:channelartlist typeid='2,0'}
+<li><a href="javascript:void(0)">{dede:field name='typename'/}</a>
+{/dede:channelartlist}
+						
+                        
+                        
+                        	<div class="subNav subNavL2">
+								<span class="subL"></span>
+								<ul>
+									
+                                    
+                                    
+{dede:channel   type ='son' typeid ='2'   }
+<li><a href="[field:typelink/]">[field:typename/]</a></li>
+{/dede:channel}
+								
+                                
+                                
+                                </ul>
+								<span class="subR"></span>
+							</div>
+					  </li>					
+						
+{dede:channelartlist typeid='1,0'}
+<li><a href="javascript:void(0)">{dede:field name='typename'/}</a>
+{/dede:channelartlist}
+                        	
+                            <div class="subNav subNavL1">
+								<span class="subL"></span>
+								<ul>
+									
+                                    
+                                    
+                                    
+{dede:channel   type ='son' typeid ='1'   }
+<li><a href="[field:typelink/]">[field:typename/]</a></li>
+{/dede:channel}
+                                
+                               
+                               
+                               
+                                </ul>
+								<span class="subR"></span>
+							</div>
+					  </li>
+						
+                        
+{dede:channelartlist typeid='105,0'}
+<li><a href="javascript:void(0)">{dede:field name='typename'/}</a>
+{/dede:channelartlist}
+						
+                        
+                        	<div class="subNav subNavL2">
+								<span class="subL"></span>
+								<ul>
+									
+                                    
+                                    
+{dede:channel   type ='son' typeid ='105'   }
+<li><a href="[field:typelink/]">[field:typename/]</a></li>
+{/dede:channel}
+								
+                                
+                                
+                                </ul>
+								<span class="subR"></span>
+							</div>
+					  </li>
+						
+                        
+                        
+                        
+{dede:channelartlist typeid='3,0'}
+<li><a href="javascript:void(0)">{dede:field name='typename'/}</a>
+{/dede:channelartlist}
+						
+                        
+                        
+                        	<div class="subNav subNavL3">
+								<span class="subL"></span>
+								<ul>
+									
+                                    
+                                    
+{dede:channel   type ='son' typeid ='3'   }
+<li><a href="[field:typelink/]">[field:typename/]</a></li>
+{/dede:channel}
+								
+                                
+                                
+                                </ul>
+								<span class="subR"></span>
+							</div>
+					  </li>
+						
+                        
+                        
+{dede:channelartlist typeid='4,0'}
+<li><a href="javascript:void(0)">{dede:field name='typename'/}</a>
+{/dede:channelartlist}
+							
+                            
+                            
+                            <div class="subNav subNavL4">
+								<span class="subL"></span>
+								<ul>
+									
+                                    
+                                    
+{dede:channel   type ='son' typeid ='4'   }
+<li><a href="[field:typelink/]">[field:typename/]</a></li>
+{/dede:channel}
+				
+								
+                                
+                                
+                                </ul>
+								<span class="subR"></span>
+							</div>
+					  </li>
+						
+                        
+                        
+{dede:channelartlist typeid='5,0'}
+<li><a href="javascript:void(0)">{dede:field name='typename'/}</a>
+{/dede:channelartlist}
+							
+                            
+                            <div class="subNav subNavL5">
+								<span class="subL"></span>
+								<ul>
+									
+                                    
+                                    
+{dede:channel   type ='son' typeid ='5'   }
+<li><a href="[field:typelink/]">[field:typename/]</a></li>
+{/dede:channel}
+							
+                            
+                            
+                            	</ul>
+								<span class="subR"></span>
+							</div>
+					  </li>
+						
+                        
+                        
+{dede:channelartlist typeid='6,0'}
+<li><a href="javascript:void(0)">{dede:field name='typename'/}</a>
+{/dede:channelartlist}
+							
+                            
+                            <div class="subNav subNavL6">
+								<span class="subL"></span>
+								<ul>
+									
+                                    
+                                    
+{dede:channel   type ='son' typeid ='6   }
+<li><a href="[field:typelink/]">[field:typename/]</a></li>
+{/dede:channel}
+								
+                                
+                                
+                                </ul>
+								<span class="subR"></span>
+							</div>
+					  </li>
+					</ul>
+				</div>
+				<div class="english">
+
+					2月22日 星期六  藏历十二月二十三
+				</div				>
+			</div>
+		</div>
+		<div class="part_one">
+			<div class="part_oneBox part_black">
+				<div class="tit">
+					
+                      {dede:channelartlist typeid='8,0'}
+                    <h2>
+						<i class="ico1"></i>
+                        
+                          {dede:field name='typename'/}
+                        
+                        </h2>
+					<span class="more_btn"><a href="{dede:field name='typeurl'/}" title="更多">更多</a></span>
+                    
+                    
+                                 
+              
+				{/dede:channelartlist} 
+                    
+                    
+                    </div>
+				
+                
+                
+                <ul>
+					
+							
+                            
+                            {dede:arclist row='6' titlelen='200' typeid='8' }
+                            <li><i class="ico5"></i><a target="_blank"
+								href="[field:arcurl/]" title="[field:title/]">
+								[field:title/]…
+							</a></li>
+                             {/dede:arclist}
+						
+				</ul>
+			</div>
+			<div class="part_oneBox">
+				<div class="tit">
+					
+                    
+  {dede:channelartlist typeid='7,0'}
+                    <h2>
+						<i class="ico1"></i>
+                        
+                          {dede:field name='typename'/}
+                        
+                        </h2>
+					<span class="more_btn"><a href="{dede:field name='typeurl'/}" title="更多">更多</a></span>
+                    
+                    
+                                 
+              
+				{/dede:channelartlist} 
+                        
+                        
+                        
+                        
+                        </div>
+				<ul>
+					
+                            {dede:arclist row='6' titlelen='200' typeid='7' }
+                            <li><i class="ico5"></i><a target="_blank"
+								href="[field:arcurl/]" title="[field:title/]">
+								[field:title/]…
+							</a></li>
+                             {/dede:arclist}
+						
+				</ul>
+			</div>
+			<div class="part_oneBg ss01">
+			</div>
+			<div class="part_oneT">
+				<div class="titL">
+				</div>
+				<div class="titC">
+					<a style="color: #fff" href="/plus/list.php?tid=103">
+						上师：唐巧奥萨堪布</a></div>
+				<div class="titR">
+				</div>
+			</div>
+			<div id="musiclistDIV" style="display: none; position: absolute; width: 160px; height: auto;
+				top: -7px; left: 810px; padding: 2px 10px; background-color: #333; color: #aaa;
+				border: 1px solid #000; z-index: 1100; text-align: left; line-height: 22px;">
+				<div style="border-bottom: 1px dotted #000; margin-bottom: 2px;">
+					请选择      <span id="jingyin" onclick='Player.stop();' style='cursor: pointer;
+						color: #ffff00;' title='关闭音乐'>[静音]</span>
+				</div>
+				<div id="musiclistHTML">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="part_stzq">
+		<div class="part_stzqXq">
+			
+					新年开始，所有能在一年内圆满念诵观音心咒“嗡嘛呢叭咪吽”100万，最少10万遍的信众可以发送报名信息到邮箱futian_kaang@163.com报名参加此次共修，待共修圆满后，上师将与我们一起回向功德。
+					<a href="#" target="_blank">[妙乘光明海共修]</a>
+				
+		</div>
+		<div class="part_stzqT">
+			<h2><i class="ico3"></i>
+            
+            
+            
+                {dede:channelartlist typeid='23,0'}
+               {dede:field name='typename'/}
+				{/dede:channelartlist}
+            
+            
+            </h2>
+			
+           {dede:channelartlist typeid='23,0'}
+            <h2 style="margin-left:453px"><i class="ico3"></i>{dede:field name='typename'/}</h2>
+			<span class="more_btn"><a href="{dede:field name='typeurl'/}" title="更多">
+				更多</a></span>
+             {/dede:channelartlist}   
+                
+                
+                </div>
+	</div>
+	<div class="part_stzqInf">
+		<div class="spScr">
+			<a class="LeftBotton" id="scrollArrLeft1"></a>
+			<div id="scrollCont1" class="Cont" >
+				<div class="ScrCont">
+						<ul>
+							
+                            
+                            {dede:arclist row='999' titlelen='100' typeid='23'  flag ='f'  }
+									<li>
+										<dl>
+											<dt>
+												<img src="[field:picname/]" title="[field:title/]" />
+												<p>
+													<span>
+														[field:title/]</span><a href="[field:arcurl/]"
+															class="openvedio"></a></p>
+											</dt>
+											<dd>
+												<div class="ContListR">
+													<span class="byte">
+														[field:typename/]</span> <span class="dl_btn"><a href="/plus/list.php?tid=23">
+															更多视频</a></span>
+												</div>
+											</dd>
+										</dl>
+									</li>
+								
+                                {/dede:arclist}
+								
+						</ul>
+				</div>
+			</div>
+			<a class="RightBotton"  id="scrollArrRight1"></a>
+		</div>
+		<div class="vspScr">
+			<a class="LeftBotton" id="scrollArrLeft2"></a>
+			<div id="scrollCont2" class="Cont">
+					<ul>
+						
+								
+                                
+                               {dede:arclist row='999' titlelen='100' typeid='37'  }
+                                <li>
+
+									<dl>
+										<dt>
+
+
+											<img src="[field:picname/]" title="[field:title/]" />
+											<p>
+												<span>
+													[field:title/]</span><a href="[field:arcurl/]"
+														class="openvedio"></a></p>
+										</dt>
+										<dd>
+											<div class="ContListR">
+												<span class="byte">
+													[field:typename/]</span> <span class="dl_btn"><a href="/plus/list.php?tid=37">
+														更多微视频</a></span>
+											</div>
+										</dd>
+									</dl>
+								</li>
+							
+							 {/dede:arclist}	
+							
+					</ul>
+			</div>
+			<a class="RightBotton" id="scrollArrRight2"></a>
+		</div>
+		<div class="spTab">
+			<div class="spTabmenu">
+				<ul>
+					<li id="one1" class="hover" onclick="setTab('one',1,8)" style="border-top: 1px dashed #ccc;">
+						法王念诵</li>
+					<li id="one3" onclick="setTab('one',3,8)">上师念诵</li>
+					<li id="one4" onclick="setTab('one',4,8)">经文念诵</li>
+					<li id="one4" onclick="setTab('one',5,8)">喇荣妙音</li>
+				</ul>
+			</div>
+			<div class="spTabcon">
+				<div id="con_one_1">
+					<div class="spic">
+						<img src="{dede:global.cfg_templets_skin/}/style/images/music_fwns.gif" /></div>
+					<div class="slist">
+						<ul>
+							
+									<li onclick="return ot('http://www.mcgmh.com/a/4/4-1/22-1/308.html','0')"><a href="#">
+										法王如意宝唱诵自在祈祷</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-1/309.html','0')"><a href="#">
+										法王念诵_宗喀巴大师祈请</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-1/310.html','0')"><a href="#">
+										法王念诵_文殊菩萨祈请及…</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-1/311.html','0')"><a href="#">
+										法王念诵_释迦牟尼佛祈请…</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-1/312.html','0')"><a href="#">
+										法王念诵_上师住世文及吉…</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-1/314.html','0')"><a href="#">
+										法王念诵_萨迦班智达祈请</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-1/315.html','0')"><a href="#">
+										法王念诵_米拉日巴尊者祈…</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-1/316.html','0')"><a href="#">
+										法王念诵_莲师心咒</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-1/317.html','0')"><a href="#">
+										法王念诵_九本尊心咒</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-1/318.html','0')"><a href="#">
+										法王念诵_黄财神心咒</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-1/319.html','0')"><a href="#">
+										法王念诵_观音菩萨心咒</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-1/320.html','0')"><a href="#">
+										法王念诵_度母祈请文</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-1/322.html','0')"><a href="#">
+										法王念诵_地藏菩萨圣号</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-1/323.html','0')"><a href="#">
+										法王念诵_阿弥陀佛祈请及…</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-1/307.html','0')"><a href="#">
+										法王如意宝-现有自在摄受…</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-1/5.html','0')"><a href="#">
+										法王如意宝美国念诵的《佛…</a> </li>
+								
+						</ul>
+					</div>
+				</div>
+				<div id="con_one_2" style="display: none">
+					<div class="spic">
+						<img src="{dede:global.cfg_templets_skin/}/style/images/music_ssks.gif" /></div>
+					<div class="slist">
+						<ul>
+							
+									
+								
+						</ul>
+					</div>
+				</div>
+				<div id="con_one_3" style="display: none">
+					<div class="spic">
+						<img src="{dede:global.cfg_templets_skin/}/style/images/music_jzns.gif" /></div>
+					<div class="slist">
+						<ul>
+							
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1151.html','0')"><a href="#">
+										喇嘛钦诺</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1162.html','0')"><a href="#">
+										秽迹金刚心咒</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1164.html','0')"><a href="#">
+										录音002布施咒</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1165.html','0')"><a href="#">
+										字母咒</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1163.html','0')"><a href="#">
+										六字大明咒念诵录音</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1161.html','0')"><a href="#">
+										观音菩萨圣号</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1160.html','0')"><a href="#">
+										顶礼咒</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1159.html','0')"><a href="#">
+										宝月莲智严光音自在王如来</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1158.html','0')"><a href="#">
+										招财仪轨</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1157.html','0')"><a href="#">
+										愿海精髓</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1156.html','0')"><a href="#">
+										缘起咒</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1155.html','0')"><a href="#">
+										药师佛心咒</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1154.html','0')"><a href="#">
+										药师佛心咒</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1154.html','0')"><a href="#">
+										药师佛圣号</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1153.html','0')"><a href="#">
+										释加佛心咒</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1152.html','0')"><a href="#">
+										释加佛圣号</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1150.html','0')"><a href="#">
+										长寿咒</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1148.html','0')"><a href="#">
+										百字明</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1149.html','0')"><a href="#">
+										普贤行愿品（发愿回向）</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1147.html','0')"><a href="#">
+										麦彭仁波切极乐愿文</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1146.html','0')"><a href="#">
+										圣号与明咒</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1145.html','0')"><a href="#">
+										地藏王菩萨赞叹</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1144.html','0')"><a href="#">
+										地藏王菩萨十轮咒</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1143.html','0')"><a href="#">
+										地藏王菩萨圣号</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1142.html','0')"><a href="#">
+										遣除道障祈祷文</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1141.html','0')"><a href="#">
+										普获悉地祈请文</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1140.html','0')"><a href="#">
+										金刚七句</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1139.html','0')"><a href="#">
+										九本尊心咒</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1138.html','0')"><a href="#">
+										大加持云</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1137.html','0')"><a href="#">
+										发心仪轨</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1136.html','0')"><a href="#">
+										普贤行愿品（七支供）</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1135.html','0')"><a href="#">
+										供养仪轨</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1134.html','0')"><a href="#">
+										八吉祥</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/22-3/1133.html','0')"><a href="#">
+										加持咒</a> </li>
+								
+									
+								
+						</ul>
+					</div>
+				</div>
+				<div id="con_one_4" style="display: none">
+					<div class="spic">
+						<img src="{dede:global.cfg_templets_skin/}/style/images/music_jwns.gif" /></div>
+					<div class="slist">
+						<ul>
+							
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/qiyu_fozixing37song.mp3&bname=%e4%bd%9b%e5%ad%90%e8%a1%8c%e4%b8%89%e5%8d%81%e4%b8%83%e9%a2%82(%e6%bc%94%e5%94%b1%ef%bc%9a%e9%bd%90%e8%b1%ab)','0')"><a href="#">
+										佛子行三十七颂(演唱：齐豫)</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/VTS_ok.mp3&bname=%e5%9c%a3%e8%88%ac%e8%8b%a5%e6%91%84%e9%a2%82','0')"><a href="#">
+										圣般若摄颂</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_93.wma&bname=%e6%95%99%e8%af%b2%e9%bb%8e%e6%98%8e%e6%9b%99%e5%85%89','0')"><a href="#">
+										教诲黎明曙光</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_92.wma&bname=%e4%ba%8b%e5%b8%88%e6%b3%95%e4%ba%94%e5%8d%81%e9%a2%82','0')"><a href="#">
+										事师法五十颂</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_91.wma&bname=%e4%bf%ae%e5%bf%83%e5%85%ab%e9%a2%82','0')"><a href="#">
+										修心八颂</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_90.wma&bname=%e4%b8%89%e4%b8%bb%e8%a6%81%e9%81%93%e8%ae%ba','0')"><a href="#">
+										三主要道论</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_88.wma&bname=%e4%bd%9b%e5%ad%90%e8%a1%8c%e4%b8%89%e5%8d%81%e4%b8%83%e9%a2%82','0')"><a href="#">
+										佛子行三十七颂</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/rxl-03.wma&bname=%e5%85%a5%e8%a1%8c%e8%ae%ba(41-54)','0')"><a href="#">
+										入行论(41-54)</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/rxl-02.wma&bname=%e5%85%a5%e8%a1%8c%e8%ae%ba(21-40)','0')"><a href="#">
+										入行论(21-40)</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/rxl-01.wma&bname=%e5%85%a5%e8%a1%8c%e8%ae%ba(1-20)','0')"><a href="#">
+										入行论(1-20)</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_87.wma&bname=%e9%87%91%e5%88%9a%e8%88%ac%e8%8b%a5%e8%88%ac%e7%bd%97%e8%9c%9c%e7%bb%8f','0')"><a href="#">
+										金刚般若般罗蜜经</a> </li>
+								
+
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_86.wma&bname=%e8%88%ac%e8%8b%a5%e6%b3%a2%e7%bd%97%e8%9c%9c%e5%a4%9a%e5%bf%83%e7%bb%8f','0')"><a href="#">
+										般若波罗蜜多心经</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_85.wma&bname=%e9%9a%8f%e5%bf%b5%e4%b8%89%e5%ae%9d%e7%bb%8f','0')"><a href="#">
+										随念三宝经</a> </li>
+								
+						</ul>
+					</div>
+				</div>
+				<div id="con_one_5" style="display: none">
+					<div class="spic">
+						<img src="{dede:global.cfg_templets_skin/}/style/images/music_xlmdl.gif" /></div>
+					<div class="slist">
+						<ul>
+							
+								        <li onclick="return ot('http://mcgmh.com/a/4/4-1/larongmiaoyin/1133.html','0')"><a href="#">
+										加持咒</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/larongmiaoyin/1158.html','0')"><a href="#">
+										招财仪轨</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/larongmiaoyin/1149.html','0')"><a href="#">
+										普贤行愿品（发愿回向）</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/larongmiaoyin/1147.html','0')"><a href="#">
+										麦彭仁波切极乐愿文</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/larongmiaoyin/1146.html','0')"><a href="#">
+										圣号与明咒</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/larongmiaoyin/1145.html','0')"><a href="#">
+										地藏王菩萨赞叹</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/larongmiaoyin/1142.html','0')"><a href="#">
+										遣除道障祈祷文</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/larongmiaoyin/1140.html','0')"><a href="#">
+										金刚七句</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/larongmiaoyin/1139.html','0')"><a href="#">
+										九本尊心咒</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/larongmiaoyin/1138.html','0')"><a href="#">
+										大加持云</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/larongmiaoyin/1137.html','0')"><a href="#">
+										发心仪轨</a> </li>
+								
+
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/larongmiaoyin/1136.html','0')"><a href="#">
+										普贤行愿品（七支供）</a> </li>
+								
+									<li onclick="return ot('http://mcgmh.com/a/4/4-1/larongmiaoyin/1134.html','0')"><a href="#">
+										供养仪轨</a> </li>
+										
+								        <li onclick="return ot('http://mcgmh.com/a/4/4-1/larongmiaoyin/1134.html','0')"><a href="#">
+										八吉祥</a> </li>
+						</ul>	
+
+					</div>
+				</div>
+				<div id="con_one_6" style="display: none">
+					<div class="spic">
+						<img src="{dede:global.cfg_templets_skin/}/style/images/music_drlj.gif" /></div>
+					<div class="slist">
+						<ul>
+							
+									
+								
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--新内容-->
+	<div class="wzpartRound">
+	</div>
+	<div id="wzpart">
+		<div class="wzpartPic">
+			<ul>
+			  <li>
+			    <p>
+						<a href="/a/1/1-5/898.html">
+							<img src="{dede:global.cfg_templets_skin/}/style/images/title.jpg" />
+							<var class="ztxt"><span>上师和孩子们</span></var>                        </a>                    </p>
+                    <a href="/kaangxueyuan/xueyuandongtai/" class="ztitle">学院动态</a>				</li>
+			  <li>
+					<p>
+						<a href="/a/ymss/300.html">
+							<img src="{dede:global.cfg_templets_skin/}/style/images/pic02.jpg" />
+							<var class="ztxt"><span>法相【第五辑】</span></var>                        </a>                    </p>
+                <a href="/a/ymss/300.html" class="ztitle">门措上师</a>				</li>
+			  <li>
+					<p>
+						<a href="/a/ymss/299.html">
+							<img src="{dede:global.cfg_templets_skin/}/style/images/pic03.jpg" />
+							<var class="ztxt"><span>法相【第五辑】</span></var>                        </a>                    </p>
+                <a href="/a/ymss/299.html" class="ztitle">法王如意宝</a>				</li>
+			  <li>
+			    <p>
+						<a href="/a/1/1-5/">
+							<img src="{dede:global.cfg_templets_skin/}/style/images/title01.jpg" />
+							<var class="ztxt"><span>2013年上师近期法相（五）</span></var>                        </a>                    </p>
+                    <a href="/a/1/1-5/" class="ztitle">上师法相</a>				</li>
+				<li>
+					<p>
+						<a href="/">
+							<img src="{dede:global.cfg_templets_skin/}/style/images/title02.jpg" />
+							<var class="ztxt"><span>电子版</span></var>                        </a>                    </p>
+                    <a href="/a/1/1-2/" class="ztitle">慧海拾贝</a>				</li>
+			</ul>
+		</div>
+		<div class="wzpartTop">
+		</div>
+		<div class="wzpartFuo">
+			<div class="wzpartLeft">
+				<div class="zxgx">
+					
+
+<div class="zxgxBox">
+	<div class="tit">
+		<h2>
+			<i class="ico1"></i>
+			
+            
+                {dede:channelartlist typeid='111,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}
+        
+        </span>
+	</div>
+	<ul class=" index_boxUl">
+		
+		
+				
+			
+            {dede:arclist row='5' titlelen='150' typeid='111' }
+            
+            	<li><i class="ico4"></i>【<a href="[field:arcurl/]">[field:typename/]</a>】
+					<a href="[field:arcurl/]"
+						target="_blank" title="[field:title/]">
+						[field:title/]
+					</a></li>
+				
+{/dede:arclist} 
+				
+
+		
+	</ul>
+</div>
+
+					
+
+<div class="zxgxBox">
+	<div class="tit">
+		<h2>
+			<i class="ico1"></i>
+			
+            
+            {dede:channelartlist typeid='102,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span>
+	
+    
+    
+    </div>
+	<ul class=" index_boxUl">
+		
+		
+				 {dede:arclist row='3' titlelen='150' typeid='102' }
+				<li><i class="ico4"></i><a target="_blank"
+					href="[field:arcurl/]" title="[field:title/]">
+					[field:title/]
+				</a></li>
+				
+{/dede:arclist} 
+            
+
+				
+
+		
+		
+	</ul>
+</div>
+
+					
+
+<div class="zxgxBox">
+	<div class="tit">
+		<h2>
+			<i class="ico1"></i>
+			
+             
+               {dede:channelartlist typeid='19,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span>
+    
+    </div>
+	<ul class=" index_boxUl">
+		
+		
+				
+				 {dede:arclist row='3' titlelen='150' typeid='19' }
+				<li><i class="ico4"></i><a target="_blank"
+					href="[field:arcurl/]" title="[field:title/]">
+					[field:title/]
+				</a></li>
+				
+{/dede:arclist} 
+				
+		
+		
+	</ul>
+</div>
+
+					<div class="zxgxBox">
+						<div class="tit">
+							<h2>
+								<i class="ico1"></i>
+                                
+                                 {dede:channelartlist typeid='27,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span>
+        
+        </div>
+						
+							
+                              {dede:arclist row='3' titlelen='150' typeid='27' }
+                            
+                            	<div class="fzxyInf">
+									<div class="fzxyBord">
+										<a href="[field:arcurl/]" target="_blank">
+											[field:description function="cn_substr(@me,90)"/]... </a></div>
+									<div class="fzxyIco">
+									</div>
+									<h6>
+										[field:title/]</h6>
+								</div>
+							 {/dede:arclist}
+								
+                                
+                                
+							
+					</div>
+					<div class="cls">
+					</div>
+				</div>
+				<div class="zxgx">
+					
+
+<div class="zxgxBox">
+	<div class="tit">
+		<h2>
+			<i class="ico1"></i>
+			
+            
+            
+                           {dede:channelartlist typeid='105,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span>
+	</div>
+	<ul class=" widC  index_boxUl">
+		
+		
+				    {dede:arclist row='5' titlelen='150' typeid='105' }
+				      <li><i class="ico5"></i><a target="_blank"
+					href="[field:arcurl/]" title="[field:title/]">
+					[field:title/]
+				</a></li>
+				
+			
+
+{/dede:arclist} 		
+		
+		
+	</ul>
+</div>
+
+					
+
+<div class="zxgxBox">
+	<div class="tit">
+		<h2>
+			<i class="ico1"></i>
+			  
+               {dede:channelartlist typeid='120,0'}
+               {dede:field name='typename'/}            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span>
+	</div>
+	<ul class=" widC  index_boxUl">
+		
+		
+				
+				    {dede:arclist row='3' titlelen='150' typeid='120' }
+				      <li><i class="ico5"></i><a target="_blank"
+					href="[field:arcurl/]" title="[field:title/]">
+					[field:title/]
+				</a></li>
+				
+			
+
+{/dede:arclist} 		
+		
+
+		
+		
+	</ul>
+</div>
+
+					
+
+<div class="zxgxBox">
+	<div class="tit">
+		<h2>
+			<i class="ico1"></i>
+		  {dede:channelartlist typeid='21,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span>
+	</div>
+	<ul class=" widC  index_boxUl">
+		
+		
+				
+
+				    {dede:arclist row='3' titlelen='150' typeid='21' }
+				      <li><i class="ico5"></i><a target="_blank"
+					href="[field:arcurl/]" title="[field:title/]">
+					[field:title/]
+				</a></li>
+				
+			
+
+{/dede:arclist} 	
+		
+		
+	</ul>
+</div>
+
+					
+
+<div class="zxgxBox">
+	<div class="tit">
+		<h2>
+			<i class="ico1"></i>
+			  {dede:channelartlist typeid='118,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span>
+	</div>
+	<ul class=" widC  index_boxUl">
+		
+		
+				
+				    {dede:arclist row='3' titlelen='150' typeid='118' }
+				      <li><i class="ico5"></i><a target="_blank"
+					href="[field:arcurl/]" title="[field:title/]">
+					[field:title/]
+				</a></li>
+				
+			
+
+{/dede:arclist} 	
+				
+
+		
+		
+	</ul>
+</div>
+						
+
+<div class="zxgxBox">
+	<div class="tit">
+		<h2>
+		    <i class="ico1"></i>
+			  {dede:channelartlist typeid='115,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span>
+	</div>
+	<ul class=" widC  index_boxUl">
+		
+		
+				
+				    {dede:arclist row='3' titlelen='150' typeid='115' }
+				      <li><i class="ico5"></i><a target="_blank"
+					href="[field:arcurl/]" title="[field:title/]">
+					[field:title/]
+				</a></li>
+				
+			
+
+{/dede:arclist} 	
+		
+		
+	</ul>
+</div>
+
+				</div>
+			</div>
+			<div class="wzpartRight">
+				<div class="zxgxBox rightbar">
+					<div class="tit">
+						<h2>
+							<i class="ico1"></i>
+                            
+                           <strong>最新讯息</strong></h2>
+						<a href="/a/xinxifabu/" title="更多" class="rightbar_more"></a>             
+                    </div>
+					<p style="max-height: 335px;"> <ul class=" index_boxU2">
+					<li><i class="ico5"></i><a href="/a/xinxifabu/2014/0201/1125.html" title="解脱之路-九年修行计划" target="_blank">解脱之路-九年修行计划</a> </li>
+					<li><i class="ico5"></i><a href="/kaangxueyuan/aixinxingdong/1550.html" title="筹建图书馆倡议书" target="_blank">筹建图书馆倡议书</a></li>
+					<li><i class="ico5"></i><a href="/a/1/1-2/1549.html" title="2014年共修" target="_blank">2014年共修</a></span></li>
+					<li><i class="ico5"></i><a href="/a/xinxifabu/2013/1009/830.html" title="每月藏历三十共修阿弥陀佛修法" target="_blank">每月藏历三十共修阿弥陀佛修法</a> </li>
+					<li><i class="ico5"></i><a href="/a/xinxifabu/2014/0128/1122.html" title="法讯：1月30号（年三十）开示" target="_blank">法讯：1月30号（年三十）开示</a> </li>
+					<li><i class="ico5"></i><a href="/a/xinxifabu/2013/1031/952.html" title="天籁梵呗免费结缘" target="_blank">天籁梵呗免费结缘</a> </li>
+				        <li><i class="ico5"></i><a href="/a/xinxifabu/2013/1009/829.html" title=" 每月藏历十五共修放生" target="_blank"> 每月藏历十五共修放生</a> </li></p></ul>
+				<p class="lbord">
+					</p>	
+				</div>
+				
+				<div class="zxgxBox rightbar">
+					<div class="tit">
+						<h2>
+							<i class="ico1"></i>天雨妙音</h2>
+						<a href="/a/4/4-1/#ypzq_7" title="更多" class="rightbar_more"></a>
+					</div>
+					<p>
+					<a href="/a/4/4-1/#ypzq_7">
+					<img src="{dede:global.cfg_templets_skin/}/style/images/wptz_xmns.png" border="0" style="margin: 20px 10px;"/></a>					</p>
+					<p class="lbord">
+					</p>
+				</div>
+				<div class="zxgxBox rightbar">
+					<div class="tit">
+						<h2>
+							<i class="ico1"></i>佛教故事</h2>
+						<a href="/a/5/5-2" title="更多" class="rightbar_more">
+						</a>
+					</div>
+					<p style="max-height: 108px;">
+						明朝万历年间，浙江桐乡的吴君平，幼年失去父母。于是淡斋四十九天，刺胸血，书写《金刚经》。夜晚，他梦见父母站在云端上，对他…</p>
+					<p class="lbord">
+					</p>
+				</div>
+				<div class="zxgxBox rightbar">
+					<div class="tit">
+						<h2>
+							<i class="ico1"></i>
+                            
+                            
+                            
+                            {dede:channelartlist typeid='21,0'} 
+                            乐素养生</h2>
+						<a href="{dede:field name='typeurl'/}" title="更多" class="rightbar_more"></a>
+					{/dede:channelartlist}
+				
+
+                
+                
+                
+                
+                
+                	</div>
+					<p style="max-height: 108px;">
+						免疫系统：下面是健康而强大的免疫系统会遭遇的一些劲敌：膳食脂肪、咖啡因、烟草、酒精、精制食物、化学疗法、过量的糖分、疲惫…</p>
+					
+				</div>
+			</div>
+			<div class="zxclBox">
+				<div class="tit">
+					<h2>
+						<i class="ico1"></i>  {dede:channelartlist typeid='116,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		            <span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span></div>
+				<ul class="zxclInf">
+					<li>
+						<div class="bookpic">
+							<a title="龙树菩萨传" href="/a/fujiaoguancha/fmlx/673.html">
+							  <img src="/uploads/allimg/c130929/13P444aMVF-41943_lit.jpg" alt="龙树菩萨传" border="0"></a></div>
+						<div class="booktit">
+							<h5>龙树菩萨传</h5>
+							<p>龙树是大乘佛学的创始人，生于约公元二至三世纪</p>
+						</div>
+					</li>
+					<li>
+						<div class="bookpic">
+							<a href="/a/fujiaoguancha/fmlx/669.html" title="净宗三祖承远大师">
+						      <img src="/uploads/allimg/c130929/13P444a1O060-2c2T_lit.jpg" alt="净宗三祖承远大师" border="0" /></a></div>
+						<div class="booktit">
+							<h5>
+								三祖承远大师</h5>
+							<p>三祖承远大师（712～802）唐代僧，为净土宗第三祖。</p>
+					  </div>
+					</li>
+					<li>
+						<div class="bookpic">
+							<a href="/a/fujiaoguancha/fmlx/672.html" title="佛陀耶舍：赤髯胡僧">
+							  <img src="/uploads/allimg/c130929/13P444a6452Z-3Xa_lit.jpg" alt="佛陀耶舍：赤髯胡僧" border="0" /></a></div>
+						<div class="booktit">
+							<h5>
+							    佛陀耶舍</h5>
+							<p>佛陀耶舍（约4～5世纪），《四分律》译主。罽宾人，</p>
+					  </div>
+					</li>
+					<li>
+						<div class="bookpic">
+							<a href="/a/fujiaoguancha/fmlx/676.html" title="真谛大师">
+							  <img src="/uploads/allimg/c130929/13P444b34I10-25O2_lit.jpg" alt="真谛大师" border="0" /></a></div>
+						<div class="booktit">
+							<h5>
+								真谛大师</h5>
+							<p>真谛（499—569年），原籍西天竺优禅尼国，出身婆罗门族。</p>
+						</div>
+					</li>
+					<li>
+						<div class="bookpic">
+							<a href="/a/fujiaoguancha/fmlx/679.html" title="唐高僧一行禅师">
+						      <img src="/uploads/allimg/c130929/13P444bJ250-54J9_lit.jpg" alt="唐高僧一行禅师" border="0" /></a></div>
+						<div class="booktit">
+							<h5>
+								唐高僧一行禅师</h5>
+							<p>释一行俗家姓名张遂，是唐初将军张公</p>
+					  </div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="wzpartLeft">
+			<div class="zxgx">
+				<div class="zxgxBox">
+					<div class="tit">
+						<h2>
+							<i class="ico1"></i> {dede:channelartlist typeid='28,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span></div>
+					
+						
+                       {dede:arclist row='4' titlelen='150' typeid='28' }  
+                        	<div class="fzxyInf">
+								<div class="fzxyBord">
+									<a href="[field:arcurl/]" target="_blank">
+										[field:description function="cn_substr(@me,90)"/]...</a></div>
+								<div class="fzxyIco">
+								</div>
+								<h6>
+									[field:title/]</h6>
+							</div>
+						 {/dede:arclist}
+							
+						
+				</div>
+			</div>
+			<div class="zxgx">
+				<div class="zxgxBox widAdd">
+					<div class="tit">
+						<h2>
+							<i class="ico1"></i>{dede:channelartlist typeid='26,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span></div>
+					<ul class="widB index_boxUl">
+						
+                        
+                        
+                       {dede:arclist row='4' titlelen='150' typeid='26' }  
+                         <li><i class="ico4"></i><a href="[field:arcurl/]" target="_blank"
+							title="[field:title/]">[field:title/]</a></li>
+						 {/dede:arclist}
+                    
+                    </ul>
+				</div>
+				<div class="zxgxBox widAdd">
+					<div class="tit">
+						<h2>
+							<i class="ico1"></i>{dede:channelartlist typeid='25,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span></div>
+					<ul class="widB index_boxUl">
+						
+								
+                                 {dede:arclist row='5' titlelen='150' typeid='79' } 
+                                   <li><i class="ico5"></i><a href="[field:arcurl/]"
+									target="_blank">[field:title/]</a></li>
+							 {/dede:arclist}
+
+							
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="wzpartRight" style="padding-bottom: 10px;">
+			<div class="rightBo">
+				<h3>
+					卡昂学院官方博客</h3>
+				<p>
+					<a href="http://blog.sina.com.cn/kaangschool" target="_blank">发布卡昂学院最新动态资讯</a></p>
+				<h3>
+					上师唐巧奥萨堪布官方博客</h3>
+				<p>
+					<a href="http://blog.sina.com.cn/kaangschool" target="_blank">发布上师唐巧奥萨堪布最新弘法资讯</a></p>
+				<h3>
+					卡昂学院官方微博</h3>
+				<p>
+					<a href="http://weibo.com/tengquekb" target="_blank">发布卡昂学院最新动态资讯</a></p>
+				<h3>
+					上师唐巧奥萨堪布官方微博</h3>
+				<p>
+					<a href="http://weibo.com/tengquekb" target="_blank">发布上师唐巧奥萨堪布最新开示、弘法资讯</a></p>
+				
+			</div>
+			<div class="email">
+				<h3>
+					联系我们</h3>
+				<a href="mailto:tq_answer@163.com">miaochengweb@163.com</a>
+				<h3>
+					佛子心语投稿</h3>
+				<a href="mailto:tq_answer@163.com">miaochengweb@163.com</a>
+				<h3>
+					放生乐园</h3>
+				<a href="mailto:fangsheng999@163.com">fangsheng999@163.com</a>
+			</div>
+		</div>
+	</div>
+<!--旧内容开始-->
+	
+	<!--背景音乐-->
+	<object type="application/x-shockwave-flash" data="http://www.ptz.cc/flash/player_mp3_maxi.swf"
+		width="1" height="1" id="monFlash">
+		<param name="movie" value="http://www.ptz.cc/flash/player_mp3_maxi.swf">
+		<param name="quality" value="high">
+
+		<param name="wmode" value="transparent" />
+		<param name="FlashVars" value="mp3=http://www.ptz.cc/flash/ssxz.mp3&showstop=1&loop=1&autoload=1" />
+		<p>
+		</p>
+	</object>
+
+	<script language="Javascript" type="text/javascript">
+		var Player = function() {
+			$j("#musiclistDIV").hover(
+				  function(e) {
+				  	//Player.showPlayList(e);
+				  },
+				  function() {
+				  	Player.hidenPlayList();
+				  }
+				);
+			var isshow = false;
+			var soundlist = [
+						
+					];
+			return {
+				bulidList: function() {
+					var html = "";
+					var id = 1;
+					if ($j.cookie("soundlistid")) {
+						id = $j.cookie("soundlistid");
+					}
+					else {
+						id = 1;
+					}
+					for (var i = 0; i < soundlist.length; i++) {
+						if (id == (i + 1)) {
+							html += "[<a href='" + soundlist[i].url + "' target='_blank' style='color: #ffff00;'>下载</a>]<a href='javascript:Player.play(" + (i + 1) + ");' class='a'  title='当前选择了" + soundlist[i].name + "'>" + soundlist[i].name + "</a> √<br />";
+						}
+						else {
+							html += "[<a href='" + soundlist[i].url + "' target='_blank' style='color: #ffff00;'>下载</a>]<a href='javascript:Player.play(" + (i + 1) + ");' class='a'  title='播放" + soundlist[i].name + "'>" + soundlist[i].name + "</a><br />";
+						}
+					};
+					$j("#musiclistHTML").html(html);
+				},
+				showPlayList: function(event) {
+					if (isshow) return;
+					isshow = true;
+					$j("#musiclistDIV").slideDown(200);
+				},
+				hidenPlayList: function() {
+					if (!isshow) return;
+					isshow = false;
+					$j("#musiclistDIV").slideUp(100);
+
+				},
+				stop: function() {
+					Player.hidenPlayList();
+					Player.bulidList();
+					try {
+						$j.cookie('soundstop', "yes");
+						$j("#soundTd").html("  <img src='{dede:global.cfg_templets_skin/}/style/images/01.gif'  align='absmiddle' onclick='Player.play(-1);' style='cursor: pointer;' title='播放音乐'> <a href='#'  style='padding:0px' onmouseover='Player.showPlayList(event)'>音乐列表</a>");
+						$j("#jingyin").html("");
+						document.getElementById("monFlash").SetVariable("player:jsStop", "");
+					} catch (e) { ; }
+				},
+				play: function(sid) {
+					Player.hidenPlayList();
+					var id = sid || 0;
+					try {
+						if (id == 0 && $j.cookie('soundstop') == "yes") {
+							Player.stop();
+							return;
+						};
+						if (id <= 0) {
+							if ($j.cookie("soundlistid")) {
+								id = $j.cookie("soundlistid");
+							}
+							else {
+								id = 1;
+							}
+						}
+						$j("#soundTd").html("  <img src='{dede:global.cfg_templets_skin/}/style/images/wptz31.gif'  align='absmiddle' onclick='Player.stop();' style='cursor: pointer;' title='关闭音乐'> <a href='#'  style='padding:0px'  onmouseover='Player.showPlayList(event)'>音乐列表</a>");
+						$j("#jingyin").html("[静音]");
+						$j.cookie('soundlistid', id);
+						$j.cookie('soundstop', "no");
+						Player.bulidList();
+						document.getElementById("monFlash").SetVariable("player:jsUrl", soundlist[id - 1].url);
+						if (!sid) {
+							window.setTimeout(function() { Player.go(); }, 3000);
+						}
+						else {
+							window.setTimeout(function() { Player.go(); }, 100);
+						}
+
+					} catch (e) { ; }
+				},
+				go: function() {
+					document.getElementById("monFlash").SetVariable("player:jsPlay", "");
+				}
+			}
+		} ();
+		$j(document).ready(function() { Player.play(); });
+	
+	
+		//上师法相更换
+		var ImgPlayer = function() {
+			var imglist = [
+						{ name: "1", url: "url({dede:global.cfg_basehost/}/imgst/1.jpg)" },
+						{ name: "3", url: "url({dede:global.cfg_basehost/}/imgst/3.jpg)" },
+						{ name: "4", url: "url({dede:global.cfg_basehost/}/imgst/4.jpg)" },
+						{ name: "5", url: "url({dede:global.cfg_basehost/}/imgst/5.jpg)" },
+
+					];
+			var thisimgindex = 0;
+			return {
+				next: function() {
+					thisimgindex++;
+					if (thisimgindex >= imglist.length) thisimgindex = 0;
+					$j(".part_oneBg").animate({ opacity: '0' }, 1000, function() {
+						$j(".part_oneBg").css('background-image', imglist[thisimgindex].url);
+						$j(".part_oneBg").animate({ opacity: '1' }, 1200);
+						ImgPlayer.play();
+					});
+				},
+				play: function(sid) {
+					window.setTimeout(function() { ImgPlayer.next(); }, 1000 * 7);
+				}
+			}
+		} ();
+		$j(document).ready(function() { ImgPlayer.play(); });
+
+		
+	</script>
+
+<script>	//视频
+	var scrollPic_02 = new ScrollPic();
+	scrollPic_02.scrollContId = "scrollCont1"; //内容容器ID
+	scrollPic_02.arrLeftId = "scrollArrLeft1"; //左箭头ID
+	scrollPic_02.arrRightId = "scrollArrRight1"; //右箭头ID
+
+	scrollPic_02.frameWidth = 310; //显示框宽度
+	scrollPic_02.pageWidth = 310; //翻页宽度
+
+	scrollPic_02.speed = 20; //移动速度(单位毫秒，越小越快)
+	scrollPic_02.space = 31; //每次移动像素(单位px，越大越快)
+
+	//scrollPic_02.autoPlay = no; //自动播放
+	//scrollPic_02.autoPlayTime = 100000000; //自动播放间隔时间(秒)
+
+	scrollPic_02.initialize(); //初始化
+</script>
+
+<script>	//微视频
+	var scrollPic_02 = new ScrollPic();
+	scrollPic_02.scrollContId = "scrollCont2"; //内容容器ID
+	scrollPic_02.arrLeftId = "scrollArrLeft2"; //左箭头ID
+	scrollPic_02.arrRightId = "scrollArrRight2"; //右箭头ID
+
+	scrollPic_02.frameWidth = 200;
+	scrollPic_02.pageWidth = 200;
+
+	scrollPic_02.speed = 20;
+	scrollPic_02.space = 20;
+
+	//scrollPic_02.autoPlay = no; //自动播放
+	//scrollPic_02.autoPlayTime = 100000000; //自动播放间隔时间(秒)
+
+	scrollPic_02.initialize(); //初始化
+
+</script>
+
+<div id="dateBox">
+	<div class="dateBoxTBg2">
+	</div>
+	<div class="footpic">
+	</div>
+</div>
+
+		</div>		
+
+{dede:include filename="footer.htm"/}
+
+
+</body>
+</html>

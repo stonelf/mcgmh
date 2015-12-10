@@ -1,0 +1,176 @@
+﻿
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+	<meta name="Keywords" content="{dede:global.cfg_keywords/}" />
+	<meta name="description" content="{dede:global.cfg_description/}" />
+	<title>{dede:global.cfg_webname/}</title>
+
+
+<link href="{dede:global.cfg_templets_skin/}/style/css/globalV3.css" rel="stylesheet" type="text/css" /><link id="ctl00_listcss" href="{dede:global.cfg_templets_skin/}/style/css/listV3.css" rel="stylesheet" type="text/css" />
+
+	<script src="{dede:global.cfg_templets_skin/}/style/js/jquery-1.5.2.min.js" type="text/javascript"></script>
+
+	<script src="{dede:global.cfg_templets_skin/}/style/js/MSClass.js" type="text/javascript"></script>
+
+	<script src="{dede:global.cfg_templets_skin/}/style/js/ptz.js" type="text/javascript"></script>
+	
+	<!--[if IE 6]>
+<script src="{dede:global.cfg_templets_skin/}/style/js/DD_belatedPNG.js" mce_src="{dede:global.cfg_templets_skin/}/style/js/DD_belatedPNG.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.dl_btn , .bfqBg2 , div, ul, img, li, input , a , i , span , .xmwkBox dd , p');
+</script>
+<style>
+/* IE6 fix */	
+.nav .current,.nav .current a,.nav .current:hover{
+	_background-image: none;  
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src="{dede:global.cfg_templets_skin/}/style/images/nav_currentL.png"); 
+}
+.nav .currentR,.nav .currentR a,.nav .currentR:hover{
+	_background-image: none;  
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src="/page/images/nav_currentR.png"); 
+}
+</style>
+<![endif]-->
+	
+<script>
+	//轮播图片
+	var interval = null; //终止循环，同时刷新
+	function tabs(se, ll, cur, prev, next, stop) {
+		if (interval) {
+			window.clearInterval(interval);
+		}
+		var $obj = jQuery("#" + se); //所用标签
+		var len = $obj.length; //个数
+		var divs = "";
+		var c = 1;
+		for (n = 1; n <= len; n++) { n == 1 ? divs += "#" + ll + n : divs += ",#" + ll + n; };
+		function showDiv($num) {
+			$obj.removeClass(cur);
+			jQuery(divs).hide();
+			jQuery($obj.get($num - 1)).addClass(cur);
+			jQuery("#" + ll + $num).show();
+		};
+		$obj.each(function(i) {
+			jQuery(this).mouseover(function() {
+				c = i + 1; showDiv(c);
+			});
+		});
+		interval = setInterval(function() {
+			c++; c > len ? c = 1 : c;
+			if (c)
+				showDiv(c);
+		}, 5000);
+		if (stop) {
+			$(stop).mouseover(function() {
+				clearInterval(interval);
+			}).mouseout(function() {
+				interval = setInterval(function() {
+					c++; c > len ? c = 1 : c; showDiv(c);
+				}, 5000);
+			});
+		}
+	}
+
+</script>
+
+	<!-- for iPad begin -->
+
+	<script type="text/javascript">
+		(function() {
+			var head = document.getElementsByTagName('head');
+			if (!/\((iPhone|iPad|iPod)/i.test(navigator.userAgent)) { return };
+			var iPadScript = document.createElement('script');
+			iPadScript.src = '../page/js/ipadreset.js';
+			head[0].appendChild(iPadScript);
+		})();
+	</script>
+
+	<!-- for iPad end -->
+</head>
+<body>
+	<a name="top"></a>
+	
+	<div class="FLBox"><div class=""></div></div>
+	<div id="wrapList">
+		
+        
+        
+    {dede:include filename="head.htm"/}    
+        
+		<div id="bd">
+			
+	<div class="bd_selBg listSet">
+		<div class="bd_timg tmys_ban xmks_banbg">
+			<div class="xmks_focus">
+				<ul>
+					<a class="pimg" id="pimg1">
+						<img src="{dede:global.cfg_templets_skin/}/style/images/xmks_pic1.jpg" /></a> <a style="display: none;" class="pimg" id="pimg2">
+							<img src="{dede:global.cfg_templets_skin/}/style/images/xmks_pic2.jpg" /></a> <a style="display: none;" class="pimg" id="pimg3">
+								<img src="{dede:global.cfg_templets_skin/}/style/images/xmks_pic3.jpg" /></a>
+				</ul>
+				<ul id="bq" class="bdbar">
+					<li class="cur"></li>
+					<li></li>
+					<li></li>
+				</ul>
+
+				<script>
+					tabs("bq li", "pimg", "cur", "", "", ".pimg");
+				</script>
+
+			</div>
+			<div class="crumbs titT1">
+				
+<!--
+<i class="ico6 icoMar1"></i><a href="../page/index/index.aspx" class="d">首页</a>
+	
+			&gt;
+			手机随身法宝-->
+		
+				</div>
+			<div class="tit">
+				<h1>
+					<i class="ico1"></i>手机随身法宝</h1>
+			</div>
+			<div class="xmks_appdown">
+				<h2>
+					请选择下载</h2>
+				<a href="https://itunes.apple.com/cn/app/sui-shen-fa-bao/id658178896?mt=8" target="_blank" class="iosbtn">苹果版本下载</a> <a href="../download/suishenfabao.apk"  target="_blank"  class="andbtn">安卓版本下载</a>
+			</div>
+			<div class="xmks_apptxt">
+            	为了最大程度地方便道友们学习与课诵，妙乘光明海网站新近推出了“手机随身法宝”手机客户端，包含了阅读与课诵两部分，其中的早课与晚课是大恩上师希阿荣博堪布在显密课诵集中为我们精选出来的，当然大家已可以根据自己的情况单独下载所需内容。
+        	<br /><br />目前我们只能适配IOS与ANDROID两个系统，并且还在试用期，未来我们将逐步丰富完善软件及内容，在这一过程中希望得到您的宝贵建议。
+        	</div>
+			<div class="xmks_appcode">
+				<img src="{dede:global.cfg_templets_skin/}/style/images/qrcode.png">
+				<br />
+				扫描二维码下载
+			</div>
+		</div>
+		
+		
+	</div>
+
+		</div>
+		<div id="dateBox">
+			<div class="footpic">
+			</div>
+		</div>
+		
+
+
+
+
+{dede:include filename="footer.htm"/}
+
+
+
+</body>
+</html>

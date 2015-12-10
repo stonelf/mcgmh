@@ -1,0 +1,471 @@
+BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H1 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H4 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H5 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H6 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+HR {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+P {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+BLOCKQUOTE {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+OL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+PRE {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+FIELDSET {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+LEGEND {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+BUTTON {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+INPUT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TEXTAREA {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TH {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+BODY {
+	FONT: 12px arial,宋体
+}
+BUTTON {
+	FONT: 12px arial,宋体
+}
+INPUT {
+	FONT: 12px arial,宋体
+}
+SELECT {
+	FONT: 12px arial,宋体
+}
+TEXTAREA {
+	FONT: 12px arial,宋体
+}
+H1 {
+	FONT-SIZE: 100%
+}
+H2 {
+	FONT-SIZE: 100%
+}
+H3 {
+	FONT-SIZE: 100%
+}
+H4 {
+	FONT-SIZE: 100%
+}
+H5 {
+	FONT-SIZE: 100%
+}
+H6 {
+	FONT-SIZE: 100%
+}
+ADDRESS {
+	FONT-STYLE: normal
+}
+CITE {
+	FONT-STYLE: normal
+}
+DFN {
+	FONT-STYLE: normal
+}
+EM {
+	FONT-STYLE: normal
+}
+VAR {
+	FONT-STYLE: normal
+}
+I {
+	FONT-STYLE: normal
+}
+CODE {
+	FONT-FAMILY: courier new,courier,monospace
+}
+KBD {
+	FONT-FAMILY: courier new,courier,monospace
+}
+PRE {
+	FONT-FAMILY: courier new,courier,monospace
+}
+SAMP {
+	FONT-FAMILY: courier new,courier,monospace
+}
+FORM {
+	DISPLAY: inline
+}
+SMALL {
+	FONT-SIZE: 12px
+}
+UL {
+	LIST-STYLE-TYPE: none
+}
+OL {
+	LIST-STYLE-TYPE: none
+}
+A {
+	COLOR: #333; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #c00000; TEXT-DECORATION: underline
+}
+SUP {
+	VERTICAL-ALIGN: text-top
+}
+SUB {
+	VERTICAL-ALIGN: text-bottom
+}
+LEGEND {
+	COLOR: #000
+}
+FIELDSET {
+	BORDER-RIGHT-WIDTH: 0px; -MS-INTERPOLATION-MODE: bicubic; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; VERTICAL-ALIGN: middle; BORDER-LEFT-WIDTH: 0px
+}
+IMG {
+	BORDER-RIGHT-WIDTH: 0px; -MS-INTERPOLATION-MODE: bicubic; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; VERTICAL-ALIGN: middle; BORDER-LEFT-WIDTH: 0px
+}
+BUTTON {
+	FONT-SIZE: 100%
+}
+INPUT {
+	FONT-SIZE: 100%
+}
+SELECT {
+	FONT-SIZE: 100%
+}
+TEXTAREA {
+	FONT-SIZE: 100%
+}
+TABLE {
+	BORDER-SPACING: 0; BORDER-COLLAPSE: collapse
+}
+INPUT {
+	OUTLINE-STYLE: none
+}
+BUTTON {
+	OUTLINE-STYLE: none
+}
+SELECT {
+	OUTLINE-STYLE: none
+}
+TEXTAREA {
+	OUTLINE-STYLE: none
+}
+TEXTAREA {
+	resize: none
+}
+.hidden {
+	DISPLAY: none
+}
+.nohidden {
+	DISPLAY: block
+}
+.clear {
+	LINE-HEIGHT: 0; ZOOM: 1; CLEAR: both; FONT-SIZE: 0px; OVERFLOW: hidden
+}
+.clearfix {
+	ZOOM: 1
+}
+.wrap960 {
+	ZOOM: 1
+}
+.list_item {
+	ZOOM: 1
+}
+.list_ol {
+	ZOOM: 1
+}
+.list_double {
+	ZOOM: 1
+}
+.list_time {
+	ZOOM: 1
+}
+.list_item_s {
+	ZOOM: 1
+}
+.list_time_edit {
+	ZOOM: 1
+}
+.clearfix:after {
+	DISPLAY: block; HEIGHT: 0px; CLEAR: both; CONTENT: ' '
+}
+.wrap960:after {
+	DISPLAY: block; HEIGHT: 0px; CLEAR: both; CONTENT: ' '
+}
+.list_item:after {
+	DISPLAY: block; HEIGHT: 0px; CLEAR: both; CONTENT: ' '
+}
+.list_ol:after {
+	DISPLAY: block; HEIGHT: 0px; CLEAR: both; CONTENT: ' '
+}
+.list_double:after {
+	DISPLAY: block; HEIGHT: 0px; CLEAR: both; CONTENT: ' '
+}
+.list_time:after {
+	DISPLAY: block; HEIGHT: 0px; CLEAR: both; CONTENT: ' '
+}
+.list_item_s:after {
+	DISPLAY: block; HEIGHT: 0px; CLEAR: both; CONTENT: ' '
+}
+.list_time_edit:after {
+	DISPLAY: block; HEIGHT: 0px; CLEAR: both; CONTENT: ' '
+}
+#site_nav {
+	MARGIN: 0px auto; WIDTH: 960px
+}
+#header {
+	MARGIN: 0px auto; WIDTH: 960px
+}
+#nav {
+	MARGIN: 0px auto; WIDTH: 960px
+}
+#sub_nav {
+	MARGIN: 0px auto; WIDTH: 960px
+}
+#hot_nav {
+	MARGIN: 0px auto; WIDTH: 960px
+}
+.wrap960 {
+	MARGIN: 0px auto; WIDTH: 1006px
+}
+BODY {
+	BACKGROUND: url(../images/army.png) no-repeat
+}
+.site_navl {
+	BACKGROUND: url(../images/army.png) no-repeat
+}
+.site_navr {
+	BACKGROUND: url(../images/army.png) no-repeat
+}
+#nav {
+	BACKGROUND: url(../images/army.png) no-repeat
+}
+#sub_nav {
+	BACKGROUND: url(../images/army.png) no-repeat
+}
+.sub_navl {
+	BACKGROUND: url(../images/army.png) no-repeat
+}
+.sub_navm {
+	BACKGROUND: url(../images/army.png) no-repeat
+}
+#hot_nav {
+	BACKGROUND: url(../images/army.png) no-repeat
+}
+.r_titfour {
+	BACKGROUND: url(../images/army.png) no-repeat
+}
+#nav LI {
+	BACKGROUND: url(../images/nav_lin.png) no-repeat
+}
+.new_a {
+	BACKGROUND: url(../images/nav_lin.png) no-repeat
+}
+.site_navl A {
+	COLOR: #c00000; TEXT-DECORATION: underline
+}
+.site_navr A:hover {
+	COLOR: #c00000; TEXT-DECORATION: underline
+}
+.site_navr CODE:hover {
+	COLOR: #c00000; TEXT-DECORATION: underline
+}
+.new_keys A:hover {
+	COLOR: #c00000; TEXT-DECORATION: underline
+}
+.site_navr A {
+	COLOR: #666
+}
+.bananer_960 {
+	TEXT-ALIGN: center; OVERFLOW: hidden
+}
+.bananer_960 IMG {
+	MARGIN-TOP: 7px; VERTICAL-ALIGN: middle
+}
+BODY {
+	BACKGROUND-REPEAT: repeat-x; BACKGROUND-POSITION: 0px -770px
+}
+#site_nav {
+	HEIGHT: 29px; OVERFLOW: hidden
+}
+.site_navl {
+	MARGIN-TOP: 6px; HEIGHT: 16px
+}
+.site_navr {
+	MARGIN-TOP: 6px; HEIGHT: 16px
+}
+.site_navl {
+	PADDING-LEFT: 25px; BACKGROUND-POSITION: -940px -1px; FLOAT: left; COLOR: #333
+}
+.site_navr {
+	PADDING-LEFT: 15px; BACKGROUND-POSITION: -940px -44px; FLOAT: right; COLOR: #666
+}
+#site_nav A {
+	MARGIN: 0px 5px
+}
+.site_navr CODE {
+	MARGIN: 0px 5px
+}
+.site_navr CODE {
+	CURSOR: pointer
+}
+#header {
+	HEIGHT: 72px; OVERFLOW: hidden
+}
+.logocss {
+	MARGIN-TOP: 4px; WIDTH: 200px; BACKGROUND: url(../images/logo.jpg) no-repeat; FLOAT: left; HEIGHT: 66px
+}
+.logocss A {
+	TEXT-INDENT: -999em; DISPLAY: block; HEIGHT: 66px; OVERFLOW: hidden
+}
+.top_bananer {
+	MARGIN-TOP: 7px; FLOAT: right
+}
+#nav {
+	BACKGROUND-POSITION: 0px -80px
+}
+#nav {
+	HEIGHT: 46px; OVERFLOW: hidden
+}
+#nav UL {
+	HEIGHT: 46px; OVERFLOW: hidden
+}
+#nav A {
+	FLOAT: left; OVERFLOW: hidden
+}
+#nav LI {
+	FLOAT: left; OVERFLOW: hidden
+}
+#nav LI {
+	PADDING-BOTTOM: 1px; PADDING-LEFT: 11px; PADDING-RIGHT: 10px; HEIGHT: 43px; MARGIN-LEFT: -2px; FONT-SIZE: 14px; FONT-WEIGHT: bold; PADDING-TOP: 2px
+}
+#nav A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; HEIGHT: 29px; COLOR: #fff; PADDING-TOP: 14px
+}
+#nav A:hover {
+	BACKGROUND-COLOR: #cc0000; COLOR: #fff; TEXT-DECORATION: none
+}
+#sub_nav {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; WIDTH: 955px; PADDING-RIGHT: 0px; BACKGROUND-POSITION: 0px -126px; HEIGHT: 50px; OVERFLOW: hidden; PADDING-TOP: 5px
+}
+#sub_nav A {
+	DISPLAY: inline-block; WHITE-SPACE: nowrap; MARGIN-RIGHT: 9px
+}
+.sub_navl {
+	LINE-HEIGHT: 1.8; PADDING-LEFT: 12px; FLOAT: left; HEIGHT: 39px; OVERFLOW: hidden
+}
+.sub_navm {
+	LINE-HEIGHT: 1.8; PADDING-LEFT: 12px; FLOAT: left; HEIGHT: 39px; OVERFLOW: hidden
+}
+.sub_navr {
+	LINE-HEIGHT: 1.8; PADDING-LEFT: 12px; FLOAT: left; HEIGHT: 39px; OVERFLOW: hidden
+}
+.sub_navl {
+	BACKGROUND-POSITION: 100% -226px
+}
+.sub_navm {
+	BACKGROUND-POSITION: 100% -226px
+}
+.sub_navl {
+	WIDTH: 268px
+}
+.sub_navm {
+	WIDTH: 381px
+}
+.sub_navr {
+	WIDTH: 267px
+}
+#hot_nav {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 12px; WIDTH: 936px; PADDING-RIGHT: 12px; BACKGROUND-POSITION: 0px -181px; HEIGHT: 23px; PADDING-TOP: 8px
+}
+.new_keys {
+	FLOAT: left; COLOR: #d6d8f1
+}
+.new_keys STRONG {
+	COLOR: #144ca1; FONT-WEIGHT: normal
+}
+.new_keys A {
+	MARGIN: 0px 8px; COLOR: #144ca1
+}
+.new_a {
+	PADDING-LEFT: 24px; BACKGROUND-POSITION: 0px -66px; FLOAT: right
+}
+.friends {
+	BORDER-BOTTOM: #dcdcdc 1px solid; BORDER-LEFT: #dcdcdc 1px solid; BORDER-TOP: #dcdcdc 1px solid; BORDER-RIGHT: #dcdcdc 1px solid
+}
+.friends {
+	MARGIN: 7px auto 0px; WIDTH: 958px
+}
+.friends_a {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
+}
+.friends_a A {
+	TEXT-ALIGN: center; LINE-HEIGHT: 17px; MARGIN-TOP: 6px; WIDTH: 12.4%; DISPLAY: inline-block; HEIGHT: 17px; OVERFLOW: hidden
+}
+.r_titfour {
+	LINE-HEIGHT: 33px; BACKGROUND-POSITION: 0px -514px; HEIGHT: 30px; OVERFLOW: hidden
+}
+.r_titfour H2 {
+	PADDING-LEFT: 10px; FLOAT: left; FONT-SIZE: 14px
+}
+.r_titfour A {
+	FLOAT: right; MARGIN-RIGHT: 10px
+}
+#ls {
+	MARGIN-TOP: 15px; WIDTH: 200px; FLOAT: left; HEIGHT: 60px
+}
+#ls P {
+	LINE-HEIGHT: 21px; HEIGHT: 21px
+}
+#footer {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 12px; LINE-HEIGHT: 2; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #333; PADDING-TOP: 12px
+}
+#footer A {
+	MARGIN: 0px 3px
+}

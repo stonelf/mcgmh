@@ -1,0 +1,510 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<link href="/css/index.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/foli.js"></script>
+<!-- <base href="{dede:global.cfg_cdn_domain/}"></base> -->
+<script type="text/javascript" src="{dede:global.cfg_cdn_domain/}/js/jquery.js"></script>
+<script type="text/javascript" language="javascript">
+	function g(o){return document.getElementById(o);}
+	function HoverLi(n){
+		for(var i=1;i<=3;i++){g('tb_'+i).className='normaltab';g('tbc_0'+i).className='undis';}g('tbc_0'+n).className='dis';g('tb_'+n).className='hovertab';
+	}
+</script>
+
+</head>
+
+<body>
+<!--top-->
+<div id="top_bg">
+	<div id="top">
+		<div id="top_left">
+			<div id="logo"><a href="/"><img src="{dede:global.cfg_cdn_domain/}/images/logo1.png" border="0" /></a></div>
+		</div>
+		<div id="top_right">
+			<div id="top_right_time"> 
+                  <script language="javascript">
+				<!--
+				if(/(mob)|(nexus)|(KFAPWI)/i.test(navigator.userAgent)){
+					var d=document.createElement("div");
+					d.id="switch2mobile";
+					d.innerHTML="<table style='width:125%;text-align:center;' bgcolor=white>"+
+					"<tr><td><h1><a href='/m/'> &nbsp; 进 入 移 动 版 &nbsp; </a></h1></td></tr></table>"
+					document.body.insertBefore(d,document.getElementById("top_bg"));
+				}
+				var today = new Date();
+				var ltoday = new Lunar(today);
+				document.write("佛历"+ltoday.byear+"年");
+				document.write("  ");
+				document.write(today.getFullYear()+"年"+(today.getMonth()+1)+"月"+today.getDate()+"日星期"+cDay[today.getDay()]);
+				document.write("  ");
+				-->
+				</script>
+	              <SCRIPT>CalConv();</SCRIPT>
+			</div>
+			<div id="top_right_link">
+				<a href="#" target="tq_answer@163.com">投稿邮箱</a>|<a href="http://weibo.com/tengquekb">官方微博</a>|<a title="一键分享到各大微博和社交网络" class="bshare-bsync" onclick="javascript:bSync.share(event)">分享</a>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bsync.js#uuid=#uuid=&style=1"></script>			</div>
+			<div id="clear"></div>
+		</div>
+		<div id="clear"></div>
+	</div>
+</div>
+
+<!--head-->{dede:include filename="head.htm"/}
+
+<!--content-->
+<div id="content_bg">
+	<div id="content">
+		<!--ctupian-->
+		<div id="ctupian">
+			<div id="ctupian_img"></div>
+		</div>
+		<!--cfgx-->
+		<div id="cfgx">
+			<img src="{dede:global.cfg_cdn_domain/}/images/cfgx_01.jpg" border="0" />
+		</div>
+		<!--cccss-->
+		<div id="cccss">
+			<div id="cccss_shuzhou">
+				<div id="cccss_shuzhou_neirong">
+					<div id="csn_title"><img src="{dede:global.cfg_cdn_domain/}/images/cccss_03.png" border="0" /></div>
+					<div id="csn_fashi01"><a href="/a/2/2-1/326.html"><img src="{dede:global.cfg_cdn_domain/}/images/cccss_04.png" border="0" /></a></div>
+					<div id="csn_mingzi01"><img src="{dede:global.cfg_cdn_domain/}/images/cccss_05.png" border="0" /></div>
+					<div id="csn_fashi02"><a href="/a/2/2-2/328.html"><img src="{dede:global.cfg_cdn_domain/}/images/cccss_06.png" border="0" /></a></div>
+					<div id="csn_mingzi02"><img src="{dede:global.cfg_cdn_domain/}/images/cccss_07.png" border="0" /></div>
+					<div id="csn_fashi03"><a href="/a/2/tqaskb/337.html"><img src="{dede:global.cfg_cdn_domain/}/images/cccss_08.png" border="0" /></a></div>
+					<div id="csn_mingzi03"><img src="{dede:global.cfg_cdn_domain/}/images/cccss_09.png" border="0" /></div>
+					<div id="csn_txt"><img src="{dede:global.cfg_cdn_domain/}/images/cccss_10.png" border="0" /></div>
+					<div id="clear"></div>
+				</div>
+			</div>
+		</div>
+		<!--cfgx-->
+		<div id="cfgx">
+			<img src="{dede:global.cfg_cdn_domain/}/images/cfgx_01.jpg" border="0" />
+		</div>
+		<!--mrjywyby-->
+		<div id="mrjywyby">
+			<!--mrjy-->
+			<div id="mrjy">
+				<!--<div class="mrjy_title">
+					<div class="mrjy_title_left"><a href="/a/mrjy/"><img src="{dede:global.cfg_cdn_domain/}/images/mrjy_02.png" border="0" /></a></div>
+					<div class="mrjy_title_right">
+						<div class="mrjy_title_right_left"><a href="/a/mrjy/">更多</a></div>
+						<div class="mrjy_title_right_right"><a href="/a/mrjy/"><img src="{dede:global.cfg_cdn_domain/}/images/mrjy_03.png" border="0" /></a></div>
+						<div id="clear"></div>
+					</div>
+					<div id="clear"></div>
+				</div>-->
+				<div class="mrjy_title">
+					<div class="mrjy_title_left"><a href="/a/wyby/"><img src="{dede:global.cfg_cdn_domain/}/images/wyby_01.png" border="0" /></a></div>
+					<div class="mrjy_title_right">
+						<div class="mrjy_title_right_left"><a href="/a/wyby/">更多</a></div>
+						<div class="mrjy_title_right_right"><a href="/a/wyby/"><img src="{dede:global.cfg_cdn_domain/}/images/mrjy_03.png" border="0" /></a></div>
+						<div id="clear"></div>
+					</div>
+					<div id="clear"></div>
+				</div>
+				<div id="mrjy_neirong">
+					<div id="mrjy_neirong_neirong">
+						<div class="mnn_neirong">
+							<div class="mnn_neirong_left"><img src="{dede:global.cfg_cdn_domain/}/images/mrjy_05.png" border="0" /></div>
+							<div class="mnn_neirong_right">
+								{dede:arclist  limit='0,1'  infolen='148' orderby='click' typeid='142' idlist='' type='commend.' flag=''}    
+                    	
+								[field:info/]<a href="[field:filename/]"><img src="[field:global name=cfg_cdn_domain /]/images/mrjy_06.png" border="0" /></a>
+	  	   	                    {/dede:arclist} 						</div>
+							<div id="clear"></div>
+						</div>
+						<div class="mnn_neirong">
+							<div class="mnn_neirong_left"><img src="{dede:global.cfg_cdn_domain/}/images/mrjy_05.png" border="0" /></div>
+							<div class="mnn_neirong_right">
+								<ul style="margin:0px; padding:0">
+			          {dede:arclist  limit='0,1'  infolen='254' orderby='id' typeid='142' idlist='' type='commend.' flag=''}    
+                    	
+								[field:info/]<a href="[field:filename/]"><img src="[field:global name=cfg_cdn_domain /]/images/mrjy_06.png" border="0" /></a>
+	  	   	                    {/dede:arclist}    
+                    </ul>						</div>
+							<div id="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div id="clear"></div>
+			</div>
+			<!--xxfb-->
+			<div id="xxfb">
+				<div class="mrjy_title">
+					<div class="mrjy_title_left"><a href="/a/xinxifabu/"><img src="{dede:global.cfg_cdn_domain/}/images/xxfb_01.png" border="0" /></a></div>
+					<div class="mrjy_title_right">
+						<div class="mrjy_title_right_left"><a href="/a/xinxifabu/">更多</a></div>
+						<div class="mrjy_title_right_right"><a href="/a/xinxifabu/"><img src="{dede:global.cfg_cdn_domain/}/images/mrjy_03.png" border="0" /></a></div>
+						<div id="clear"></div>
+					</div>
+					<div id="clear"></div>
+				</div>
+				<div class="hfjs_neirong">
+					<div class="hfjs_neirong_shang">
+						<div class="hfjs_neirong_shang_left">{dede:arclist   limit='0,1'   titlelen='30' infolen='160'  imgwidth='156' imgheight='117'  orderby='id' typeid='102' idlist='' type='image' flag='h'}
+						<a href="[field:arcurl/]" target="_blank"><img src="[field:litpic/]" width="156" height="117" border="0" /></a></div>
+						<div class="hfjs_neirong_shang_right">
+							<div class="hnsr_title">
+								<div class="hnsr_title_left"><img src="[field:global name=cfg_cdn_domain /]/images/mrjy_05.png" border="0" /></div>
+								<div class="hnsr_title_right">
+									<a href="[field:filename/]">[field:title/]</a>
+								</div>
+								<div id="clear"></div>
+							</div>
+							<div class="hnsr_txt">
+								[field:info/]<a href="[field:filename/]"><img src="[field:global name=cfg_cdn_domain /]/images/mrjy_06.png" border="0" /></a>
+							</dl>
+							</div>
+						</div>
+						<div id="clear"></div>
+					</div>
+					<div class="hfjs_neirong_xia">
+				    {/dede:arclist}   
+			        <ul style="margin:0px; padding:0">{dede:arclist  limit='0,3'  titlelen='60' orderby='id' typeid='102' idlist='' type='commend.' flag=''}    
+                    <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	        {/dede:arclist}    
+                    </ul>
+					</div>
+				</div>
+			</div>
+		<!--hfjsxxfb-->
+		<div id="hfjsxxfb">
+			<!--hfjs-->
+			<div id="hfjs">
+				<div class="mrjy_title">
+					<div class="mrjy_title_left"><a href="/a/1/jishi/"><img src="{dede:global.cfg_cdn_domain/}/images/hfjs_01.png" border="0" /></a></div>
+					<div class="mrjy_title_right">
+						<div class="mrjy_title_right_left"><a href="/a/1/jishi/">更多</a></div>
+						<div class="mrjy_title_right_right"><a href="/a/1/jishi/"><img src="{dede:global.cfg_cdn_domain/}/images/mrjy_03.png" border="0" /></a></div>
+						<div id="clear"></div>
+					</div>
+					<div id="clear"></div>
+				</div>
+				<div class="hfjs_neirong">
+					<div class="hfjs_neirong_shang">
+						<div class="hfjs_neirong_shang_left">{dede:arclist   limit='0,1'   titlelen='30' infolen='160'  imgwidth='156' imgheight='117'  orderby='id' typeid='1' idlist='' type='commend.' flag=''}
+						<a href="[field:arcurl/]" target="_blank"><img src="[field:litpic/]" width="156" height="117" border="0" /></a></div>
+						<div class="hfjs_neirong_shang_right">
+							<div class="hnsr_title">
+								<div class="hnsr_title_left"><img src="[field:global name=cfg_cdn_domain /]/images/mrjy_05.png" border="0" /></div>
+								<div class="hnsr_title_right">
+									<a href="[field:filename/]">[field:title/]</a>
+								</div>
+								<div id="clear"></div>
+							</div>
+							<div class="hnsr_txt">
+								[field:info/]<a href="[field:filename/]"><img src="[field:global name=cfg_cdn_domain /]/images/mrjy_06.png" border="0" /></a>
+							</dl>
+							</div>
+						</div>
+						<div id="clear"></div>
+					</div>
+					<div class="hfjs_neirong_xia">
+				    {/dede:arclist}   
+			        <ul style="margin:0px; padding:0">{dede:arclist  limit='0,3'  titlelen='60' orderby='id' typeid='1' idlist='' type='commend.' flag=''}    
+                    <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	        {/dede:arclist}    
+                    </ul>
+					</div>
+				</div>
+			</div>
+			<!--xxfb-->
+			<div id="xxfb">
+				<div class="mrjy_title">
+					<div class="mrjy_title_left"><a href="/a/1/1-1/"><img src="{dede:global.cfg_cdn_domain/}/images/ssks001.png" border="0" /></a></div>
+					<div class="mrjy_title_right">
+						<div class="mrjy_title_right_left"><a href="/a/1/1-1/">更多</a></div>
+						<div class="mrjy_title_right_right"><a href="/a/1/1-1/"><img src="{dede:global.cfg_cdn_domain/}/images/mrjy_03.png" border="0" /></a></div>
+						<div id="clear"></div>
+					</div>
+					<div id="clear"></div>
+				</div>
+				<div class="hfjs_neirong">
+					<div class="hfjs_neirong_shang">
+						<div class="hfjs_neirong_shang_left">{dede:arclist   limit='0,1'   titlelen='30' infolen='160'  imgwidth='156' imgheight='117'  orderby='id' typeid='7' idlist='' type='image' flag='h'}
+						<a href="[field:arcurl/]" target="_blank"><img src="[field:litpic/]" width="156" height="117" border="0" /></a></div>
+						<div class="hfjs_neirong_shang_right">
+							<div class="hnsr_title">
+								<div class="hnsr_title_left"><img src="[field:global name=cfg_cdn_domain /]/images/mrjy_05.png" border="0" /></div>
+								<div class="hnsr_title_right">
+									<a href="[field:filename/]">[field:title/]</a>
+								</div>
+								<div id="clear"></div>
+							</div>
+							<div class="hnsr_txt">
+								[field:info/]<a href="[field:filename/]"><img src="[field:global name=cfg_cdn_domain /]/images/mrjy_06.png" border="0" /></a>
+							</dl>
+							</div>
+						</div>
+						<div id="clear"></div>
+					</div>
+					<div class="hfjs_neirong_xia">
+				    {/dede:arclist}   
+			        <ul style="margin:0px; padding:0">{dede:arclist  limit='0,3'  titlelen='60' orderby='id' typeid='7' idlist='' type='commend.' flag=''}    
+                    <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	        {/dede:arclist}    
+                    </ul>
+					</div>
+				</div>
+			</div>
+				<!--stzqssfx-->
+		<div id="stzqssfx">
+			<!--stzq-->
+			<div id="stzq">
+				<div class="mrjy_title">
+					<div class="mrjy_title_left"><a href="/a/4/"><img src="{dede:global.cfg_cdn_domain/}/images/stzq_01.png" border="0" /></a></div>
+					<div class="mrjy_title_right">
+						<div class="mrjy_title_right_left"><a href="/a/4/">更多</a></div>
+						<div class="mrjy_title_right_right"><a href="/a/4/"><img src="{dede:global.cfg_cdn_domain/}/images/mrjy_03.png" border="0" /></a></div>
+						<div id="clear"></div>
+					</div>
+					<div id="clear"></div>
+				</div>
+				<div id="stzq_neirong">
+					<div id="stzq_neirong_left">
+				{dede:arclist row='1' limit='0,1' titlelen='32' infolen='120'  imgwidth='228' imgheight='167'  orderby='id' typeid='23' idlist='' type='image' flag='h'}    
+                          <div id="stzq_neirong_left_top"><img style="width:228px; height:167px ;"src="[field:litpic/]" /></div>
+						  <div id="stzq_neirong_left_bot">
+								<div id="stzq_neirong_left_bot_left"><a href="[field:filename/]">[field:title/]</a>
+								</div>
+							  <div id="stzq_neirong_left_bot_right"><a href="[field:filename/]"><img src="[field:global name=cfg_cdn_domain /]/images/bofang.png" width="22" height="22" border="0" /></a> </div>
+	  	   	    {/dede:arclist}   
+						  </div>
+						
+					</div>
+					<div id="stzq_neirong_right">
+						<ul>
+			  	  {dede:arclist row='5'  titlelen='42' infolen='120'  imgwidth='228' imgheight='167'  orderby='id' typeid='23' idlist='' type='' flag=''}    
+                  <li><a href="[field:filename/]" target="_blank">[field:title/]</a> </li>
+	  	   	      {/dede:arclist}   
+                </ul>
+					</div>
+					<div id="clear"></div>
+				</div>
+			</div>
+			<!--ssfx-->
+			<div id="ssfx">
+				<div class="mrjy_title">
+					<div class="mrjy_title_left"><a href="/a/1/1-5/"><img src="{dede:global.cfg_cdn_domain/}/images/ssfx_01.png" border="0" /></a></div>
+					<div class="mrjy_title_right">
+						<div class="mrjy_title_right_left"><a href="/a/1/1-5/">更多</a></div>
+						<div class="mrjy_title_right_right"><a href="/a/1/1-5/"><img src="{dede:global.cfg_cdn_domain/}/images/mrjy_03.png" border="0" /></a></div>
+						<div id="clear"></div>
+					</div>
+					<div id="clear"></div>
+				</div>
+				<div id="ssfx_neirong">
+					<div id="ssfx_neirong_left">
+						<div class="ssfx_neirong_img"><a href="/a/1/1-5/821.html"><img src="{dede:global.cfg_cdn_domain/}/images/ssfx_02.jpg" border="0" /></a></div>
+						<div class="ssfx_neirong_txt"><a href="/a/1/1-5/821.html">上师2006年广州</a></div>
+					</div>
+					<div id="ssfx_neirong_mid">
+						<div class="ssfx_neirong_img"><a href="/a/1/1-5/824.html"><img src="{dede:global.cfg_cdn_domain/}/images/ssfx_03.jpg" border="0" /></a></div>
+						<div class="ssfx_neirong_txt"><a href="/a/1/1-5/824.html">上师2008年广州弘法</a></div>
+					</div>
+					<div id="ssfx_neirong_right">
+						<div class="ssfx_neirong_img"><a href="/a/1/1-5/825.html"><img src="{dede:global.cfg_cdn_domain/}/images/ssfx_04.jpg" border="0" /></a></div>
+						<div class="ssfx_neirong_txt"><a href="/a/1/1-5/825.html">上师2008年山西弘法行</a></div>
+					</div>
+					<div id="clear"></div>
+				</div>
+			</div>
+			<div id="clear"></div>
+		</div>
+		<!--fzxdkaxt-->
+		<div id="fzxdkaxt">
+			<!--fzxd-->
+			<div id="fzxd">
+				<div class="mrjy_title">
+					<div class="mrjy_title_left"><a href="/a/6/"><img src="{dede:global.cfg_cdn_domain/}/images/fzxd_01.png" border="0" /></a></div>
+					<div class="mrjy_title_right">
+						<div class="mrjy_title_right_left"><a href="/a/6/">更多</a></div>
+						<div class="mrjy_title_right_right"><a href="/a/6/"><img src="{dede:global.cfg_cdn_domain/}/images/mrjy_03.png" border="0" /></a></div>
+						<div id="clear"></div>
+					</div>
+					<div id="clear"></div>
+				</div>
+				<div id="fzxd_neirong">
+					<div id="fzxd_neirong_shang">
+						<div id="fzxd_neirong_shang_left">{dede:arclist   limit='0,1'   titlelen='30' infolen='160'  imgwidth='156' imgheight='117'  orderby='id' typeid='6' idlist='' type='image' flag='h'}
+						<a href="[field:arcurl/]" target="_blank"><img src="[field:litpic/]" width="156" height="117" border="0" /></a></div>
+						<div id="fzxd_neirong_shang_right">
+							<div id="fnsr_title">
+								<div id="fnsr_title_left"><img src="[field:global name=cfg_cdn_domain /]/images/mrjy_05.png" border="0" /></div>
+								<div id="fnsr_title_right">
+									<a href="[field:filename/]">[field:title/]</a>
+								</div>
+								<div id="clear"></div>
+							</div>
+							<div id="fnsr_txt">
+								[field:info/]<a href="[field:filename/]"><img src="[field:global name=cfg_cdn_domain /]/images/mrjy_06.png" border="0" /></a>
+							</div>
+						</div>
+						<div id="clear"></div>
+					</div>
+					<div id="fzxd_neirong_xia">
+						{/dede:arclist}   
+			        <ul style="margin:0px; padding:0">{dede:arclist  limit='0,3'  titlelen='60' orderby='id' typeid='6' idlist='' type='commend.' flag=''}    
+                    <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	        {/dede:arclist}    
+                    </ul>
+					</div>
+				</div>
+			</div>
+			<!--kaxt-->
+			<div id="kaxt">
+				<div class="mrjy_title">
+					<div class="mrjy_title_left"><a href="/kaangxueyuan/"><img src="{dede:global.cfg_cdn_domain/}/images/kaxt_01.png" border="0" /></a></div>
+					<div class="mrjy_title_right">
+						<div class="mrjy_title_right_left"><a href="/kaangxueyuan/">更多</a></div>
+						<div class="mrjy_title_right_right"><a href="/kaangxueyuan/"><img src="{dede:global.cfg_cdn_domain/}/images/mrjy_03.png" border="0" /></a></div>
+						<div id="clear"></div>
+					</div>
+					<div id="clear"></div>
+				</div>
+				<div id="kaxt_neirong">
+					<div id="tb_" class="tb_">
+						<ul>
+							<li id="tb_1" class="hovertab" onclick="x:HoverLi(1);">
+								<img src="{dede:global.cfg_cdn_domain/}/images/kaxt_04.png" border="0" class="tb_li_img" />
+							</li>
+							<li id="tb_2" class="normaltab" onclick="i:HoverLi(2);">
+								<img src="{dede:global.cfg_cdn_domain/}/images/kaxt_05.png" border="0" class="tb_li_img" />
+							</li>
+							<li id="tb_3" class="normaltab" onclick="a:HoverLi(3);">
+								<img src="{dede:global.cfg_cdn_domain/}/images/kaxxgx.png" border="0" class="tb_li_img" />
+							</li>
+						</ul>
+					</div>
+					<div class="ctt">
+						<div class="dis" id="tbc_01">
+							<div id="knxydt">
+								<div class="xmwk_neirong">
+					<ul style="margin:0px; padding:0">
+			  {dede:arclist  limit='0,7'  titlelen='46' orderby='id' typeid='106' idlist='' type='' flag=''}    
+                <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	 {/dede:arclist}    
+              </ul>
+
+				</div>
+							</div>
+						</div>
+						</div>
+						<div class="ctt">
+						<div class="undis" id="tbc_02">
+						<div id="knxydt">
+								<div class="xmwk_neirong">
+					<ul style="margin:0px; padding:0">
+			  {dede:arclist  limit='0,7'  titlelen='46' orderby='id' typeid='107' idlist='' type='' flag=''}    
+                <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	 {/dede:arclist}    
+              </ul>
+
+				</div>
+							</div>
+</div>
+</div>
+                        <div class="ctt">
+						<div class="undis" id="tbc_03">
+						<div id="knxydt">
+								<div class="xmwk_neirong">
+					<ul style="margin:0px; padding:0">
+			  {dede:arclist  limit='0,7'  titlelen='46' orderby='id' typeid='143' idlist='' type='' flag=''}    
+                <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	 {/dede:arclist}    
+              </ul>
+
+				</div>
+							</div>
+</div>
+</div>
+					</div>
+					<div id="clear"></div>
+				</div>
+			</div>
+			<div id="clear"></div>
+		</div>
+		<!--xmfsfj-->
+		<div id="xmfsfj">
+			<!--xmwk-->
+			<div id="xmwk">
+				<div class="xmwk_title">
+					<div class="xmwk_title_left"><a href="/a/5/5-1/"><img src="{dede:global.cfg_cdn_domain/}/images/xmwk_02.png" border="0" /></a></div>
+					<div class="xmwk_title_right">
+						<div class="xmwk_title_right_left"><a href="/a/5/5-1/">更多</a></div>
+						<div class="xmwk_title_right_right"><a href="/a/5/5-1/"><img src="{dede:global.cfg_cdn_domain/}/images/mrjy_03.png" border="0" /></a></div>
+						<div id="clear"></div>
+					</div>
+					<div id="clear"></div>
+				</div>
+				<div class="xmwk_neirong">
+					<ul>
+						<li><a href="http://www.mcgmh.com/page/menu/jdys/zfncj.rar">《正法念处经》</a></li>
+						<li><a href="http://www.mcgmh.com/page/menu/jdys/dfgfhyj.rar">《大方广佛华严经》</a></li>
+						<li><a href="http://www.mcgmh.com/page/menu/jdys/dbnpj.rar">《大般涅槃经》</a></li>
+						<li><a href="http://www.mcgmh.com/page/menu/jdys/xyyyj.rar">《贤愚因缘经》</a></li>
+						<li><a href="http://www.mcgmh.com/page/menu/jdys/qsqygsyps.rar">《千手千眼大悲心陀罗尼经》</a></li>
+						<li><a href="http://www.mcgmh.com/page/menu/jdys/fsgwlsfj.rar">《佛说观无量寿佛经》</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--fsly-->
+			<div id="fsly">
+				<div class="xmwk_title">
+					<div class="xmwk_title_left"><a href="/a/3/3-1/"><img src="{dede:global.cfg_cdn_domain/}/images/fsly_01.png" border="0" /></a></div>
+					<div class="xmwk_title_right">
+						<div class="xmwk_title_right_left"><a href="/a/3/3-1/">更多</a></div>
+						<div class="xmwk_title_right_right"><a href="/a/3/3-1/"><img src="{dede:global.cfg_cdn_domain/}/images/mrjy_03.png" border="0" /></a></div>
+						<div id="clear"></div>
+					</div>
+					<div id="clear"></div>
+				</div>
+				<div class="xmwk_neirong">
+					<ul style="margin:0px; padding:0">
+			  {dede:arclist  limit='0,3'  titlelen='40' orderby='id' typeid='19' idlist='' type='' flag=''}    
+                <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	 {/dede:arclist}    
+              </ul>
+						<ul style="margin:0px; padding:0">
+			  {dede:arclist  limit='0,3'  titlelen='40' orderby='id' typeid='19' idlist='' type='' flag=''}    
+                <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	 {/dede:arclist}    
+              </ul>
+				</div>
+			</div>
+			<!--fjgs-->
+			<div id="fjgs">
+				<div class="xmwk_title">
+					<div class="xmwk_title_left"><a href="/a/5/5-2/"><img src="{dede:global.cfg_cdn_domain/}/images/fjgs_01.png" border="0" /></a></div>
+					<div class="xmwk_title_right">
+						<div class="xmwk_title_right_left"><a href="/a/5/5-2/">更多</a></div>
+						<div class="xmwk_title_right_right"><a href="/a/5/5-2/"><img src="{dede:global.cfg_cdn_domain/}/images/mrjy_03.png" border="0" /></a></div>
+						<div id="clear"></div>
+					</div>
+					<div id="clear"></div>
+				</div>
+				<div class="xmwk_neirong">
+					<ul style="margin:0px; padding:0">
+			  {dede:arclist  limit='0,6'  titlelen='40' orderby='id' typeid='26' idlist='' type='' flag='h'}    
+                <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	 {/dede:arclist}    
+              </ul>
+				</div>
+			</div>
+			<div id="clear"></div>
+		</div>
+	</div>
+</div>
+
+<!--footer-->
+{dede:include filename="footer.htm"/}
+
+
+</body>
+</html>

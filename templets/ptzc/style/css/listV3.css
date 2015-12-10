@@ -1,0 +1,235 @@
+﻿@charset "utf-8";
+/*
+*Version:v1.1
+*Website:www.ptz.cc/css
+*Author:zy{2012-01-18}
+*/
+.listLP{background:url(img/listLP.png) no-repeat;height:46px;width:136px;position:absolute;bottom:0;left:20px}
+.dspic{background:url(img/ds2.png) no-repeat;width:236px;height:165px;position:absolute;right:56px;top:89px}
+
+.csxjpic,.hfjspic,.fshspic,.ssfxpic,.cspic,.fbhcpic,.fjgspic,.cxhspic,.ddxypic,.jzlhpic,.referencepic,.spzqpic,.ypzqpic,.wkinfopic,.wkinfopic2,.lxhbpic,.lshbpic,.jkznpic,.lshb2pic,.lsshpic,.ssylpic{background:no-repeat;width:230px;height:165px;position:absolute;right:56px;top:228px}
+
+.csxjpic{background-image:url(img/csxj.png)}
+.hfjspic{background-image:url(img/hfjs.png)}
+.fshspic{background-image:url(img/fshs.png)}
+.ssfxpic{background-image:url(img/ssfx.png)}
+.cspic{background-image:url(img/cs.png)}
+.fbhcpic{background-image:url(img/fbhc.png)}
+.sdxzpic{background:url(img/sdxz.png) no-repeat;width:462px;height:156px;position:absolute;right:36px;top:98px}
+.fjgspic{background-image:url(img/fjgs.png)}
+.cxhspic{background-image:url(img/cxhs.png)}
+.ddxypic{background-image:url(img/ddxy.png)}
+.jzlhpic{background-image:url(img/jzlh.png)}
+.referencepic{background-image:url(img/reference.png)}
+.spzqpic{background-image:url(img/spzq.png)}
+.ypzqpic{background-image:url(img/ypzq.png)}
+.wkinfopic{background-image:url(img/wkinfo.png)}
+.wkinfopic2{background-image:url(img/wkinfo2.png)}
+.xinyupic{background:url(img/xinyu.png) no-repeat;width:318px;height:159px;position:absolute;right:30px;top:95px}
+.lxhbpic{background-image:url(img/lxhb.png)}
+.lshbpic{background-image:url(img/lshb.png)}
+
+.jkznpic{background-image:url(img/jkzn.png)}
+.lshb2pic{background-image:url(img/lshb2.png)}
+.lsshpic{background-image:url(img/lssh.png)}
+.ssylpic{background-image:url(img/ssyl.png)}
+
+.icoMar1{margin:0 15px 0 50px}
+.icoMar2{margin:0 15px 0 0;*margin:0 15px -1px 0}
+.dateBoxTBg2{background:url(img/bottom_date.png) 0 -3px no-repeat;padding:40px 11px 45px;width:984px;_height:0px}
+.dateBoxTBg3{background:url(img/bottom_date2.png) 0 -3px no-repeat;padding:40px 11px 45px;width:984px}
+.dateBoxTBg4{background:url(img/bottom_date4.png) 0 -3px no-repeat;padding:40px 11px 45px;width:984px}
+.dateBoxDL{line-height:30px;height:30px;text-align:center;padding-top:20px;font-size:14px}
+.dateBoxTBg6{padding:0px 0 45px;width:984px;_height:0px;margin:0 11px}
+
+#dateBox{margin:0 auto;width:1006px;position:relative}
+.pMar1{margin-right:10px}
+.pPadd1{padding-left:22px}
+.DivPadd1{padding-left:220px}
+.DivPadd1 .listInfo{float:left;clear:both;overflow:hidden;_zoom:1;padding:10px 0 0 25px;_padding:0 0 0 25px}
+.DivPadd1 .listVd{height:122px;width:92px;float:left;margin-rignth:5px; background-color:#ccc}
+.DivPadd1 p{background:url(img/pline.png) repeat scroll 0 0 transparent;color:#333330;float:left;height:90px;line-height:30px;margin:-5px 0 5px 23px;padding:0 0 0 5px;text-indent:2em;font-size:14px;width:560px;overflow:hidden;_zoom:1}
+.DivPadd1 .listInfo img{width:90px;height:120px;display:block;border:1px solid lightgrey}
+.DivPadd1 .look_btn{float:right;text-indent:0em}
+.DivPadd1 .listInfoP{height:30px}
+
+.DivPadd2{padding-left:220px}
+.vedioL .show1P1{padding:0 0 0 220px;min-height:412px}
+
+.sdxz{padding-left:186px;_padding-left:180px;overflow:hidden;_zoom:1}
+.sdxz li{float:left;width:270px;height:55px;background-color:#222;margin:60px 95px 0 0;display:inline-block}
+.sdxz li a{cursor:pointer}
+
+.sdxz img{display:block;float:left;width:55px;height:55px;margin-right:5px}
+.sdxz h4{color:#fff;line-height:19px;padding:10px 0 5px}
+.sdxz .info{color:#aaa;font-size:12px;line-height:10px}
+
+.leftBar{margin-left:60px;_margin-left:30px;border:8px solid #000;height:494px;overflow:hidden;_zoom:1;text-align:center;width:131px;padding-top:20px;float:left}
+.leftBar li,.leftBar li{background-position:center center;height:71px;opacity:0.2;visibility:visible;width:94px}
+.leftBar li{border:#000 8px solid}
+.leftBar li:hover{border:#aaa 8px solid}
+.leftBar li img{width:94px;height:71px}
+
+.jdGallery{overflow:hidden;float:left;padding-top:60px}
+.jdGallery .photoB{margin-bottom:30px;width:600px}
+
+.rightBar{float:left;padding-top:60px}
+.rightBar p{text-indent:2em;color:#fff;line-height:24px;margin-left:20px;width:135px}
+
+.titwidT{width:680px}
+.vedioTem1{padding:20px 0 0 8px;_padding:14px 0 0 8px}
+.vedioTem2{padding:20px 0 0 8px}
+.show1H1{font-size:20px;color:#bf340b;text-align:center;height:40px;line-height:40px;padding:40px 0}
+.show1H1 strong{font-size:14px;color:#bf340b;text-align:center;height:40px;line-height:40px;padding:40px 0}
+.show1H1 strong a{color:#bf340b}
+.show1H1 strong a:hover{color:#bf340b}
+.show1H2{font-size:18px;color:#474747;text-align:center;height:30px;line-height:30px;padding-bottom:30px}
+.show1H3{font-size:20px;color:#bf340b;text-align:center;height:40px;line-height:40px;padding:10px 0}
+.show1P1{font-size:14px;line-height:24px;color:#474747;padding:0 150px;text-indent:2em;margin:15px 0}
+.show1P1 img{width:600px}
+.show1end{font-size:14px;line-height:30px;text-align:right;color:#474747}
+
+.showImg{text-indent:0em;display:block;text-align:center;cursor:pointer}
+.Rtop_btnB{margin:60px auto -30px;text-align:center}
+.Rtop_btn{background-position:-64px -73px;cursor:pointer;text-indent:-9999px;width:26px;height:28px}
+
+.bookinfo{width:100%;float:left}
+.bookSJ{float:left;overflow:hidden;_zoom:1;width:333px;margin-left:30px;height:500px}
+.bookSJ .bookBG{background:url(img/bookrack2.png) no-repeat 0 230px;width:333px;height:302px}
+.bookSJ .bookty{background:url(img/bookBg2.png) no-repeat;margin:0 auto;padding:4px 25px 15px 9px;width:214px;height:273px}
+.bookSJ .bookty img{width:214px;height:273px}
+
+.bookIndex{float:left;overflow:hidden;padding:0 20px 0 45px;width:520px}
+.bookJJ{float:left;overflow:hidden;margin-bottom:40px}
+.bookBoxo{height:30px;margin:0 0 4px 10px}
+.bookBoxo h2{color:#BF340B;float:left;font-size:20px}
+.bookBoxp{float:left;margin-top:-5px;padding:0 0 0 25px;width:495px}
+.bookBoxp li{font-size:14px;background:url(img/hd_line.png) repeat-x;float:left;height:30px;line-height:30px;padding-left:5px;width:241px; overflow:hidden;margin-right:0}
+.bookBoxp .tab{display:inline-block;margin-right:25px;width:70px}
+.bookIndex p{font-size:14px;line-height:24px;padding-left:30px;text-indent:2em}
+
+.bookBoxm{float:left;margin-top:-5px;padding:0 0 0 25px;width:495px}
+.bookBoxm li{font-size:14px;background:url(img/hd_line.png) repeat-x;float:left;height:30px;line-height:30px;margin-right:20px;padding-left:5px;width:221px;overflow:hidden}
+
+.termSearch{font-size:14px;left:260px;overflow:hidden;position:absolute;top:50px;width:500px}
+.termSearch h4{height:30;line-height:30px;font-size:14px;color:#bf340b}
+form .infor select{margin-top:2px}
+form input,form select{color:#666666;margin-right:20px;font:14px "Microsoft Yahei",Arial, Helvetica, sans-serif}
+
+.temInf{color:#E09C81;float:right;height:30px;line-height:30px;padding:8px 30px 0 0}
+.temInf a,.temInf a:hover{color:#E09C81}
+
+.bookBFlash{text-align:center;margin-top:50px;overflow:hidden}
+.bookMenuB{display:inline-block;padding:20px 0 20px 0}
+.bookMenuB dt{color:#BF340B;float:left;width:165px;padding-left:55px}
+.bookMenuB dd{float:left}
+.downB1{float:left;line-height:32px;background-position:0 -122px;width:108px;height:32px;display:inline-block;text-align:center}
+.bookMenuB .tit{height:30px;margin:0 0 4px;width:100%}
+.bookMenuB .tit h2{color:#BF340B;font-size:18px}
+.bookMenuB ul{margin-left:25px;float:left}
+.bookMenuB li{padding-left:5px}
+.bookMenuB .wid1{width:338px}
+.bookMenuB span{color:#BF340B}
+
+.email2{float:right;padding-right:40px}
+.email3{left:270px;position:absolute;top:10px}
+
+.minH{min-height:412px;height:412px}
+[class].minH{height:auto}
+.vedioLs{width:706px;float:left;margin:20px 0 0 0;padding-left:250px}
+.vedioLs .tit{height:30px}
+.vedioLs h2{color:#BF340B;font-size:18px}
+.vedioLs p{color:#333330;line-height:24px;font-size:14px;padding-left:30px;margin:15px 0}
+.rrsS2{color:#BF340B;float:left;font-size:14px;height:36px;line-height:36px;padding-top:2px;vertical-align:middle;position:absolute;right:20px;top:-10px}
+.temLSp1,.temLSp2{background:url(img/pline.png) repeat;color:#333330;font-size:14px;float:left;line-height:30px;margin:-5px 0 5px 25px;overflow:hidden;padding:0 0 0 5px;width:750px}
+.temLSp1{height:90px;text-indent:2em}
+.temLSp2{height:30px;text-align:right}
+
+.textContent{width:706px;color:#474747;font-size:14px;line-height:24px;padding:0 150px}
+.textContent p{margin:15px 0px}
+
+.pagesW1{width:300px;margin:0 auto}
+
+.bookBg1,.bookBg2,.bookBg3,.bookBg4,.bookBg5,.bookBg6{height:324px;width:926px;margin:0 auto 4px;overflow:hidden;_zoom:1}
+.bookBg1{background:url(img/01.gif) no-repeat}
+.bookBg2{background:url(img/02.gif) no-repeat}
+.bookBg3{background:url(img/03.gif) no-repeat}
+.bookBg4{background:url(img/04.gif) no-repeat}
+.bookBg5{background:url(img/05.gif) no-repeat}
+.bookBg6{background:url(img/06.gif) no-repeat}
+
+.bookInfo{height:205px;margin:0 0 0 360px;width:510px;font:12px "宋体",Arial, Helvetica, sans-serif}
+.bookInfo .bookI1,.bookInfo .bookI2,.bookInfo .bookI3,.bookInfo .bookI4{color:#fff;line-height:22px}
+.bookInfo .bookI1{text-indent:2em}
+.bookInfo .bookI2{width:210px;float:left;text-indent:0;margin-right:20px}
+.bookInfo .bookI3{width:270px;float:left;text-indent:0}
+.bookInfo .bookI4{width:175px;float:left;text-indent:0}
+.bookP1{padding-top:120px}
+.bookP2{padding-top:100px}
+.bookP3{padding-top:110px}
+.bookBg1 .look_btn,.bookBg2 .look_btn,.bookBg3 .look_btn,.bookBg4 .look_btn{float:right;position:relative;bottom:-30px;font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif}
+
+.todayBox{margin:0px 60px}
+.todayBox p{height:24px;_height:20px;line-height:24px;_line-height:20px;margin:0;color:#D2704F}
+.positO{position:relative}
+
+.digest{line-height:30px;font-size:16px;color:#4c4c4c;width:700px;margin:60px auto 20px;text-align:left;font-weight:bold}
+.pagesW2{width:500px;margin:0 auto;padding:0 20px 30px;position:relative;height:32px}
+.pagesW2 .nextprev,.pagesW2 a.nextprev,.pagesW2 a.nextprev:hover,.pagesW2 .nextprevR,.pagesW2 a.nextprevR,.pagesW2 a.nextprevR:hover{color:#fff;font-size:14px;height:32px;line-height:28px;padding:0 0 0 10px;width:113px;display:inline-block;font-family:"Microsoft Yahei";cursor:pointer}
+.pagesW2 .nextprev,.pagesW2 a.nextprev,.pagesW2 a.nextprev:hover{background-position:0 -248px;padding-left:30px}
+.pagesW2 .nextprevR,.pagesW2 a.nextprevR,.pagesW2 a.nextprevR:hover{background-position:0 -290px;padding-left:13px}
+
+
+.calendarTop{width:880px;margin:0 auto;padding:10px 0;position:relative;height:32px}
+
+.calendarN{height:32px;color:#bf340b;font-size:18px;text-align:center;padding-top:5px; width:200px;float:left}
+.calendarToday{background-color:#C1370C;color:#fff}
+.calendarToday .cFC1{color:#fff}
+.calendarEmpty{background-color:#fffef1}
+
+.caleTab{width:880px;background:url(img/bottom_dateT.gif) no-repeat;text-align:center;vertical-align:middle;margin:4px auto 0;color:#96958e}
+.caleTab td{border-top:#dbdad2 1px solid;border-left:#dbdad2 1px solid;border-right:#dbdad2 1px solid;width:124px}
+.cTabRow1{height:20px;color:#fff;height:33px}
+.cTabRow2{height:80px}
+.cTabRB{border-right:#dbdad2 1px solid}
+.cTabBB{border-bottom:#dbdad2 1px solid}
+.cFC1{color:#c1370c}
+.cFC2{color:#9e9d93}
+.cFS1{font-size:14px;text-align:right;padding-right:5px;height:20px}
+.cFS2{font-size:24px;text-align:center;height:40px}
+.cFS3{font-size:12px;text-align:center;height:20px}
+
+.zl_cal_daystip8{background:url(img/days8.gif) no-repeat}
+.zl_cal_daystip10{background:url(img/days10.gif) no-repeat}
+.zl_cal_daystip15{background:url(img/days15.gif) no-repeat}
+.zl_cal_daystip25{background:url(img/days25.gif) no-repeat}
+.zl_cal_daystip30{background:url(img/days30.gif) no-repeat}
+.zl_cal_mindaystip8{background:url(img/mindays8.gif) 105px 60px no-repeat}
+.zl_cal_mindaystip10{background:url(img/mindays10.gif) 105px 60px no-repeat}
+.zl_cal_mindaystip15{background:url(img/mindays15.gif) 105px 60px no-repeat}
+.zl_cal_mindaystip18{background:url(img/mindays18.gif) 105px 60px no-repeat}
+.zl_cal_mindaystip21{background:url(img/mindays21.gif) 105px 60px no-repeat}
+.zl_cal_mindaystip25{background:url(img/mindays25.gif) 105px 60px no-repeat}
+.zl_cal_mindaystip30{background-image:url(img/mindays30.gif) 105px 60px no-repeat}
+.zltip{position:absolute;width:113px;height:170px;z-index:10000}
+
+.caleTabBtm{background:url(img/bottom_dateB.gif) no-repeat;width:900px;height:51px;margin:0 auto 30px}
+.calendarS{font-size:12px;color:#888882;line-height:18px;width:840px;margin:0 auto}
+.calendarS span{color:#bf340b}
+.calendarS p{margin-top:10px;text-indent:24px}
+
+.TYear{float:left;width:300px;font-size:18px;font-family:"Microsoft Yahei";color:#96958E;margin-top:5px}
+.selYear{text-align:right;float:right;margin-top:10px;*margin-top:6px;_margin-top:6px}
+.selYear select{margin-right:0}
+.quickBtn{float:right;margin-top:5px;width:230px}
+.quickBtn input{float:right;font-size:12px;width:40px;height:28px;*height:20px;_height:20px;text-align:center;cursor:pointer;display:inline-block;margin:0 0 0 5px;padding:0 0 3px;font-family:"Microsoft Yahei"}
+.TDa{background-color:#eee}
+
+/*2013-05-17 wuqiong_add*/
+.xmkspic1{background:url(img/xmkspic.png) no-repeat;width:230px;height:165px;position:absolute;right:10px;top:104px}
+.tmys_conInfo{ padding-bottom:0}
+.tmys_conInfo .textContent{color:#628895; line-height:35px;}
+.tmys_conInfo .textContent p{ margin:20px 0;}
+.tmys_conInfo .textContent img{ border:4px solid #e2dfda}
+.tmys_conInfo .show1H1{color:#446fa6;}
+

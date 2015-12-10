@@ -1,0 +1,1 @@
+document.writeln("<p style=\"padding-left:5px;\"><a href=\"http:\/\/www.leiting001.com\/news\/201206\/38958.html\" target=\"_blank\" style=\"color:#C00000;\">英国颁布《自由大宪章》<\/a><\/p>")

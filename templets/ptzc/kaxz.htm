@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="Keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description  function='html2text(@me)'/}" />
+<link href="/css/putonglanmu.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/foli.js"></script>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" language="javascript">
+	function g(o){return document.getElementById(o);}
+	function HoverLi(n){
+		for(var i=1;i<=3;i++){g('tb_'+i).className='normaltab';g('tbc_0'+i).className='undis';}g('tbc_0'+n).className='dis';g('tb_'+n).className='hovertab';
+	}
+</script>
+
+</head>
+
+<body>
+<!--top-->
+<div id="top_bg">
+	<div id="top">
+		<div id="top_left">
+			<div id="logo"><a href="/"><img src="/images/logo1.png" border="0" /></a></div>
+		</div>
+		<div id="top_right">
+			<div id="top_right_time"> 
+                  <script language="javascript">
+				<!--
+				var today = new Date();
+				var ltoday = new Lunar(today);
+				document.write("佛历"+ltoday.byear+"年");
+				document.write("  ");
+				document.write(today.getFullYear()+"年"+(today.getMonth()+1)+"月"+today.getDate()+"日星期"+cDay[today.getDay()]);
+				document.write("  ");
+				-->
+				</script>
+	              <SCRIPT>CalConv();</SCRIPT>
+			</div>
+			<div id="top_right_link">
+				<a href="#" target="tq_answer@163.com">投稿邮箱</a>|<a href="http://weibo.com/tengquekb">官方微博</a>|<a title="一键分享到各大微博和社交网络" class="bshare-bsync" onclick="javascript:bSync.share(event)">分享</a>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bsync.js#uuid=#uuid=&style=1"></script>			</div>
+			<div id="clear"></div>
+		</div>
+		<div id="clear"></div>
+	</div>
+</div>
+
+<!--head-->
+{dede:include filename="head.htm"/}
+<!--content-->
+<div id="content_bg">
+	<div id="content">
+		<!--ctupian-->
+		<div id="ctupian">
+			<div id="ctupian_img"></div>
+			<div id="ctupian_weizhi">
+				{dede:field name='position'/}
+			</div>
+			<div id="ctupian_line"><img src="/images/cfgx_01.jpg" border="0" /></div>
+		</div>
+		<!--nyhfjs_neirong-->
+		<div id="nyhfjs_neirong">
+			<div id="nyhfjs_neirong_title"><img src="/images/kaxz.jpg" border="0" /></div>
+			<div id="nyhfjs_neirong_neirong">
+			{dede:list pagesize ='6'}
+				<div class="nnn_dan">
+					<div class="nnn_dan_left"><img src="[field:picname/]" border="0" width="156" height="117"/></div>
+					<div class="nnn_dan_right">
+						<div class="nnn_dan_right_title">
+							<a href="[field:arcurl/]">[field:title/]</a>
+						</div>
+						<div class="nnn_dan_right_txt">
+							[field:baizhu/]
+						</div>
+						<div class="nnn_dan_right_xx">
+							<a href="[field:arcurl/]"><img src="/images/mrjy_06.png" border="0" /></a>
+						</div>
+					</div>
+					<div id="clear"></div>
+				</div>
+				<div class="nnn_dan_kpng"></div>
+				{/dede:list}
+				<div class="manu"><span class="disabled"> 
+ {dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/} 
+</div>
+					<div id="clear"></div>
+		  </div>
+	  </div>
+		</div>
+	</div>
+</div>
+
+<!--footer-->
+{dede:include filename="footer.htm"/}
+
+
+</body>
+</html>

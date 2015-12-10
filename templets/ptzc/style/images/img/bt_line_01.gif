@@ -1,0 +1,124 @@
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="Keywords" content="菩提洲,菩提兴盛洲,希阿荣博,法王如意宝,佛教,佛子心语,放生护生,普贤放生,经咒念诵,上师开示,佛教故事" />
+	<meta name="description" content="几年前，为了利益众生，让更多的人进入佛门，在上师三宝的加持下，我们开办了这个网站。在网站开办的几年中，信众们通过登录网站，参加放生共修与金刚萨埵修法共修等共修活动，积累资粮,清净业障，增上了对上师三宝的信心。更有许多还没有皈依三宝的朋友在看到网站的内容后，生起了对上师三宝的信心，并通过网站的邮箱与我们联系，发心皈依三宝。其实这正是我们开办菩提洲网站的初衷。在此我们对所有关注和信任网站的道友表示衷心的感谢。" />
+	<title>菩提洲-希阿荣博堪布菩提之路</title>
+	<style type="text/css">
+		body
+		{
+			margin: 0px; /*background-image: url(images/loader_body_bg.gif);*/
+			background: url(images/images2/page_bg.gif) left top repeat;
+			background-color: #333333;
+			
+		}
+		a img
+		{
+			padding: 0px;
+			border: 0px;
+			outline: none;
+		}
+		div#flash_box
+		{
+			margin: auto;
+			width: 100%;
+			height: 556px;
+			padding: 0px;
+			border-top: 4px solid #333;
+			border-bottom: 4px solid #333;
+			clear: both;
+			text-align: center;
+		}
+		.huabian_top_box
+		{
+			margin: 0px;
+			height: 10px;
+			background-image: url(images/bt_line.gif);
+			background-position: left top;
+			background-repeat: repeat-x;
+			padding: 0px;
+			border-bottom: 4px solid #000;
+			clear: both;
+		}
+		.huabian_bottom_box
+		{
+			margin: 0px;
+			height: 10px;
+			background-image: url(images/bt_line_01.gif);
+			background-position: left top;
+			background-repeat: repeat-x;
+			padding: 0px;
+			border-top: 4px solid #000;
+			clear: both;
+		}
+		div#sound_box
+		{
+			margin: auto;
+			background-color: none;
+			padding: 0px 0px 5px 0px;
+			border: 0px;
+			clear: both;
+			text-align: right;
+		}
+		div#button_box
+		{
+			margin: auto;
+			background-color: none;
+			padding: 18px 0px 0px 0px;
+			border: 0px;
+			clear: both;
+			font-size: 13px;
+		}
+		div#button_box a
+		{
+			color: #fff;
+			text-decoration: none;
+			font-family: Arial, Helvetica, sans-serif;
+			outline: none;
+		}
+		div#button_box a:hover
+		{
+			text-decoration: none;
+			color: #ffff00;
+			outline: none;
+		}
+		.middle-1
+		{
+			padding: 0px;
+		}
+	</style>
+</head>
+<body scroll="auto">
+	<table style="height: 100%; width: 100%" cellpadding="0" cellspacing="0">
+		<tr>
+			<td align="center" style="height: 100%; width: 100%" class="middle-1">
+				<div>
+					
+					<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0"
+						width="1000" height="550">
+						<param name="movie" value="flash/welcome2.swf">
+						<param name="quality" value="high">
+						<embed src="flash/welcome2.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"
+							type="application/x-shockwave-flash" width="1000" height="550"></embed>
+					</object>
+					
+				</div>
+				<div id="button_box">
+					<a href="page/index/index.aspx" title="跳过/直接进入首页">跳过/直接进入首页 >></a></div>
+			</td>
+		</tr>
+	</table>
+	
+<!--baidu-->
+
+<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F93ce2df5b7db086fe0920af05a1f0cd0' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!--/baidu-->
+
+</body>
+</html>

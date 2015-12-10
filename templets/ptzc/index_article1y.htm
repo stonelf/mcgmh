@@ -1,0 +1,2146 @@
+﻿
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+<title>{dede:global.cfg_webname/}</title>
+<meta name="Keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+
+    
+    
+    <link href="{dede:global.cfg_templets_skin/}/style/css/globalV3.css" rel="stylesheet" type="text/css" /><link id="ctl00_indexcss" href="{dede:global.cfg_templets_skin/}/style/css/indexV3.css" rel="stylesheet" type="text/css" />
+
+	<script src="{dede:global.cfg_templets_skin/}/style/js/jquery-1.5.2.min.js" type="text/javascript"></script>
+
+	<script src="{dede:global.cfg_templets_skin/}/style/js/MSClass.js" type="text/javascript"></script>
+
+	<script src="{dede:global.cfg_templets_skin/}/style/js/ptz.js" type="text/javascript"></script>
+	
+	<script src="{dede:global.cfg_templets_skin/}/style/js/scroll_image.js" type="text/javascript"></script>
+
+	<!--[if IE 6]>
+<script src="{dede:global.cfg_templets_skin/}/style/js/DD_belatedPNG.js" mce_src="{dede:global.cfg_templets_skin/}/style/js/DD_belatedPNG.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.dl_btn , .bfqBg2 , div, ul, img, li, input , a , i , span , .xmwkBox dd , p');
+</script>
+<style>
+/* IE6 fix */	
+.nav .current,.nav .current a,.nav .current:hover{
+	_background-image: none;  
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src="{dede:global.cfg_templets_skin/}/style/images/nav_currentL.png"); 
+}
+.nav .currentR,.nav .currentR a,.nav .currentR:hover{
+	_background-image: none;  
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src="/page/images/nav_currentR.png"); 
+}
+</style>
+<![endif]-->
+	
+	<link rel="alternate" type="application/rss+xml" href="http://www.ptz.cc/page/RSSFeeds.aspx"
+		title="妙乘光明海" />
+
+	<script type="text/javascript">
+		//导航二级菜单
+		$j(document).ready(function() {
+			$j(".nrbanC_nav li").click(function() {
+				$j(".nrbanC_nav .cur").children(".subNav").slideUp();
+				$j(".nrbanC_nav .cur").removeClass("cur");
+				$j(this).addClass("cur");
+				$j(this).children(".subNav").slideDown();
+			}).mouseover(function(e) {
+				var d = $(this).children(".subNav");
+				var r = e.relatedTarget;
+				if (r !== d[0]) {
+					$j(".nrbanC_nav li").removerClass("cur");
+					d.slideUp();
+				}
+			})
+		})
+
+		//tab选项卡
+		function setTab(name, cursel, n) {
+			for (i = 1; i <= n; i++) {
+				var menu = $j("#" + name + i);
+				var con = $j("#con_" + name + "_" + i);
+				if (i == cursel) {
+					menu.addClass("hover");
+				} else {
+					menu.removeClass("hover");
+				}
+				con.css("display", i == cursel ? "block" : "none");
+			}
+		}
+	</script>
+
+	<script type="text/javascript">
+		$j(document).ready(function() {
+			//UCweb浏览器，异常修正滚不动。
+			if (/(UCWEB)/i.test(navigator.userAgent)) { return };
+			//18祖师像
+			new Marquee(
+			{
+				MSClass: ["m_18_div", "m_18_content"],
+				Direction: 2,
+				Step: 1,
+				Width: 740,
+				Height: 80,
+				Timer: 80,
+				DelayTime: 0,
+				WaitTime: 0,
+				ScrollStep: 0,
+				SwitchType: 0,
+				HiddenID: ["m_18_div"],
+				AutoStart: true
+			});
+		});
+		
+		
+	</script>
+
+
+	<!-- for iPad begin -->
+
+	<script type="text/javascript">
+		(function() {
+			var head = document.getElementsByTagName('head');
+			if (!/\((iPhone|iPad|iPod)/i.test(navigator.userAgent)) { return };
+			var iPadScript = document.createElement('script');
+			iPadScript.src = 'http://www.ptz.cc/page/js/ipadreset.js';
+			head[0].appendChild(iPadScript);
+		})();
+	</script>
+
+	<!-- for iPad end -->
+</head>
+<body>
+	<a name="top"></a>
+	
+	
+	<div id="main">
+		
+	<div id="hd" style="overflow: visible">
+		<div id="hdban">
+		</div>
+		<div id="hdcloud">
+		</div>
+	</div>
+	<div id="topbg">
+		<div id="hd">
+			<div class="topbgcon" style="padding-top: 115px;">
+				<div class="topbgconL">
+				</div>
+				<div class="topbgconR">
+				</div>
+				<div id="m_18_div">
+					<ul id="m_18_content">
+						
+								<li><a href="/a/ymss/283.html" target="_blank">
+									<img src="{dede:global.cfg_templets_skin/}/style/images/pic_001.jpg" width="60" border="0" alt="法身普贤王如来"
+										title="法身普贤王如来" />
+								</a></li>
+							
+								<li><a href="/a/ymss/284.html" target="_blank">
+									<img src="{dede:global.cfg_templets_skin/}/style/images/pic_002.jpg" width="60" border="0" alt="报身佛金刚萨埵"
+										title="报身佛金刚萨埵" />
+								</a></li>
+							
+								<li><a href="/a/ymss/285.html" target="_blank">
+									<img src="{dede:global.cfg_templets_skin/}/style/images/pic_003.jpg" width="60" border="0" alt="化身佛极喜金刚"
+										title="化身佛极喜金刚" />
+								</a></li>
+							
+								<li><a href="/a/ymss/286.html" target="_blank">
+									<img src="{dede:global.cfg_templets_skin/}/style/images/pic_004.jpg" width="60" border="0" alt="文殊友"
+										title="文殊友" />
+								</a></li>
+							
+								<li><a href="/a/ymss/287.html" target="_blank">
+									<img src="{dede:global.cfg_templets_skin/}/style/images/pic_005.jpg" width="60" border="0" alt="熙日森哈"
+										title="熙日森哈" />
+								</a></li>
+							
+								<li><a href="/a/ymss/288.html" target="_blank">
+									<img src="{dede:global.cfg_templets_skin/}/style/images/pic_006.jpg" width="60" border="0" alt="嘉纳思扎"
+										title="嘉纳思扎" />
+								</a></li>
+							
+								<li><a href="/a/ymss/289.html" target="_blank">
+									<img src="{dede:global.cfg_templets_skin/}/style/images/pic_007.jpg" width="60" border="0" alt="布玛目扎"
+										title="布玛目扎" />
+								</a></li>
+							
+								<li><a href="/a/ymss/290.html" target="_blank">
+									<img src="{dede:global.cfg_templets_skin/}/style/images/pic_008.jpg" width="60" border="0" alt="莲花生大士"
+										title="莲花生大士" />
+								</a></li>
+							
+								<li><a href="/a/ymss/282.html" target="_blank">
+									<img src="{dede:global.cfg_templets_skin/}/style/images/pic_009.jpg" width="60" border="0" alt="赤松德赞"
+										title="赤松德赞" />
+								</a></li>
+							
+								<li><a href="/a/ymss/291.html" target="_blank">
+									<img src="{dede:global.cfg_templets_skin/}/style/images/pic_010.jpg" width="60" border="0" alt="贝若扎那"
+										title="贝若扎那" />
+								</a></li>
+							
+								<li><a href="/a/ymss/292.html" target="_blank">
+									<img src="{dede:global.cfg_templets_skin/}/style/images/pic_011.jpg" width="60" border="0" alt="益西措嘉"
+										title="益西措嘉" />
+								</a></li>
+							
+								<li><a href="/a/ymss/293.html" target="_blank">
+									<img src="{dede:global.cfg_templets_skin/}/style/images/pic_012.jpg" width="60" border="0" alt="无垢光尊者"
+										title="无垢光尊者" />
+								</a></li>
+							
+								<li><a href="/a/ymss/294.html" target="_blank">
+									<img src="{dede:global.cfg_templets_skin/}/style/images/pic_013.jpg" width="60" border="0" alt="晋美林巴尊者"
+										title="晋美林巴尊者" />
+								</a></li>
+							
+								<li><a href="/a/ymss/295.html" target="_blank">
+									<img src="{dede:global.cfg_templets_skin/}/style/images/pic_014.jpg" width="60" border="0" alt="无畏如来芽"
+										title="无畏如来芽" />
+								</a></li>
+							
+								<li><a href="/a/ymss/296.html" target="_blank">
+									<img src="{dede:global.cfg_templets_skin/}/style/images/pic_015.jpg" width="60" border="0" alt="华智仁波切"
+										title="华智仁波切" />
+								</a></li>
+							
+								<li><a href="/a/ymss/297.html" target="_blank">
+									<img src="{dede:global.cfg_templets_skin/}/style/images/pic_016.jpg" width="60" border="0" alt="蒋扬钦哲旺波尊者"
+										title="蒋扬钦哲旺波尊者" />
+								</a></li>
+							
+								<li><a href="/a/ymss/298.html" target="_blank">
+									<img src="{dede:global.cfg_templets_skin/}/style/images/pic_017.jpg" width="60" border="0" alt="麦彭仁波切"
+										title="麦彭仁波切" />
+								</a></li>
+							
+								<li><a href="/a/ymss/299.html" target="_blank">
+									<img src="{dede:global.cfg_templets_skin/}/style/images/pic_018.jpg" width="60" border="0" alt="法王如意宝晋美彭措"
+										title="法王如意宝晋美彭措" />
+								</a></li>
+							
+								<li><a href="/a/ymss/300.html" target="_blank">
+									<img src="{dede:global.cfg_templets_skin/}/style/images/pic_019.jpg" width="60" border="0" alt="门措上师"
+										title="门措上师" />
+								</a></li>
+							
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		
+	<div id="nrbox">
+		<div class="nrban">
+			<div class="nrbanL">
+				<img src="{dede:global.cfg_templets_skin/}/style/images/wptz07t.gif" alt="" /></div>
+			<div class="nrbanR">
+				<img src="{dede:global.cfg_templets_skin/}/style/images/wptz08t.gif" alt="" /></div>
+			<div class="nrbanC_line">
+			</div>
+			<div class="nrbanC">
+				<div class="nrbanC_nav">
+					<ul>
+						
+{dede:channelartlist typeid='1,0'}
+<li><a href="javascript:void(0)">{dede:field name='typename'/}</a>
+{/dede:channelartlist}
+                        	
+                            <div class="subNav subNavL1">
+								<span class="subL"></span>
+								<ul>
+									
+                                    
+                                    
+                                    
+{dede:channel   type ='son' typeid ='1'   }
+<li><a href="[field:typelink/]">[field:typename/]</a></li>
+{/dede:channel}
+                                
+                               
+                               
+                               
+                                </ul>
+								<span class="subR"></span>
+							</div>
+						</li>
+						
+                        
+{dede:channelartlist typeid='2,0'}
+<li><a href="javascript:void(0)">{dede:field name='typename'/}</a>
+{/dede:channelartlist}
+						
+                        
+                        	<div class="subNav subNavL2">
+								<span class="subL"></span>
+								<ul>
+									
+                                    
+                                    
+{dede:channel   type ='son' typeid ='2'   }
+<li><a href="[field:typelink/]">[field:typename/]</a></li>
+{/dede:channel}
+								
+                                
+                                
+                                </ul>
+								<span class="subR"></span>
+							</div>
+						</li>
+						
+                        
+                        
+                        
+{dede:channelartlist typeid='3,0'}
+<li><a href="javascript:void(0)">{dede:field name='typename'/}</a>
+{/dede:channelartlist}
+						
+                        
+                        
+                        	<div class="subNav subNavL3">
+								<span class="subL"></span>
+								<ul>
+									
+                                    
+                                    
+{dede:channel   type ='son' typeid ='3'   }
+<li><a href="[field:typelink/]">[field:typename/]</a></li>
+{/dede:channel}
+								
+                                
+                                
+                                </ul>
+								<span class="subR"></span>
+							</div>
+						</li>
+						
+                        
+                        
+{dede:channelartlist typeid='4,0'}
+<li><a href="javascript:void(0)">{dede:field name='typename'/}</a>
+{/dede:channelartlist}
+							
+                            
+                            
+                            <div class="subNav subNavL4">
+								<span class="subL"></span>
+								<ul>
+									
+                                    
+                                    
+{dede:channel   type ='son' typeid ='4'   }
+<li><a href="[field:typelink/]">[field:typename/]</a></li>
+{/dede:channel}
+				
+								
+                                
+                                
+                                </ul>
+								<span class="subR"></span>
+							</div>
+						</li>
+						
+                        
+                        
+{dede:channelartlist typeid='5,0'}
+<li><a href="javascript:void(0)">{dede:field name='typename'/}</a>
+{/dede:channelartlist}
+							
+                            
+                            <div class="subNav subNavL5">
+								<span class="subL"></span>
+								<ul>
+									
+                                    
+                                    
+{dede:channel   type ='son' typeid ='5'   }
+<li><a href="[field:typelink/]">[field:typename/]</a></li>
+{/dede:channel}
+							
+                            
+                            
+                            	</ul>
+								<span class="subR"></span>
+							</div>
+						</li>
+						
+                        
+                        
+{dede:channelartlist typeid='6,0'}
+<li><a href="javascript:void(0)">{dede:field name='typename'/}</a>
+{/dede:channelartlist}
+							
+                            
+                            <div class="subNav subNavL6">
+								<span class="subL"></span>
+								<ul>
+									
+                                    
+                                    
+{dede:channel   type ='son' typeid ='6   }
+<li><a href="[field:typelink/]">[field:typename/]</a></li>
+{/dede:channel}
+								
+                                
+                                
+                                </ul>
+								<span class="subR"></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="english">
+					<!--<a href="http://www.ptz.cc/page/menu/zai_xian_dian_tang.aspx?classnameid=76" title="English">
+						<img src="{dede:global.cfg_templets_skin/}/style/images/english.gif" alt="" /></a>--></div>
+				<div style="right:115px" class="radio">
+					<span id="PhoneFB">  <img align="absmiddle" title="手机随身法宝" style="cursor: pointer;" src="{dede:global.cfg_templets_skin/}/style/images/wptz46.gif"> <a href="http://www.ptz.cc/page/client.aspx">手机随身法宝</a></span>
+				</div>
+
+				<div class="radio">
+					<span id="soundTd">  <img align="absmiddle" title="关闭音乐" style="cursor: pointer;"
+						onclick="Player.stop();" src="{dede:global.cfg_templets_skin/}/style/images/wptz31.gif">
+						<a onmouseover="Player.showPlayList(event)" href="#">音乐列表</a> </span>
+				</div>
+				<div class="ss" id="searchDiv2">
+					<span class="sstxtl"></span>
+					  <form id="form1" name="formsearch" action="/plus/search.php">
+ <input type="hidden" name="domains" value="www.mcgmh.com">
+   <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sstxt" id="searchKeyWord2" value="站内搜索" />
+					<input name="submit" type="button" class="ssbtn" id="searchBut2" />
+				</form>
+                
+                </div>
+			</div>
+		</div>
+		<div class="part_one">
+			<div class="part_oneBox part_black">
+				<div class="tit">
+					
+                      {dede:channelartlist typeid='8,0'}
+                    <h2>
+						<i class="ico1"></i>
+                        
+                          {dede:field name='typename'/}
+                        
+                        </h2>
+					<span class="more_btn"><a href="{dede:field name='typeurl'/}" title="更多">更多</a></span>
+                    
+                    
+                                 
+              
+				{/dede:channelartlist} 
+                    
+                    
+                    </div>
+				
+                
+                
+                <ul>
+					
+							
+                            
+                            {dede:arclist row='6' titlelen='200' typeid='8' }
+                            <li><i class="ico5"></i><a target="_blank"
+								href="[field:arcurl/]" title="[field:title/]">
+								[field:title/]…
+							</a></li>
+                             {/dede:arclist}
+						
+				</ul>
+			</div>
+			<div class="part_oneBox">
+				<div class="tit">
+					
+                    
+  {dede:channelartlist typeid='7,0'}
+                    <h2>
+						<i class="ico1"></i>
+                        
+                          {dede:field name='typename'/}
+                        
+                        </h2>
+					<span class="more_btn"><a href="{dede:field name='typeurl'/}" title="更多">更多</a></span>
+                    
+                    
+                                 
+              
+				{/dede:channelartlist} 
+                        
+                        
+                        
+                        
+                        </div>
+				<ul>
+					
+                            {dede:arclist row='6' titlelen='200' typeid='7' }
+                            <li><i class="ico5"></i><a target="_blank"
+								href="[field:arcurl/]" title="[field:title/]">
+								[field:title/]…
+							</a></li>
+                             {/dede:arclist}
+						
+				</ul>
+			</div>
+			<div class="part_oneBg ss01">
+			</div>
+			<div class="part_oneT">
+				<div class="titL">
+				</div>
+				<div class="titC">
+					<a style="color: #fff" href="/plus/list.php?tid=103">
+						上师：唐巧奥萨堪布</a></div>
+				<div class="titR">
+				</div>
+			</div>
+			<div id="musiclistDIV" style="display: none; position: absolute; width: 160px; height: auto;
+				top: -7px; left: 810px; padding: 2px 10px; background-color: #333; color: #aaa;
+				border: 1px solid #000; z-index: 1100; text-align: left; line-height: 22px;">
+				<div style="border-bottom: 1px dotted #000; margin-bottom: 2px;">
+					请选择      <span id="jingyin" onclick='Player.stop();' style='cursor: pointer;
+						color: #ffff00;' title='关闭音乐'>[静音]</span>
+				</div>
+				<div id="musiclistHTML">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="part_stzq">
+		<div class="part_stzqXq">
+			
+					从现在开始，所有能在一年内圆满念诵阿弥陀佛心咒“嗡阿弥得瓦阿耶色德吽舍”110万遍的信众都可以通过妙乘光明海网站的“联系我们”邮箱报名参加此次共修，待共修圆满后，上师将与我们一起回向功德。
+					<a href="#" target="_blank">[妙乘光明海网站声明]</a>
+				
+		</div>
+		<div class="part_stzqT">
+			<h2><i class="ico3"></i>
+            
+            
+            
+                {dede:channelartlist typeid='23,0'}
+               {dede:field name='typename'/}
+				{/dede:channelartlist}
+            
+            
+            </h2>
+			
+           {dede:channelartlist typeid='23,0'}
+            <h2 style="margin-left:453px"><i class="ico3"></i>{dede:field name='typename'/}</h2>
+			<span class="more_btn"><a href="{dede:field name='typeurl'/}" title="更多">
+				更多</a></span>
+             {/dede:channelartlist}   
+                
+                
+                </div>
+	</div>
+	<div class="part_stzqInf">
+		<div class="spScr">
+			<a class="LeftBotton" id="scrollArrLeft1"></a>
+			<div id="scrollCont1" class="Cont" >
+				<div class="ScrCont">
+						<ul>
+							
+                            
+                            {dede:arclist row='999' titlelen='100' typeid='23'  flag ='f'  }
+									<li>
+										<dl>
+											<dt>
+												<img src="[field:picname/]" title="[field:title/]" />
+												<p>
+													<span>
+														[field:title/]</span><a href="[field:arcurl/]"
+															class="openvedio"></a></p>
+											</dt>
+											<dd>
+												<div class="ContListR">
+													<span class="byte">
+														[field:typename/]</span> <span class="dl_btn"><a href="/plus/list.php?tid=23">
+															更多视频</a></span>
+												</div>
+											</dd>
+										</dl>
+									</li>
+								
+                                {/dede:arclist}
+								
+						</ul>
+				</div>
+			</div>
+			<a class="RightBotton"  id="scrollArrRight1"></a>
+		</div>
+		<div class="vspScr">
+			<a class="LeftBotton" id="scrollArrLeft2"></a>
+			<div id="scrollCont2" class="Cont">
+					<ul>
+						
+								
+                                
+                               {dede:arclist row='999' titlelen='100' typeid='37'  }
+                                <li>
+									<dl>
+										<dt>
+											<img src="[field:picname/]" title="[field:title/]" />
+											<p>
+												<span>
+													[field:title/]</span><a href="[field:arcurl/]"
+														class="openvedio"></a></p>
+										</dt>
+										<dd>
+											<div class="ContListR">
+												<span class="byte">
+													[field:typename/]</span> <span class="dl_btn"><a href="/plus/list.php?tid=37">
+														更多微视频</a></span>
+											</div>
+										</dd>
+									</dl>
+								</li>
+							
+							 {/dede:arclist}	
+							
+					</ul>
+			</div>
+			<a class="RightBotton" id="scrollArrRight2"></a>
+		</div>
+		<div class="spTab">
+			<div class="spTabmenu">
+				<ul>
+					<li id="one1" class="hover" onclick="setTab('one',1,8)" style="border-top: 1px dashed #ccc;">
+						法王念诵</li>
+					<li id="one2" onclick="setTab('one',2,8)">上师开示</li>
+					<li id="one3" onclick="setTab('one',3,8)">经咒念诵</li>
+					<li id="one4" onclick="setTab('one',4,8)">经文念诵</li>
+					<li id="one5" onclick="setTab('one',5,8)">喜乐的曼达拉</li>
+					<li id="one6" onclick="setTab('one',6,8)">冬日札记</li>
+					<li id="one7" onclick="setTab('one',7,8)">上师开示藏语</li>
+				</ul>
+			</div>
+			<div class="spTabcon">
+				<div id="con_one_1">
+					<div class="spic">
+						<img src="{dede:global.cfg_templets_skin/}/style/images/music_fwns.gif" /></div>
+					<div class="slist">
+						<ul>
+							
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/fawang%2f%e6%b3%95%e7%8e%8b%e5%a6%82%e6%84%8f%e5%ae%9d%e5%94%b1%e8%af%b5%e8%87%aa%e5%9c%a8%e7%a5%88%e7%a5%b7.mp3&bname=%e6%b3%95%e7%8e%8b%e5%a6%82%e6%84%8f%e5%ae%9d%e5%94%b1%e8%af%b5%e8%87%aa%e5%9c%a8%e7%a5%88%e7%a5%b7','0')"><a href="#">
+										法王如意宝唱诵自在祈祷</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/fawang%2f%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e5%ae%97%e5%96%80%e5%b7%b4%e5%a4%a7%e5%b8%88%e7%a5%88%e8%af%b7.mp3&bname=%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e5%ae%97%e5%96%80%e5%b7%b4%e5%a4%a7%e5%b8%88%e7%a5%88%e8%af%b7','0')"><a href="#">
+										法王念诵_宗喀巴大师祈请</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/fawang%2f%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e6%96%87%e6%ae%8a%e8%8f%a9%e8%90%a8%e7%a5%88%e8%af%b7%e5%8f%8a%e5%bf%83%e5%92%92.mp3&bname=%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e6%96%87%e6%ae%8a%e8%8f%a9%e8%90%a8%e7%a5%88%e8%af%b7%e5%8f%8a%e5%bf%83%e5%92%92','0')"><a href="#">
+										法王念诵_文殊菩萨祈请及…</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/fawang%2f%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e9%87%8a%e8%bf%a6%e7%89%9f%e5%b0%bc%e4%bd%9b%e7%a5%88%e8%af%b7%e5%8f%8a%e5%9c%a3%e5%8f%b7.mp3&bname=%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e9%87%8a%e8%bf%a6%e7%89%9f%e5%b0%bc%e4%bd%9b%e7%a5%88%e8%af%b7%e5%8f%8a%e5%9c%a3%e5%8f%b7','0')"><a href="#">
+										法王念诵_释迦牟尼佛祈请…</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/fawang%2f%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e4%b8%8a%e5%b8%88%e4%bd%8f%e4%b8%96%e6%96%87%e5%8f%8a%e5%90%89%e7%a5%a5%e9%a2%82.mp3&bname=%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e4%b8%8a%e5%b8%88%e4%bd%8f%e4%b8%96%e6%96%87%e5%8f%8a%e5%90%89%e7%a5%a5%e9%a2%82','0')"><a href="#">
+										法王念诵_上师住世文及吉…</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/fawang%2f%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e8%90%a8%e8%bf%a6%e7%8f%ad%e6%99%ba%e8%be%be%e7%a5%88%e8%af%b7.mp3&bname=%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e8%90%a8%e8%bf%a6%e7%8f%ad%e6%99%ba%e8%be%be%e7%a5%88%e8%af%b7','0')"><a href="#">
+										法王念诵_萨迦班智达祈请</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/fawang%2f%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e7%b1%b3%e6%8b%89%e6%97%a5%e5%b7%b4%e5%b0%8a%e8%80%85%e7%a5%88%e8%af%b7.mp3&bname=%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e7%b1%b3%e6%8b%89%e6%97%a5%e5%b7%b4%e5%b0%8a%e8%80%85%e7%a5%88%e8%af%b7','0')"><a href="#">
+										法王念诵_米拉日巴尊者祈…</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/fawang%2f%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e8%8e%b2%e5%b8%88%e5%bf%83%e5%92%92.mp3&bname=%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e8%8e%b2%e5%b8%88%e5%bf%83%e5%92%92','0')"><a href="#">
+										法王念诵_莲师心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/fawang%2f%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e4%b9%9d%e6%9c%ac%e5%b0%8a%e5%bf%83%e5%92%92.mp3&bname=%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e4%b9%9d%e6%9c%ac%e5%b0%8a%e5%bf%83%e5%92%92','0')"><a href="#">
+										法王念诵_九本尊心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/fawang%2f%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e9%bb%84%e8%b4%a2%e7%a5%9e%e5%bf%83%e5%92%92.mp3&bname=%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e9%bb%84%e8%b4%a2%e7%a5%9e%e5%bf%83%e5%92%92','0')"><a href="#">
+										法王念诵_黄财神心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/fawang%2f%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e8%a7%82%e9%9f%b3%e8%8f%a9%e8%90%a8%e5%bf%83%e5%92%92.mp3&bname=%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e8%a7%82%e9%9f%b3%e8%8f%a9%e8%90%a8%e5%bf%83%e5%92%92','0')"><a href="#">
+										法王念诵_观音菩萨心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/fawang%2f%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e5%ba%a6%e6%af%8d%e7%a5%88%e8%af%b7%e6%96%87.mp3&bname=%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e5%ba%a6%e6%af%8d%e7%a5%88%e8%af%b7%e6%96%87','0')"><a href="#">
+										法王念诵_度母祈请文</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/fawang%2f%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e5%9c%b0%e8%97%8f%e8%8f%a9%e8%90%a8%e5%9c%a3%e5%8f%b7.mp3&bname=%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e5%9c%b0%e8%97%8f%e8%8f%a9%e8%90%a8%e5%9c%a3%e5%8f%b7','0')"><a href="#">
+										法王念诵_地藏菩萨圣号</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/fawang%2f%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e9%98%bf%e5%bc%a5%e9%99%80%e4%bd%9b%e7%a5%88%e8%af%b7%e5%8f%8a%e5%9c%a3%e5%8f%b7.mp3&bname=%e6%b3%95%e7%8e%8b%e5%bf%b5%e8%af%b5_%e9%98%bf%e5%bc%a5%e9%99%80%e4%bd%9b%e7%a5%88%e8%af%b7%e5%8f%8a%e5%9c%a3%e5%8f%b7','0')"><a href="#">
+										法王念诵_阿弥陀佛祈请及…</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/fawang%2f%e6%b3%95%e7%8e%8b%e5%a6%82%e6%84%8f%e5%ae%9d-%e7%8e%b0%e6%9c%89%e8%87%aa%e5%9c%a8%e6%91%84%e5%8f%97%e7%a5%88%e7%a5%b7%e6%96%87-%e5%a4%a7%e5%8a%a0%e6%8c%81%e4%ba%91.mp3&bname=%e6%b3%95%e7%8e%8b%e5%a6%82%e6%84%8f%e5%ae%9d-%e7%8e%b0%e6%9c%89%e8%87%aa%e5%9c%a8%e6%91%84%e5%8f%97%e7%a5%88%e7%a5%b7%e6%96%87-%e5%a4%a7%e5%8a%a0%e6%8c%81%e4%ba%91','0')"><a href="#">
+										法王如意宝-现有自在摄受…</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/fawang%2f%e6%b3%95%e7%8e%8b%e5%a6%82%e6%84%8f%e5%ae%9d%e7%be%8e%e5%9b%bd%e5%bf%b5%e8%af%b5%e7%9a%84%e3%80%8a%e4%bd%9b%e5%ad%90%e8%a1%8c%e3%80%8b%e4%bc%a0%e6%89%bf.mp3&bname=%e6%b3%95%e7%8e%8b%e5%a6%82%e6%84%8f%e5%ae%9d%e7%be%8e%e5%9b%bd%e5%bf%b5%e8%af%b5%e7%9a%84%e3%80%8a%e4%bd%9b%e5%ad%90%e8%a1%8c%e3%80%8b%e4%bc%a0%e6%89%bf','0')"><a href="#">
+										法王如意宝美国念诵的《佛…</a> </li>
+								
+						</ul>
+					</div>
+				</div>
+				<div id="con_one_2" style="display: none">
+					<div class="spic">
+						<img src="{dede:global.cfg_templets_skin/}/style/images/music_ssks.gif" /></div>
+					<div class="slist">
+						<ul>
+							
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/smzcx%2fsmzcx_0.mp3&bname=%e7%94%9f%e5%91%bd%e8%bf%99%e5%87%ba%e6%88%8f-%e5%ba%8f%e8%a8%80','0')"><a href="#">
+										生命这出戏-序言</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/smzcx%2fsmzcx_1.mp3&bname=%e7%94%9f%e5%91%bd%e8%bf%99%e5%87%ba%e6%88%8f%ef%bc%88%e4%b8%80%ef%bc%89','0')"><a href="#">
+										生命这出戏（一）</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/smzcx%2fsmzcx_2.mp3&bname=%e7%94%9f%e5%91%bd%e8%bf%99%e5%87%ba%e6%88%8f%ef%bc%88%e4%ba%8c%ef%bc%89','0')"><a href="#">
+										生命这出戏（二）</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/smzcx%2fsmzcx_3.mp3&bname=%e7%94%9f%e5%91%bd%e8%bf%99%e5%87%ba%e6%88%8f%ef%bc%88%e4%b8%89%ef%bc%89','0')"><a href="#">
+										生命这出戏（三）</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/smzcx%2fsmzcx_4.mp3&bname=%e7%94%9f%e5%91%bd%e8%bf%99%e5%87%ba%e6%88%8f%ef%bc%88%e5%9b%9b%ef%bc%89','0')"><a href="#">
+										生命这出戏（四）</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/smzcx%2fsmzcx_5.mp3&bname=%e7%94%9f%e5%91%bd%e8%bf%99%e5%87%ba%e6%88%8f%ef%bc%88%e4%ba%94%ef%bc%89','0')"><a href="#">
+										生命这出戏（五）</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/smzcx%2fsmzcx_6.mp3&bname=%e7%94%9f%e5%91%bd%e8%bf%99%e5%87%ba%e6%88%8f%ef%bc%88%e5%85%ad%ef%bc%89','0')"><a href="#">
+										生命这出戏（六）</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/smzcx%2fsmzcx_7.mp3&bname=%e7%94%9f%e5%91%bd%e8%bf%99%e5%87%ba%e6%88%8f%ef%bc%88%e4%b8%83%ef%bc%89','0')"><a href="#">
+										生命这出戏（七）</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/smzcx%2fsmzcx_8.mp3&bname=%e7%94%9f%e5%91%bd%e8%bf%99%e5%87%ba%e6%88%8f%ef%bc%88%e5%85%ab%ef%bc%89','0')"><a href="#">
+										生命这出戏（八）</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/smzcx%2fsmzcx_all.mp3&bname=+%e7%94%9f%e5%91%bd%e8%bf%99%e5%87%ba%e6%88%8f%ef%bc%88%e5%ae%8c%e6%95%b4%ef%bc%89','0')"><a href="#">
+										 生命这出戏（完整）</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/cdhk%2fcyssq.mp3&bname=%e4%bb%8e%e7%8e%89%e6%a0%91%e8%af%b4%e8%b5%b7','0')"><a href="#">
+										从玉树说起</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/cdhk%2fysjdks.mp3&bname=%e9%9d%92%e6%b5%b7%e7%8e%89%e6%a0%91%e5%9c%b0%e9%9c%87%e7%9a%84%e7%ae%80%e7%9f%ad%e5%bc%80%e7%a4%ba','0')"><a href="#">
+										青海玉树地震的简短开示</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/cdhk%2fzbrsdd_zbrs.mp3&bname=%e7%8f%8d%e5%ae%9d%e4%ba%ba%e7%94%9f','0')"><a href="#">
+										珍宝人生</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/cdhk%2frfm.mp3&bname=%e5%85%a5%e4%bd%9b%e9%97%a8','0')"><a href="#">
+										入佛门</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/cdhk%2fgyqxjdks.mp3&bname=%e5%85%b3%e4%ba%8e%e5%89%8d%e8%a1%8c%e7%9a%84%e7%ae%80%e7%9f%ad%e5%bc%80%e7%a4%ba','0')"><a href="#">
+										关于前行的简短开示</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/cdhk%2ffswd.mp3&bname=%e6%94%be%e7%94%9f%e9%97%ae%e7%ad%94','0')"><a href="#">
+										放生问答</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/gyclx.mp3&bname=%e5%85%b3%e4%ba%8e%e5%87%ba%e7%a6%bb%e5%bf%83','0')"><a href="#">
+										关于出离心</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/zt.mp3&bname=%e5%98%b1%e6%89%98','0')"><a href="#">
+										嘱托</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/gysshdz.mp3&bname=%e5%85%b3%e4%ba%8e%e4%b8%8a%e5%b8%88%e5%92%8c%e5%bc%9f%e5%ad%90','0')"><a href="#">
+										关于上师和弟子</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/gyptx.mp3&bname=%e5%85%b3%e4%ba%8e%e8%8f%a9%e6%8f%90%e5%bf%83','0')"><a href="#">
+										关于菩提心</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/0420_kw.wma&bname=%e5%bc%80%e6%82%9f','0')"><a href="#">
+										开悟</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/gy_full.wma&bname=%e5%85%b3%e4%ba%8e%e7%9a%88%e4%be%9d','0')"><a href="#">
+										关于皈依</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/anle_full.wma&bname=%e5%ae%89%e4%b9%90','0')"><a href="#">
+										安乐</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/rhzgk_full.wma&bname=%e5%a6%82%e4%bd%95%e5%81%9a%e5%8a%9f%e8%af%be','0')"><a href="#">
+										如何做功课</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/shky.wma&bname=%e5%96%84%e6%8a%a4%e5%8f%a3%e4%b8%9a','0')"><a href="#">
+										善护口业</a> </li>
+								
+						</ul>
+					</div>
+				</div>
+				<div id="con_one_3" style="display: none">
+					<div class="spic">
+						<img src="{dede:global.cfg_templets_skin/}/style/images/music_jzns.gif" /></div>
+					<div class="slist">
+						<ul>
+							
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/fangshengyigui_2.mp3&bname=%e6%94%be%e7%94%9f%e4%bb%aa%e8%bd%a8(%e4%b8%8b)-%e5%9b%9e%e5%90%91','0')"><a href="#">
+										放生仪轨(下)-回向</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/fangshengyigui_1.mp3&bname=%e6%94%be%e7%94%9f%e4%bb%aa%e8%bd%a8(%e4%b8%8a)','0')"><a href="#">
+										放生仪轨(上)</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_095.wma&bname=%e4%ba%8c%e5%8d%81%e4%b8%80%e5%ba%a6%e6%af%8d%e4%bf%ae%e6%b3%95','0')"><a href="#">
+										二十一度母修法</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_094.wma&bname=%e4%b8%8a%e5%b8%88%e4%be%9b%e4%bb%aa%e8%bd%a8','0')"><a href="#">
+										上师供仪轨</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_84.wma&bname=%e5%be%80%e7%94%9f%e9%93%9c%e8%89%b2%e5%90%89%e7%a5%a5%e6%84%bf%e6%96%87','0')"><a href="#">
+										往生铜色吉祥愿文</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_83.wma&bname=%e6%9e%81%e4%b9%90%e6%84%bf%e6%96%87%ef%bc%88%e4%b8%8d%e5%8f%98%e9%87%91%e5%88%9a%e9%80%a0%ef%bc%89','0')"><a href="#">
+										极乐愿文（不变金刚造）</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_82.wma&bname=%e6%84%8f%e4%b9%90%e7%96%be%e9%80%9f%e6%88%90%e5%b0%b1%e7%a5%88%e7%a5%b7%e9%a2%82','0')"><a href="#">
+										意乐疾速成就祈祷颂</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_81.wma&bname=%e6%84%8f%e4%b9%90%e6%88%90%e5%b0%b1%e7%a5%88%e7%a5%b7%e9%a2%82','0')"><a href="#">
+										意乐成就祈祷颂</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_80.wma&bname=%e5%89%8d%e8%a1%8c%e5%bf%b5%e8%af%b5%e4%bb%aa%e8%bd%a8-%e5%bc%80%e6%98%be%e8%a7%a3%e8%84%b1%e9%81%93','0')"><a href="#">
+										前行念诵仪轨-开显解脱道</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_79.wma&bname=%e8%af%ad%e7%8b%ae%e5%ad%90%e6%96%87%e6%ae%8a%e4%bf%ae%e6%8c%81%e4%bb%aa%e8%bd%a8','0')"><a href="#">
+										语狮子文殊修持仪轨</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_78.wma&bname=%e6%9e%81%e4%b9%90%e5%8f%91%e6%84%bf%e6%96%87','0')"><a href="#">
+										极乐发愿文</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_77.wma&bname=%e4%bd%9b%e5%ad%90%e8%a1%8c%e4%b8%89%e5%8d%81%e4%b8%83%e9%a2%82','0')"><a href="#">
+										佛子行三十七颂</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns.wma&bname=%e2%98%86+%e7%bb%8f%e5%92%92%e5%bf%b5%e8%af%b5%e6%a0%8f%e7%9b%ae%e5%85%a8%e9%83%a8%e9%9f%b3%e9%a2%91%e6%89%93%e5%8c%85%e4%b8%8b%e8%bd%bd+%e2%98%86+(%e6%89%93%e5%bc%80%e9%a1%b5%e9%9d%a2%e7%9b%b4%e6%8e%a5%e7%82%b9%e5%87%bb%e4%b8%8b%e8%bd%bd)','0')"><a href="#">
+										☆ 经咒念诵栏目全部音频打包下…</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_63.wma&bname=%e6%99%ba%e6%85%a7%e6%b5%81%e6%98%9f%e5%bf%83%e5%92%92','0')"><a href="#">
+										智慧流星心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_64.wma&bname=%e8%a7%82%e9%9f%b3%e4%b9%9d%e6%9c%ac%e5%b0%8a%e6%80%bb%e6%91%84%e4%bf%ae%e6%8c%81%e5%92%92','0')"><a href="#">
+										观音九本尊总摄修持咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_65.wma&bname=%e8%a7%82%e9%9f%b3%e4%b9%9d%e6%9c%ac%e5%b0%8a%e6%80%bb%e6%91%84%e4%ba%8b%e4%b8%9a%e5%92%92','0')"><a href="#">
+										观音九本尊总摄事业咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_66.wma&bname=%e9%a1%b6%e7%a4%bc%e5%92%92','0')"><a href="#">
+										顶礼咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_67.wma&bname=%e7%b2%be%e5%8d%8e%e4%bc%9a%e4%be%9b%e4%bb%aa%e8%bd%a8','0')"><a href="#">
+										精华会供仪轨</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_68.wma&bname=%e5%a4%a7%e7%8b%ae%e6%a0%bc%e8%90%a8%e5%b0%94%e7%8e%8b%e7%a5%88%e7%a5%b7%e4%be%9b%e5%85%bb%e4%bb%aa%e8%bd%a8----%e4%ba%8b%e4%b8%9a%e8%87%aa%e6%88%90','0')"><a href="#">
+										大狮格萨尔王祈祷供养仪轨---…</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_69.wma&bname=%e5%9b%9e%e5%90%91%e9%ad%94%e7%a5%9f%e9%83%a8%e5%a4%9a%e7%81%ab%e6%96%bd%e4%bb%aa%e8%bd%a8','0')"><a href="#">
+										回向魔祟部多火施仪轨</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_70.wma&bname=%e5%8f%a4%e8%90%a8%e9%87%8c%e4%bf%ae%e6%b3%95','0')"><a href="#">
+										古萨里修法</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_71.wma&bname=%e5%a4%a7%e5%9c%86%e6%bb%a1%e9%be%99%e9%92%a6%e5%bf%83%e9%ab%93%e5%be%80%e7%94%9f%e6%b3%95','0')"><a href="#">
+										大圆满龙钦心髓往生法</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_72.wma&bname=%e5%9c%b0%e8%97%8f%e8%8f%a9%e8%90%a8%e6%8b%9b%e8%b4%a2%e4%bb%aa%e8%bd%a8','0')"><a href="#">
+										地藏菩萨招财仪轨</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_73.wma&bname=%e6%99%ae%e8%b4%a4%e8%a1%8c%e6%84%bf%e5%93%81%ef%bc%88%e5%8f%91%e6%84%bf%ef%bc%89','0')"><a href="#">
+										普贤行愿品（发愿）</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_74.wma&bname=%e5%89%8d%e8%af%91%e6%95%99%e6%b3%95%e5%85%b4%e7%9b%9b%e4%b9%8b%e6%84%bf%e6%96%87','0')"><a href="#">
+										前译教法兴盛之愿文</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_75.wma&bname=%e6%b3%95%e7%8e%8b%e4%bd%8f%e4%b8%96%e7%a5%88%e7%a5%b7%e6%96%87','0')"><a href="#">
+										法王住世祈祷文</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_76.wma&bname=%e9%97%a8%e6%8e%aa%e4%b8%8a%e5%b8%88%e4%bd%8f%e4%b8%96%e7%a5%88%e7%a5%b7%e6%96%87','0')"><a href="#">
+										门措上师住世祈祷文</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_07.wma&bname=%e8%af%ad%e8%bd%ae%e5%8a%a0%e6%8c%81','0')"><a href="#">
+										语轮加持</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_16.wma&bname=%e5%97%94%e6%81%a8%e5%bf%83%e4%b8%8d%e8%83%bd%e6%91%a7%e6%af%81%e5%96%84%e6%a0%b9%e4%b9%8b%e7%9c%9f%e8%a8%80','0')"><a href="#">
+										嗔恨心不能摧毁善根之真言</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_08.wma&bname=%e5%bf%b5%e7%8f%a0%e5%8a%a0%e6%8c%81','0')"><a href="#">
+										念珠加持</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_09.wma&bname=%e5%8a%a0%e6%8c%81%e5%92%92','0')"><a href="#">
+										加持咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_06.wma&bname=%e5%85%ab%e5%9c%a3%e5%90%89%e7%a5%a5%e9%a2%82','0')"><a href="#">
+										八圣吉祥颂</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_10.wma&bname=%e4%be%9b+%e5%85%bb+%e4%bb%aa+%e8%bd%a8','0')"><a href="#">
+										供 养 仪 轨</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_11.wma&bname=%e6%99%ae%e8%b4%a4%e8%a1%8c%e6%84%bf%e5%93%81%ef%bc%88%e4%b8%83%e6%94%af%e4%be%9b%ef%bc%89','0')"><a href="#">
+										普贤行愿品（七支供）</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_12.wma&bname=%e5%8f%91%e5%bf%83%e4%bb%aa%e8%bd%a8','0')"><a href="#">
+										发心仪轨</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_13.wma&bname=%e7%8e%b0%e6%9c%89%e8%87%aa%e5%9c%a8%e6%91%84%e5%8f%97%e7%a5%88%e7%a5%b7%e6%96%87%e2%80%94%e2%80%94%e5%a4%a7%e5%8a%a0%e6%8c%81%e4%ba%91','0')"><a href="#">
+										现有自在摄受祈祷文——大加持云</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_14.wma&bname=%e6%96%87%e6%ae%8a%e7%a4%bc%e8%b5%9e','0')"><a href="#">
+										文殊礼赞</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_15.wma&bname=%e5%9b%9e%e5%90%91%e5%81%88','0')"><a href="#">
+										回向偈</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_17.wma&bname=%e6%80%bb%e9%9b%86%e4%bc%a0%e6%89%bf%e4%b8%8a%e5%b8%88%e7%a5%88%e7%a5%b7%e6%96%87','0')"><a href="#">
+										总集传承上师祈祷文</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_18.wma&bname=%e7%a5%88%e7%a5%b7%e9%81%8d%e7%9f%a5%e6%97%a0%e5%9e%a2%e5%85%89%e5%b0%8a%e8%80%85','0')"><a href="#">
+										祈祷遍知无垢光尊者</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_19.wma&bname=%e7%a5%88%e7%a5%b7%e5%85%a8%e7%9f%a5%e9%ba%a6%e5%bd%ad%e4%bb%81%e6%b3%a2%e5%88%87','0')"><a href="#">
+										祈祷全知麦彭仁波切</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_20.wma&bname=%e7%a5%88%e7%a5%b7%e5%9c%a3%e8%80%85%e6%b3%95%e7%8e%8b%e5%a6%82%e6%84%8f%e5%ae%9d','0')"><a href="#">
+										祈祷圣者法王如意宝</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_21.wma&bname=%e4%b8%8a%e5%b8%88%e7%91%9c%e4%bc%bd%e9%80%9f%e8%b5%90%e5%8a%a0%e6%8c%81','0')"><a href="#">
+										上师瑜伽速赐加持</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_22.wma&bname=%e8%8e%b2%e5%b8%88%e7%a5%88%e7%a5%b7%e6%96%87','0')"><a href="#">
+										莲师祈祷文</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_23.wma&bname=%e6%99%ae%e8%8e%b7%e6%82%89%e5%9c%b0%e7%a5%88%e7%a5%b7%e6%96%87','0')"><a href="#">
+										普获悉地祈祷文</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_24.wma&bname=%e9%81%a3%e9%99%a4%e9%81%93%e9%9a%9c%e7%a5%88%e7%a5%b7%e6%96%87','0')"><a href="#">
+										遣除道障祈祷文</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_25.wma&bname=%e9%87%8a%e8%bf%a6%e7%89%9f%e5%b0%bc%e4%bd%9b%e4%bf%ae%e6%b3%95%e4%bb%aa%e8%bd%a8','0')"><a href="#">
+										释迦牟尼佛修法仪轨</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_26.wma&bname=%e9%98%bf%e5%bc%a5%e9%99%80%e4%bd%9b%e4%bf%ae%e6%b3%95%e6%9e%81%e4%b9%90%e6%8d%b7%e5%be%84','0')"><a href="#">
+										阿弥陀佛修法极乐捷径</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_27.wma&bname=%e5%9b%9b%e8%87%82%e8%a7%82%e9%9f%b3%e4%bf%ae%e6%b3%95','0')"><a href="#">
+										四臂观音修法</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_28.wma&bname=%e9%bb%84%e8%b4%a2%e7%a5%9e%e4%bf%ae%e6%b3%95%e4%bb%aa%e8%bd%a8','0')"><a href="#">
+										黄财神修法仪轨</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_29.wma&bname=%e9%87%91%e5%88%9a%e8%90%a8%e5%9f%b5%e7%99%be%e5%ad%97%e6%98%8e','0')"><a href="#">
+										金刚萨埵百字明</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_30.wma&bname=%e9%87%91%e5%88%9a%e8%90%a8%e5%9f%b5%e5%bf%83%e5%92%92','0')"><a href="#">
+										金刚萨埵心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_31.wma&bname=%e9%87%91%e5%88%9a%e8%90%a8%e5%9e%9b%e7%a7%98%e5%af%86%e6%97%a0%e5%9e%a2%e6%b4%b2%e5%bf%8f%e6%82%94%e7%b2%be%e5%8d%8e%e6%b8%85%e5%87%80%e4%b9%8b%e7%8e%8b%e8%80%85','0')"><a href="#">
+										金刚萨垛秘密无垢洲忏悔精华清净…</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_32.wma&bname=%e9%ba%a6%e5%bd%ad%e4%bb%81%e6%b3%a2%e5%88%87%e6%9e%81%e4%b9%90%e6%84%bf%e6%96%87','0')"><a href="#">
+										麦彭仁波切极乐愿文</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_33.wma&bname=%e6%96%87%e6%ae%8a%e5%a4%a7%e5%9c%86%e6%bb%a1%e5%9f%ba%e9%81%93%e6%9e%9c%e6%97%a0%e5%88%ab%e5%8f%91%e6%84%bf%e6%96%87','0')"><a href="#">
+										文殊大圆满基道果无别发愿文</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_34.wma&bname=%e7%9c%9f%e5%ae%9e%e5%90%8d%e7%bb%8f%e5%bd%92%e7%ba%b3%e4%b8%83%e5%8f%a5','0')"><a href="#">
+										真实名经归纳七句</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_35.wma&bname=%e6%97%a0+%e8%af%a0+%e4%b9%89+%e5%bf%8f','0')"><a href="#">
+										无 诠 义 忏</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_36.wma&bname=%e6%97%a0+%e5%9e%a2+%e5%bf%8f+%e6%82%94+%e7%bb%ad','0')"><a href="#">
+										无 垢 忏 悔 续</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_37.wma&bname=%e9%87%8a%e8%bf%a6%e7%89%9f%e5%b0%bc%e4%bd%9b%e5%9c%a3%e5%8f%b7','0')"><a href="#">
+										释迦牟尼佛圣号</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_38.wma&bname=%e9%98%bf%e5%bc%a5%e9%99%80%e4%bd%9b%e5%9c%a3%e5%8f%b7','0')"><a href="#">
+										阿弥陀佛圣号</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_39.wma&bname=%e8%a7%82%e4%b8%96%e9%9f%b3%e8%8f%a9%e8%90%a8%e5%9c%a3%e5%8f%b7','0')"><a href="#">
+										观世音菩萨圣号</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_40.wma&bname=%e5%9c%b0%e8%97%8f%e7%8e%8b%e8%8f%a9%e8%90%a8%e5%9c%a3%e5%8f%b7','0')"><a href="#">
+										地藏王菩萨圣号</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_41.wma&bname=%e9%87%8a%e8%bf%a6%e7%89%9f%e5%b0%bc%e4%bd%9b%e5%bf%83%e5%92%92','0')"><a href="#">
+										释迦牟尼佛心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_42.wma&bname=%e9%98%bf%e5%bc%a5%e9%99%80%e4%bd%9b%e5%bf%83%e5%92%92','0')"><a href="#">
+										阿弥陀佛心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_43.wma&bname=%e8%8d%af%e5%b8%88%e4%bd%9b%e5%bf%83%e5%92%92','0')"><a href="#">
+										药师佛心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_44.wma&bname=%e8%8d%af%e5%b8%88%e4%bd%9b%e5%bf%83%e5%92%92%ef%bc%88%e7%9f%ad%e5%92%92%ef%bc%89','0')"><a href="#">
+										药师佛心咒（短咒）</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_45.wma&bname=%e9%87%91%e5%88%9a%e8%90%a8%e5%9f%b5%e5%bf%83%e5%92%92','0')"><a href="#">
+										金刚萨埵心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_46.wma&bname=%e6%96%87%e6%ae%8a%e5%bf%83%e5%92%92','0')"><a href="#">
+										文殊心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_47.wma&bname=%e6%b3%95%e7%8e%8b%e5%a6%82%e6%84%8f%e5%ae%9d%e5%bf%83%e5%92%92','0')"><a href="#">
+										法王如意宝心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_48.wma&bname=%e8%8e%b2%e5%b8%88%e5%bf%83%e5%92%92','0')"><a href="#">
+										莲师心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_49.wma&bname=%e8%a7%82%e9%9f%b3%e5%bf%83%e5%92%92','0')"><a href="#">
+										观音心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_50.wma&bname=%e5%ba%a6%e6%af%8d%e5%bf%83%e5%92%92','0')"><a href="#">
+										度母心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_51.wma&bname=%e7%99%bd%e5%ba%a6%e6%af%8d%e9%95%bf%e5%af%bf%e5%bf%83%e5%92%92','0')"><a href="#">
+										白度母长寿心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_52.wma&bname=%e5%a4%a7%e7%99%bd%e4%bc%9e%e7%9b%96%e4%bd%9b%e6%af%8d%e5%bf%83%e5%92%92','0')"><a href="#">
+										大白伞盖佛母心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_53.wma&bname=%e8%88%ac%e8%8b%a5%e4%bd%9b%e6%af%8d%e5%92%92','0')"><a href="#">
+										般若佛母咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_54.wma&bname=%e9%95%bf%e5%af%bf%e5%92%92','0')"><a href="#">
+										长寿咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_55.wma&bname=%e7%8b%ae%e5%90%bc%e5%92%92','0')"><a href="#">
+										狮吼咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_56.wma&bname=%e5%85%b7%e5%85%89%e4%bd%9b%e6%af%8d%e5%bf%83%e5%92%92','0')"><a href="#">
+										具光佛母心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_57.wma&bname=%e5%ad%97%e6%af%8d%e5%92%92','0')"><a href="#">
+										字母咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_58.wma&bname=%e7%bc%98%e8%b5%b7%e5%92%92','0')"><a href="#">
+										缘起咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_59.wma&bname=%e6%b8%85%e5%87%80%e6%88%92%e5%be%8b%e5%92%92','0')"><a href="#">
+										清净戒律咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_60.wma&bname=%e9%87%91%e5%88%9a%e9%93%a0%e7%94%b2%e5%bf%83%e5%92%92','0')"><a href="#">
+										金刚铠甲心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_61.wma&bname=%e6%91%a7%e7%a0%b4%e9%87%91%e5%88%9a%e5%bf%83%e5%92%92','0')"><a href="#">
+										摧破金刚心咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_62.wma&bname=%e4%bd%9b%e6%88%90%e9%81%93%e6%97%b6%e4%b9%8b%e9%99%8d%e9%ad%94%e5%92%92','0')"><a href="#">
+										佛成道时之降魔咒</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/mzzy_04.wma&bname=%e9%87%91%e5%88%9a%e8%90%a8%e5%9f%b5%e7%99%be%e5%ad%97%e6%98%8e%ef%bc%88%e5%bf%b5%e8%af%b5%ef%bc%9a%e5%b8%8c%e9%98%bf%e8%8d%a3%e5%8d%9a%e4%b8%8a%e5%b8%88%ef%bc%89','0')"><a href="#">
+										金刚萨埵百字明（念诵：希阿荣博…</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/mzzy_05.wma&bname=%e9%bb%84%e8%b4%a2%e7%a5%9e%e5%bf%83%e5%92%92%ef%bc%88%e5%bf%b5%e8%af%b5%ef%bc%9a%e5%b8%8c%e9%98%bf%e8%8d%a3%e5%8d%9a%e4%b8%8a%e5%b8%88%ef%bc%89','0')"><a href="#">
+										黄财神心咒（念诵：希阿荣博上师…</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/mzzy_02.wma&bname=%e8%a7%82%e9%9f%b3%e4%b9%9d%e6%9c%ac%e5%b0%8a%e5%bf%83%e5%92%92%ef%bc%88%e5%bf%b5%e8%af%b5%ef%bc%9a%e5%b8%8c%e9%98%bf%e6%8e%aa+%e4%b8%8a%e5%b8%88%e5%a4%96%e7%94%a5%e5%a5%b3%ef%bc%89','0')"><a href="#">
+										观音九本尊心咒（念诵：希阿措 …</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/mzzy_01.wma&bname=%e9%98%bf%e5%bc%a5%e9%99%80%e4%bd%9b%e5%bf%83%e5%92%92%ef%bc%88%e5%bf%b5%e8%af%b5%ef%bc%9a%e5%9c%9f%e7%99%bb%e3%80%81%e5%b8%8c%e9%98%bf%e6%8e%aa%ef%bc%89','0')"><a href="#">
+										阿弥陀佛心咒（念诵：土登、希阿…</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/mzzy_03.wma&bname=%e9%87%91%e5%88%9a%e8%90%a8%e5%9f%b5%e5%bf%83%e5%92%92%ef%bc%88%e5%bf%b5%e8%af%b5%ef%bc%9a%e5%b8%8c%e9%98%bf%e6%8e%aa%e3%80%81%e8%b5%a4%e8%af%9a%e5%8d%93%e7%8e%9b%ef%bc%89','0')"><a href="#">
+										金刚萨埵心咒（念诵：希阿措、赤…</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_01.wma&bname=%e5%85%ab%e5%90%89%e7%a5%a5%e9%a2%82%ef%bc%88%e5%bf%b5%e8%af%b5%ef%bc%9a%e5%b8%8c%e9%98%bf%e6%8e%aa%e3%80%81%e8%b5%a4%e8%af%9a%e5%8d%93%e7%8e%9b%ef%bc%89','0')"><a href="#">
+										八吉祥颂（念诵：希阿措、赤诚卓…</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_02.wma&bname=%e4%be%9b%e5%85%bb%e4%bb%aa%e8%bd%a8%ef%bc%88%e5%bf%b5%e8%af%b5%ef%bc%9a%e5%b8%8c%e9%98%bf%e6%8e%aa%e3%80%81%e8%b5%a4%e8%af%9a%e5%8d%93%e7%8e%9b%ef%bc%89','0')"><a href="#">
+										供养仪轨（念诵：希阿措、赤诚卓…</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_03.wma&bname=%e6%80%80%e4%b8%9a%e7%a5%88%e7%a5%b7%e6%96%87%ef%bc%88%e5%bf%b5%e8%af%b5%ef%bc%9a%e5%b8%8c%e9%98%bf%e6%8e%aa%e3%80%81%e8%b5%a4%e8%af%9a%e5%8d%93%e7%8e%9b%ef%bc%89','0')"><a href="#">
+										怀业祈祷文（念诵：希阿措、赤诚…</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_04.wma&bname=%e6%99%ae%e8%b4%a4%e8%a1%8c%e6%84%bf%e5%93%81%ef%bc%88%e4%b8%83%e6%94%af%e4%be%9b%ef%bc%89%e4%b8%8e%e5%8f%91%e5%bf%83%e4%bb%aa%e8%bd%a8%ef%bc%88%e5%bf%b5%e8%af%b5%ef%bc%9a%e5%b8%8c%e9%98%bf%e6%8e%aa%e3%80%81%e8%b5%a4%e8%af%9a%e5%8d%93%e7%8e%9b%ef%bc%89','0')"><a href="#">
+										普贤行愿品（七支供）与发心仪轨…</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_05.wma&bname=%e6%96%87%e6%ae%8a%e7%a4%bc%e8%b5%9e%ef%bc%88%e5%bf%b5%e8%af%b5%ef%bc%9a%e6%89%8e%e8%a5%bf%e6%8c%81%e6%9e%97%e5%83%a7%e4%bc%97%ef%bc%89','0')"><a href="#">
+										文殊礼赞（念诵：扎西持林僧众）</a> </li>
+								
+						</ul>
+					</div>
+				</div>
+				<div id="con_one_4" style="display: none">
+					<div class="spic">
+						<img src="{dede:global.cfg_templets_skin/}/style/images/music_jwns.gif" /></div>
+					<div class="slist">
+						<ul>
+							
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/qiyu_fozixing37song.mp3&bname=%e4%bd%9b%e5%ad%90%e8%a1%8c%e4%b8%89%e5%8d%81%e4%b8%83%e9%a2%82(%e6%bc%94%e5%94%b1%ef%bc%9a%e9%bd%90%e8%b1%ab)','0')"><a href="#">
+										佛子行三十七颂(演唱：齐豫)</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/VTS_ok.mp3&bname=%e5%9c%a3%e8%88%ac%e8%8b%a5%e6%91%84%e9%a2%82','0')"><a href="#">
+										圣般若摄颂</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_93.wma&bname=%e6%95%99%e8%af%b2%e9%bb%8e%e6%98%8e%e6%9b%99%e5%85%89','0')"><a href="#">
+										教诲黎明曙光</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_92.wma&bname=%e4%ba%8b%e5%b8%88%e6%b3%95%e4%ba%94%e5%8d%81%e9%a2%82','0')"><a href="#">
+										事师法五十颂</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_91.wma&bname=%e4%bf%ae%e5%bf%83%e5%85%ab%e9%a2%82','0')"><a href="#">
+										修心八颂</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_90.wma&bname=%e4%b8%89%e4%b8%bb%e8%a6%81%e9%81%93%e8%ae%ba','0')"><a href="#">
+										三主要道论</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_88.wma&bname=%e4%bd%9b%e5%ad%90%e8%a1%8c%e4%b8%89%e5%8d%81%e4%b8%83%e9%a2%82','0')"><a href="#">
+										佛子行三十七颂</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/rxl-03.wma&bname=%e5%85%a5%e8%a1%8c%e8%ae%ba(41-54)','0')"><a href="#">
+										入行论(41-54)</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/rxl-02.wma&bname=%e5%85%a5%e8%a1%8c%e8%ae%ba(21-40)','0')"><a href="#">
+										入行论(21-40)</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/rxl-01.wma&bname=%e5%85%a5%e8%a1%8c%e8%ae%ba(1-20)','0')"><a href="#">
+										入行论(1-20)</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_87.wma&bname=%e9%87%91%e5%88%9a%e8%88%ac%e8%8b%a5%e8%88%ac%e7%bd%97%e8%9c%9c%e7%bb%8f','0')"><a href="#">
+										金刚般若般罗蜜经</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_86.wma&bname=%e8%88%ac%e8%8b%a5%e6%b3%a2%e7%bd%97%e8%9c%9c%e5%a4%9a%e5%bf%83%e7%bb%8f','0')"><a href="#">
+										般若波罗蜜多心经</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/jdns_85.wma&bname=%e9%9a%8f%e5%bf%b5%e4%b8%89%e5%ae%9d%e7%bb%8f','0')"><a href="#">
+										随念三宝经</a> </li>
+								
+						</ul>
+					</div>
+				</div>
+				<div id="con_one_5" style="display: none">
+					<div class="spic">
+						<img src="{dede:global.cfg_templets_skin/}/style/images/music_xlmdl.gif" /></div>
+					<div class="slist">
+						<ul>
+							
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f1.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%891-%e5%bc%80%e7%af%87','0')"><a href="#">
+										喜乐的曼达拉1-开篇</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f2.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%892-%e5%89%8d%e8%a8%80','0')"><a href="#">
+										喜乐的曼达拉2-前言</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f3.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%893-%e5%ae%b6%e4%b9%a1%e4%b8%80','0')"><a href="#">
+										喜乐的曼达拉3-家乡一</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f4.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%894-%e5%ae%b6%e4%b9%a1%e4%ba%8c','0')"><a href="#">
+										喜乐的曼达拉4-家乡二</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f5.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%895-%e5%ae%b6%e4%b9%a1%e4%b8%89','0')"><a href="#">
+										喜乐的曼达拉5-家乡三</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f6.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%896-%e5%ae%b6%e4%b9%a1%e5%9b%9b','0')"><a href="#">
+										喜乐的曼达拉6-家乡四</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f7.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%897-%e5%ae%b6%e4%b9%a1%e4%ba%94','0')"><a href="#">
+										喜乐的曼达拉7-家乡五</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f8.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%898-%e5%ae%b6%e4%b9%a1%e5%85%ad','0')"><a href="#">
+										喜乐的曼达拉8-家乡六</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f9.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%899-%e5%96%87%e8%8d%a3%e4%b8%80','0')"><a href="#">
+										喜乐的曼达拉9-喇荣一</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f10.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8910-%e5%96%87%e8%8d%a3%e4%ba%8c','0')"><a href="#">
+										喜乐的曼达拉10-喇荣二</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f11.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8911-%e5%96%87%e8%8d%a3%e4%b8%89','0')"><a href="#">
+										喜乐的曼达拉11-喇荣三</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f12.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8912-%e5%96%87%e8%8d%a3%e5%9b%9b','0')"><a href="#">
+										喜乐的曼达拉12-喇荣四</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f13.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8913-%e5%96%87%e8%8d%a3%e4%ba%94','0')"><a href="#">
+										喜乐的曼达拉13-喇荣五</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f14.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8914-%e5%96%87%e8%8d%a3%e5%85%ad','0')"><a href="#">
+										喜乐的曼达拉14-喇荣六</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f15.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8915-%e5%a0%aa%e5%b8%83%e4%b8%80','0')"><a href="#">
+										喜乐的曼达拉15-堪布一</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f16.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8916-%e5%a0%aa%e5%b8%83%e4%ba%8c','0')"><a href="#">
+										喜乐的曼达拉16-堪布二</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f17.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8917-%e5%a0%aa%e5%b8%83%e4%b8%89','0')"><a href="#">
+										喜乐的曼达拉17-堪布三</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f18.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8918-%e5%a0%aa%e5%b8%83%e5%9b%9b','0')"><a href="#">
+										喜乐的曼达拉18-堪布四</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f19.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8919-%e5%a0%aa%e5%b8%83%e4%ba%94','0')"><a href="#">
+										喜乐的曼达拉19-堪布五</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f20.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8920-%e5%89%8d%e8%a1%8c%e4%b8%80','0')"><a href="#">
+										喜乐的曼达拉20-前行一</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f21.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8921-%e5%89%8d%e8%a1%8c%e4%ba%8c','0')"><a href="#">
+										喜乐的曼达拉21-前行二</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f22.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8922-%e5%89%8d%e8%a1%8c%e4%b8%89','0')"><a href="#">
+										喜乐的曼达拉22-前行三</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f23.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8923-%e5%89%8d%e8%a1%8c%e5%9b%9b','0')"><a href="#">
+										喜乐的曼达拉23-前行四</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f24.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8924-%e5%89%8d%e8%a1%8c%e4%ba%94','0')"><a href="#">
+										喜乐的曼达拉24-前行五</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f25.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8925-%e5%89%8d%e8%a1%8c%e5%85%ad','0')"><a href="#">
+										喜乐的曼达拉25-前行六</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f26.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8926-%e5%89%8d%e8%a1%8c%e4%b8%83','0')"><a href="#">
+										喜乐的曼达拉26-前行七</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f27.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8927-%e5%bc%98%e6%b3%95%e4%b8%80','0')"><a href="#">
+										喜乐的曼达拉27-弘法一</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f28.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8928-%e5%bc%98%e6%b3%95%e4%ba%8c','0')"><a href="#">
+										喜乐的曼达拉28-弘法二</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f29.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8929-%e5%bc%98%e6%b3%95%e4%b8%89','0')"><a href="#">
+										喜乐的曼达拉29-弘法三</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f30.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8930-%e5%bc%98%e6%b3%95%e5%9b%9b','0')"><a href="#">
+										喜乐的曼达拉30-弘法四</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f31.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8931-%e5%bc%98%e6%b3%95%e4%ba%94','0')"><a href="#">
+										喜乐的曼达拉31-弘法五</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f32.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8932-%e5%bc%98%e6%b3%95%e5%85%ad','0')"><a href="#">
+										喜乐的曼达拉32-弘法六</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f33.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8933-%e5%bc%98%e6%b3%95%e4%b8%83','0')"><a href="#">
+										喜乐的曼达拉33-弘法七</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f34.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8934-%e5%bc%98%e6%b3%95%e5%85%ab','0')"><a href="#">
+										喜乐的曼达拉34-弘法八</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f35.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8935-%e6%8b%b3%e6%8b%b3%e6%88%91%e5%bf%83','0')"><a href="#">
+										喜乐的曼达拉35-拳拳我心</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f36.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8936-%e8%87%b4%e8%b0%a2','0')"><a href="#">
+										喜乐的曼达拉36-致谢</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f37.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8937-%e5%9b%9e%e5%bf%86','0')"><a href="#">
+										喜乐的曼达拉37-回忆</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f38.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%8938-%e8%af%97','0')"><a href="#">
+										喜乐的曼达拉38-诗</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/xldmdl%2f40.wma&bname=%e5%96%9c%e4%b9%90%e7%9a%84%e6%9b%bc%e8%be%be%e6%8b%89%ef%bc%88%e5%85%a8%e9%83%a8%e9%9f%b3%e9%a2%91%ef%bc%89','0')"><a href="#">
+										喜乐的曼达拉（全部音频）</a> </li>
+								
+						</ul>
+					</div>
+				</div>
+				<div id="con_one_6" style="display: none">
+					<div class="spic">
+						<img src="{dede:global.cfg_templets_skin/}/style/images/music_drlj.gif" /></div>
+					<div class="slist">
+						<ul>
+							
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/drzj%2f01.wma&bname=%e5%86%ac%e6%97%a5%e6%9c%ad%e8%ae%b001%e2%80%94%e2%80%94%e5%89%8d%e8%a8%80','0')"><a href="#">
+										冬日札记01——前言</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/drzj%2f02.wma&bname=%e5%86%ac%e6%97%a5%e6%9c%ad%e8%ae%b002%e2%80%94%e2%80%94%e4%bf%a1%e5%bf%83','0')"><a href="#">
+										冬日札记02——信心</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/drzj%2f03.wma&bname=%e5%86%ac%e6%97%a5%e6%9c%ad%e8%ae%b003%e2%80%94%e2%80%94%e6%97%a0%e5%b0%bd%e8%97%8f','0')"><a href="#">
+										冬日札记03——无尽藏</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/drzj%2f04.wma&bname=%e5%86%ac%e6%97%a5%e6%9c%ad%e8%ae%b004%e2%80%94%e2%80%94%e4%ba%ba%e4%ba%ba%e6%98%af%e6%88%91%e5%b8%88','0')"><a href="#">
+										冬日札记04——人人是我师</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/drzj%2f05.wma&bname=%e5%86%ac%e6%97%a5%e6%9c%ad%e8%ae%b005%e2%80%94%e2%80%94%e6%af%8d%e4%ba%b2','0')"><a href="#">
+										冬日札记05——母亲</a> </li>
+								
+						</ul>
+					</div>
+				</div>
+				<div id="con_one_7" style="display: none">
+					<div class="spic">
+						<img src="{dede:global.cfg_templets_skin/}/style/images/music_kszy.gif" /></div>
+					<div class="slist">
+						<ul>
+							
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/zy_3_jqfh.wma&bname=%e5%8d%8f%e5%ba%86%e6%b3%95%e4%bc%9a(%e8%97%8f%e8%af%ad)','0')"><a href="#">
+										协庆法会(藏语)</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/zy_2_jqfxy.wma&bname=%e5%8d%8f%e5%ba%86%e4%bd%9b%e5%ad%a6%e9%99%a2(%e8%97%8f%e8%af%ad)','0')"><a href="#">
+										协庆佛学院(藏语)</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/zy_1_ysfh.wma&bname=%e7%8e%89%e6%a0%91%e6%b3%95%e4%bc%9a(%e8%97%8f%e8%af%ad)','0')"><a href="#">
+										玉树法会(藏语)</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/zy_5_rhfh.wma&bname=%e7%82%89%e9%9c%8d%e6%b3%95%e4%bc%9a(%e8%97%8f%e8%af%ad)','0')"><a href="#">
+										炉霍法会(藏语)</a> </li>
+								
+									<li onclick="return ot('http://www.ptz.cc/page/menu/xia_zai_zhuan_qu/AudioDownload.aspx?blink=/audio/jzns/zy_4_djfh.wma&bname=%e6%b1%9f%e8%be%be%e6%b3%95%e4%bc%9a(%e8%97%8f%e8%af%ad)','0')"><a href="#">
+										江达法会(藏语)</a> </li>
+								
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--新内容-->
+	<div class="wzpartRound">
+	</div>
+	<div id="wzpart">
+		<div class="wzpartPic">
+			<ul>
+			  <li>
+			    <p>
+						<a href="/">
+							<img src="{dede:global.cfg_templets_skin/}/style/images/title.jpg" />
+							<var class="ztxt"><span>扎西持林法宝：佛像（六）</span></var>                        </a>                    </p>
+                    <a href="/" class="ztitle">法宝荟萃</a>				</li>
+			  <li>
+					<p>
+						<a href="/a/ymss/300.html">
+							<img src="{dede:global.cfg_templets_skin/}/style/images/pic02.jpg" />
+							<var class="ztxt"><span>法相【第五辑】</span></var>                        </a>                    </p>
+                <a href="/a/ymss/300.html" class="ztitle">门措上师</a>				</li>
+			  <li>
+					<p>
+						<a href="/a/ymss/299.html">
+							<img src="{dede:global.cfg_templets_skin/}/style/images/pic03.jpg" />
+							<var class="ztxt"><span>法相【第五辑】</span></var>                        </a>                    </p>
+                <a href="/a/ymss/299.html" class="ztitle">法王如意宝</a>				</li>
+			  <li>
+			    <p>
+						<a href="/a/1/1-5/">
+							<img src="{dede:global.cfg_templets_skin/}/style/images/title01.jpg" />
+							<var class="ztxt"><span>2013年上师近期法相（五）</span></var>                        </a>                    </p>
+                    <a href="/a/1/1-5/" class="ztitle">上师法相</a>				</li>
+				<li>
+					<p>
+						<a href="/">
+							<img src="{dede:global.cfg_templets_skin/}/style/images/title02.jpg" />
+							<var class="ztxt"><span>第二期</span></var>                        </a>                    </p>
+                    <a href="/" class="ztitle">电子杂志</a>				</li>
+			</ul>
+		</div>
+		<div class="wzpartTop">
+		</div>
+		<div class="wzpartFuo">
+			<div class="wzpartLeft">
+				<div class="zxgx">
+					
+
+<div class="zxgxBox">
+	<div class="tit">
+		<h2>
+			<i class="ico1"></i>
+			
+            
+                {dede:channelartlist typeid='7,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}
+        
+        </span>
+	</div>
+	<ul class=" index_boxUl">
+		
+		
+				
+			
+            {dede:arclist row='5' titlelen='150' typeid='7' }
+            
+            	<li><i class="ico4"></i>【<a href="[field:arcurl/]">[field:typename/]</a>】
+					<a href="[field:arcurl/]"
+						target="_blank" title="[field:title/]">
+						[field:title/]
+					</a></li>
+				
+{/dede:arclist} 
+				
+
+		
+	</ul>
+</div>
+
+					
+
+<div class="zxgxBox">
+	<div class="tit">
+		<h2>
+			<i class="ico1"></i>
+			
+            
+            {dede:channelartlist typeid='102,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span>
+	
+    
+    
+    </div>
+	<ul class=" index_boxUl">
+		
+		
+				 {dede:arclist row='3' titlelen='150' typeid='102' }
+				<li><i class="ico4"></i><a target="_blank"
+					href="[field:arcurl/]" title="[field:title/]">
+					[field:title/]
+				</a></li>
+				
+{/dede:arclist} 
+            
+
+				
+
+		
+		
+	</ul>
+</div>
+
+					
+
+<div class="zxgxBox">
+	<div class="tit">
+		<h2>
+			<i class="ico1"></i>
+			
+             
+               {dede:channelartlist typeid='19,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span>
+    
+    </div>
+	<ul class=" index_boxUl">
+		
+		
+				
+				 {dede:arclist row='3' titlelen='150' typeid='19' }
+				<li><i class="ico4"></i><a target="_blank"
+					href="[field:arcurl/]" title="[field:title/]">
+					[field:title/]
+				</a></li>
+				
+{/dede:arclist} 
+				
+		
+		
+	</ul>
+</div>
+
+					<div class="zxgxBox">
+						<div class="tit">
+							<h2>
+								<i class="ico1"></i>
+                                
+                                 {dede:channelartlist typeid='27,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span>
+        
+        </div>
+						
+							
+                              {dede:arclist row='3' titlelen='150' typeid='27' }
+                            
+                            	<div class="fzxyInf">
+									<div class="fzxyBord">
+										<a href="[field:arcurl/]" target="_blank">
+											[field:description function="cn_substr(@me,90)"/]... </a></div>
+									<div class="fzxyIco">
+									</div>
+									<h6>
+										[field:title/]</h6>
+								</div>
+							 {/dede:arclist}
+								
+                                
+                                
+							
+					</div>
+					<div class="cls">
+					</div>
+				</div>
+				<div class="zxgx">
+					
+
+<div class="zxgxBox">
+	<div class="tit">
+		<h2>
+			<i class="ico1"></i>
+			
+            
+            
+                           {dede:channelartlist typeid='10,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span>
+	</div>
+	<ul class=" widC  index_boxUl">
+		
+		
+				    {dede:arclist row='5' titlelen='150' typeid='10' }
+				<li><i class="ico5"></i><a target="_blank"
+					href="[field:arcurl/]" title="[field:title/]">
+					[field:title/]
+				</a></li>
+				
+			
+
+{/dede:arclist} 		
+		
+		
+	</ul>
+</div>
+
+					
+
+<div class="zxgxBox">
+	<div class="tit">
+		<h2>
+			<i class="ico1"></i>
+			  
+               {dede:channelartlist typeid='9,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span>
+	</div>
+	<ul class=" widC  index_boxUl">
+		
+		
+				
+				    {dede:arclist row='3' titlelen='150' typeid='9' }
+				<li><i class="ico5"></i><a target="_blank"
+					href="[field:arcurl/]" title="[field:title/]">
+					[field:title/]
+				</a></li>
+				
+			
+
+{/dede:arclist} 		
+		
+
+		
+		
+	</ul>
+</div>
+
+					
+
+<div class="zxgxBox">
+	<div class="tit">
+		<h2>
+			<i class="ico1"></i>
+		  {dede:channelartlist typeid='20,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span>
+	</div>
+	<ul class=" widC  index_boxUl">
+		
+		
+				
+				    {dede:arclist row='3' titlelen='150' typeid='20' }
+				<li><i class="ico5"></i><a target="_blank"
+					href="[field:arcurl/]" title="[field:title/]">
+					[field:title/]
+				</a></li>
+				
+			
+
+{/dede:arclist} 	
+		
+		
+	</ul>
+</div>
+
+					
+
+<div class="zxgxBox">
+	<div class="tit">
+		<h2>
+			<i class="ico1"></i>
+			  {dede:channelartlist typeid='13,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span>
+	</div>
+	<ul class=" widC  index_boxUl">
+		
+		
+				
+				    {dede:arclist row='3' titlelen='150' typeid='2' }
+				<li><i class="ico5"></i><a target="_blank"
+					href="[field:arcurl/]" title="[field:title/]">
+					[field:title/]
+				</a></li>
+				
+			
+
+{/dede:arclist} 	
+				
+
+		
+		
+	</ul>
+</div>
+
+						
+
+<div class="zxgxBox">
+	<div class="tit">
+		<h2>
+			  {dede:channelartlist typeid='16,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span>
+	</div>
+	<ul class=" widC  index_boxUl">
+		
+		
+				
+				    {dede:arclist row='3' titlelen='150' typeid='16' }
+				<li><i class="ico5"></i><a target="_blank"
+					href="[field:arcurl/]" title="[field:title/]">
+					[field:title/]
+				</a></li>
+				
+			
+
+{/dede:arclist} 	
+		
+		
+	</ul>
+</div>
+
+				</div>
+			</div>
+			<div class="wzpartRight">
+				<div class="zxgxBox rightbar">
+					<div class="tit">
+						<h2>
+							<i class="ico1"></i>
+                            
+                           {dede:channelartlist typeid='12,0'} 
+                            {dede:field name='typename'/}</h2>
+						<a href="{dede:field name='typeurl'/}" title="更多" class="rightbar_more"></a>
+					{/dede:channelartlist}
+                    
+                    
+                    </div>
+					<p style="max-height: 167px;">
+						在扎西持林，藏传佛教许多古老、传统的仪式仪轨仍然是僧众日常生活的组成部分。这些珍贵的传统希望能保存、延续下去，并启发、指导一代又一代修行者。</p>
+					<p class="lbord">
+					</p>
+				</div>
+				<div class="zxgxBox rightbar">
+					<div class="tit">
+						<h2>
+							<i class="ico1"></i>圣者法语</h2>
+						<a href="http://www.ptz.cc/page/menu/fa_hai_guan_lan.aspx" title="更多" class="rightbar_more">
+						</a>
+					</div>
+					<p style="max-height: 90px;">
+						大部分的人仍然不知道“佛法”修习的核心，他们认为行禅、坐禅和听闻佛法就是修行。那也没错，但这些仍只是修行的外在形式，真正…</p>
+					<p class="lbord">
+					</p>
+				</div>
+				<div class="zxgxBox rightbar">
+					<div class="tit">
+						<h2>
+							<i class="ico1"></i>显密念诵</h2>
+						<a href="http://www.ptz.cc/page/xianminiansong.aspx" title="更多" class="rightbar_more"></a>
+					</div>
+					<p>
+					<a href="http://www.ptz.cc/page/xianminiansong.aspx">
+					<img src="{dede:global.cfg_templets_skin/}/style/images/wptz_xmns.png" border="0" style="margin: 20px 10px;"/></a>
+					</p>
+					<p class="lbord">
+					</p>
+				</div>
+				<div class="zxgxBox rightbar">
+					<div class="tit">
+						<h2>
+							<i class="ico1"></i>佛教故事</h2>
+						<a href="[field:arcurl/]" title="更多" class="rightbar_more">
+						</a>
+					</div>
+					<p style="max-height: 108px;">
+						明朝万历年间，浙江桐乡的吴君平，幼年失去父母。于是淡斋四十九天，刺胸血，书写《金刚经》。夜晚，他梦见父母站在云端上，对他…</p>
+					<p class="lbord">
+					</p>
+				</div>
+				<div class="zxgxBox rightbar">
+					<div class="tit">
+						<h2>
+							<i class="ico1"></i>
+                            
+                            
+                            
+                            {dede:channelartlist typeid='21,0'} 
+                            {dede:field name='typename'/}</h2>
+						<a href="{dede:field name='typeurl'/}" title="更多" class="rightbar_more"></a>
+					{/dede:channelartlist}
+				
+                
+                
+                
+                
+                
+                	</div>
+					<p style="max-height: 108px;">
+						免疫系统：下面是健康而强大的免疫系统会遭遇的一些劲敌：膳食脂肪、咖啡因、烟草、酒精、精制食物、化学疗法、过量的糖分、疲惫…</p>
+					
+				</div>
+			</div>
+			<div class="zxclBox">
+				<div class="tit">
+					<h2>
+						<i class="ico1"></i>  {dede:channelartlist typeid='14,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span></div>
+				<ul class="zxclInf">
+					<li>
+						<div class="bookpic">
+							<a title="生命这出戏" href="@">
+							  <img alt="生命这出戏" src="{dede:global.cfg_templets_skin/}/style/images/shengm.gif"></a></div>
+						<div class="booktit">
+							<h5> 生命这出戏</h5>
+							<p>让有缘的读者获得利益，从而入解脱之道</p>
+						</div>
+					</li>
+					<li>
+						<div class="bookpic">
+							<a href="#" title="次第花开">
+						    <img src="{dede:global.cfg_templets_skin/}/style/images/wcs_cdhk.gif" alt="次第花开" /></a></div>
+						<div class="booktit">
+							<h5>
+								次第花开</h5>
+							<p>
+								上师近两年来所写的心灵随笔集。</p>
+						</div>
+					</li>
+					<li>
+						<div class="bookpic">
+							<a href="#" title="佛子心语">
+							  <img src="{dede:global.cfg_templets_skin/}/style/images/fzxy.gif" alt="佛子心语" /></a></div>
+						<div class="booktit">
+							<h5>
+								佛子心语</h5>
+							<p>
+								跟随上师的脚步，尽览 修行之路的风景。</p>
+						</div>
+					</li>
+					<li>
+						<div class="bookpic">
+							<a href="#" title="喜乐的曼达拉">
+							  <img src="{dede:global.cfg_templets_skin/}/style/images/mdl.gif" alt="喜乐的曼达拉" /></a></div>
+						<div class="booktit">
+							<h5>
+								喜乐的曼达拉</h5>
+							<p>
+								一部人物传记，但又不仅仅是一部传记。</p>
+						</div>
+					</li>
+					
+					<li>
+						<div class="bookpic">
+							<a href="#" title="">
+							  <img src="{dede:global.cfg_templets_skin/}/style/images/wcs_jjzd.gif" alt="寂静之道" /></a></div>
+						<div class="booktit">
+							<h5>
+								寂静之道</h5>
+							<p>
+								让您的心灵感受到一缕阳光、一阵清风。</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="wzpartLeft">
+			<div class="zxgx">
+				<div class="zxgxBox">
+					<div class="tit">
+						<h2>
+							<i class="ico1"></i> {dede:channelartlist typeid='28,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span></div>
+					
+						
+                       {dede:arclist row='4' titlelen='150' typeid='28' }  
+                        	<div class="fzxyInf">
+								<div class="fzxyBord">
+									<a href="[field:arcurl/]" target="_blank">
+										[field:description function="cn_substr(@me,90)"/]...</a></div>
+								<div class="fzxyIco">
+								</div>
+								<h6>
+									[field:title/]</h6>
+							</div>
+						 {/dede:arclist}
+							
+						
+				</div>
+			</div>
+			<div class="zxgx">
+				<div class="zxgxBox widAdd">
+					<div class="tit">
+						<h2>
+							<i class="ico1"></i>{dede:channelartlist typeid='26,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span></div>
+					<ul class="widB index_boxUl">
+						
+                        
+                        
+                       {dede:arclist row='2' titlelen='150' typeid='26' }  
+                        <li><i class="ico4"></i><a href="[field:arcurl/]" target="_blank"
+							title="[field:title/]">[field:title/]</a></li>
+						 {/dede:arclist}
+                    
+                    </ul>
+				</div>
+				<div class="zxgxBox widAdd">
+					<div class="tit">
+						<h2>
+							<i class="ico1"></i>{dede:channelartlist typeid='25,0'}
+               {dede:field name='typename'/}
+				
+            
+            
+            </h2>
+		<span class="more_btn">
+        
+        <a href="{dede:field name='typeurl'/}" title="更多">更多</a>
+        
+        {/dede:channelartlist}</span></div>
+					<ul class="widB index_boxUl">
+						
+								
+                                 {dede:arclist row='7' titlelen='150' typeid='79' } 
+                                <li><i class="ico5"></i><a href="[field:arcurl/]"
+									target="_blank">[field:title/]</a></li>
+							 {/dede:arclist}
+
+							
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="wzpartRight" style="padding-bottom: 10px;">
+			<div class="rightBo">
+				<h3>
+					卡昂学院官方博客</h3>
+				<p>
+					<a href="http://blog.sina.com.cn/kaangschool" target="_blank">发布卡昂学院最新动态资讯</a></p>
+				<h3>
+					上师唐巧奥萨堪布官方博客</h3>
+				<p>
+					<a href="http://blog.sina.com.cn/kaangschool" target="_blank">发布上师唐巧奥萨堪布最新弘法资讯</a></p>
+				<h3>
+					卡昂学院官方微博</h3>
+				<p>
+					<a href="http://weibo.com/tengquekb" target="_blank">发布卡昂学院最新动态资讯</a></p>
+				<h3>
+					上师唐巧奥萨堪布官方微博</h3>
+				<p>
+					<a href="http://weibo.com/tengquekb" target="_blank">发布上师唐巧奥萨堪布最新开示、弘法资讯</a></p>
+				
+			</div>
+			<div class="email">
+				<h3>
+					联系我们</h3>
+				<a href="mailto:schoolkaang@163.com">schoolkaang@163.com</a>
+				<h3>
+					佛子心语投稿</h3>
+				<a href="mailto:tengquekanbu@126.com">tengquekanbu@126.com</a>
+				<h3>
+					普贤放生</h3>
+				<a href="mailto:schoolkaang@163.com">schoolkaang@163.com</a>
+			</div>
+		</div>
+	</div>
+	<!--旧内容开始-->
+	
+	<!--背景音乐-->
+	<object type="application/x-shockwave-flash" data="http://www.ptz.cc/flash/player_mp3_maxi.swf"
+		width="1" height="1" id="monFlash">
+		<param name="movie" value="http://www.ptz.cc/flash/player_mp3_maxi.swf">
+		<param name="quality" value="high">
+		<param name="wmode" value="transparent" />
+		<param name="FlashVars" value="mp3=http://www.ptz.cc/flash/ssxz.mp3&showstop=1&loop=1&autoload=1" />
+		<p>
+		</p>
+	</object>
+
+	<script language="Javascript" type="text/javascript">
+		var Player = function() {
+			$j("#musiclistDIV").hover(
+				  function(e) {
+				  	//Player.showPlayList(e);
+				  },
+				  function() {
+				  	Player.hidenPlayList();
+				  }
+				);
+			var isshow = false;
+			var soundlist = [
+						{ name: "上师心咒(女声)", url: "http://www.ptz.cc/flash/ssxz.mp3" },
+						{ name: "大加持云(法王)", url: "http://www.ptz.cc/flash/fw_djcy.mp3" },
+						{ name: "上师祈祷文(女声)", url: "http://www.ptz.cc/flash/qdw_w.mp3" },
+						{ name: "上师祈祷文(男声)", url: "http://www.ptz.cc/flash/qdw_m.mp3" }
+					];
+			return {
+				bulidList: function() {
+					var html = "";
+					var id = 1;
+					if ($j.cookie("soundlistid")) {
+						id = $j.cookie("soundlistid");
+					}
+					else {
+						id = 1;
+					}
+					for (var i = 0; i < soundlist.length; i++) {
+						if (id == (i + 1)) {
+							html += "[<a href='" + soundlist[i].url + "' target='_blank' style='color: #ffff00;'>下载</a>]<a href='javascript:Player.play(" + (i + 1) + ");' class='a'  title='当前选择了" + soundlist[i].name + "'>" + soundlist[i].name + "</a> √<br />";
+						}
+						else {
+							html += "[<a href='" + soundlist[i].url + "' target='_blank' style='color: #ffff00;'>下载</a>]<a href='javascript:Player.play(" + (i + 1) + ");' class='a'  title='播放" + soundlist[i].name + "'>" + soundlist[i].name + "</a><br />";
+						}
+					};
+					$j("#musiclistHTML").html(html);
+				},
+				showPlayList: function(event) {
+					if (isshow) return;
+					isshow = true;
+					$j("#musiclistDIV").slideDown(200);
+				},
+				hidenPlayList: function() {
+					if (!isshow) return;
+					isshow = false;
+					$j("#musiclistDIV").slideUp(100);
+				},
+				stop: function() {
+					Player.hidenPlayList();
+					Player.bulidList();
+					try {
+						$j.cookie('soundstop', "yes");
+						$j("#soundTd").html("  <img src='{dede:global.cfg_templets_skin/}/style/images/01.gif'  align='absmiddle' onclick='Player.play(-1);' style='cursor: pointer;' title='播放音乐'> <a href='#'  style='padding:0px' onmouseover='Player.showPlayList(event)'>音乐列表</a>");
+						$j("#jingyin").html("");
+						document.getElementById("monFlash").SetVariable("player:jsStop", "");
+					} catch (e) { ; }
+				},
+				play: function(sid) {
+					Player.hidenPlayList();
+					var id = sid || 0;
+					try {
+						if (id == 0 && $j.cookie('soundstop') == "yes") {
+							Player.stop();
+							return;
+						};
+						if (id <= 0) {
+							if ($j.cookie("soundlistid")) {
+								id = $j.cookie("soundlistid");
+							}
+							else {
+								id = 1;
+							}
+						}
+						$j("#soundTd").html("  <img src='{dede:global.cfg_templets_skin/}/style/images/wptz31.gif'  align='absmiddle' onclick='Player.stop();' style='cursor: pointer;' title='关闭音乐'> <a href='#'  style='padding:0px'  onmouseover='Player.showPlayList(event)'>音乐列表</a>");
+						$j("#jingyin").html("[静音]");
+						$j.cookie('soundlistid', id);
+						$j.cookie('soundstop', "no");
+						Player.bulidList();
+						document.getElementById("monFlash").SetVariable("player:jsUrl", soundlist[id - 1].url);
+						if (!sid) {
+							window.setTimeout(function() { Player.go(); }, 3000);
+						}
+						else {
+							window.setTimeout(function() { Player.go(); }, 100);
+						}
+
+					} catch (e) { ; }
+				},
+				go: function() {
+					document.getElementById("monFlash").SetVariable("player:jsPlay", "");
+				}
+			}
+		} ();
+		$j(document).ready(function() { Player.play(); });
+
+		//上师法相更换
+		var ImgPlayer = function() {
+			var imglist = [
+						{ name: "1", url: "url({dede:global.cfg_templets_skin/}/style/images/img/1.jpg)" },
+						{ name: "2", url: "url({dede:global.cfg_templets_skin/}/style/images/img/2.jpg)" },
+						{ name: "3", url: "url({dede:global.cfg_templets_skin/}/style/images/img/3.jpg)" },
+						{ name: "4", url: "url({dede:global.cfg_templets_skin/}/style/images/img/4.jpg)" },
+						{ name: "5", url: "url({dede:global.cfg_templets_skin/}/style/images/img/5.jpg)" },
+						{ name: "6", url: "url({dede:global.cfg_templets_skin/}/style/images/img/6.jpg)" },
+						{ name: "7", url: "url({dede:global.cfg_templets_skin/}/style/images/img/7.jpg)" },
+						{ name: "8", url: "url({dede:global.cfg_templets_skin/}/style/images/img/8.jpg)" },
+						{ name: "9", url: "url({dede:global.cfg_templets_skin/}/style/images/img/9.jpg)" },
+						{ name: "10", url: "url({dede:global.cfg_templets_skin/}/style/images/img/10.jpg)" },
+						{ name: "11", url: "url({dede:global.cfg_templets_skin/}/style/images/img/11.jpg)" },
+						{ name: "12", url: "url({dede:global.cfg_templets_skin/}/style/images/img/12.jpg)" },
+						{ name: "13", url: "url({dede:global.cfg_templets_skin/}/style/images/img/13.jpg)" },
+						{ name: "14", url: "url({dede:global.cfg_templets_skin/}/style/images/img/14.jpg)" },
+						{ name: "15", url: "url({dede:global.cfg_templets_skin/}/style/images/img/15.jpg)" }
+					];
+			var thisimgindex = 0;
+			return {
+				next: function() {
+					thisimgindex++;
+					if (thisimgindex >= imglist.length) thisimgindex = 0;
+					$j(".part_oneBg").animate({ opacity: '0' }, 1000, function() {
+						$j(".part_oneBg").css('background-image', imglist[thisimgindex].url);
+						$j(".part_oneBg").animate({ opacity: '1' }, 1200);
+						ImgPlayer.play();
+					});
+				},
+				play: function(sid) {
+					window.setTimeout(function() { ImgPlayer.next(); }, 1000 * 7);
+				}
+			}
+		} ();
+		$j(document).ready(function() { ImgPlayer.play(); });
+
+		
+	</script>
+
+<script>	//视频
+	var scrollPic_02 = new ScrollPic();
+	scrollPic_02.scrollContId = "scrollCont1"; //内容容器ID
+	scrollPic_02.arrLeftId = "scrollArrLeft1"; //左箭头ID
+	scrollPic_02.arrRightId = "scrollArrRight1"; //右箭头ID
+
+	scrollPic_02.frameWidth = 310; //显示框宽度
+	scrollPic_02.pageWidth = 310; //翻页宽度
+
+	scrollPic_02.speed = 20; //移动速度(单位毫秒，越小越快)
+	scrollPic_02.space = 31; //每次移动像素(单位px，越大越快)
+
+	//scrollPic_02.autoPlay = no; //自动播放
+	//scrollPic_02.autoPlayTime = 100000000; //自动播放间隔时间(秒)
+
+	scrollPic_02.initialize(); //初始化
+</script>
+
+<script>	//微视频
+	var scrollPic_02 = new ScrollPic();
+	scrollPic_02.scrollContId = "scrollCont2"; //内容容器ID
+	scrollPic_02.arrLeftId = "scrollArrLeft2"; //左箭头ID
+	scrollPic_02.arrRightId = "scrollArrRight2"; //右箭头ID
+
+	scrollPic_02.frameWidth = 200;
+	scrollPic_02.pageWidth = 200;
+
+	scrollPic_02.speed = 20;
+	scrollPic_02.space = 20;
+
+	//scrollPic_02.autoPlay = no; //自动播放
+	//scrollPic_02.autoPlayTime = 100000000; //自动播放间隔时间(秒)
+
+	scrollPic_02.initialize(); //初始化
+
+</script>
+
+<div id="dateBox">
+	<div class="dateBoxTBg2">
+	</div>
+	<div class="footpic">
+	</div>
+</div>
+
+		</div>		
+
+{dede:include filename="footer.htm"/}
+
+<embed src="http://www.ptz.cc/flash/ssxz.mp3" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="1" height="1"></embed>
+</body>
+</html>

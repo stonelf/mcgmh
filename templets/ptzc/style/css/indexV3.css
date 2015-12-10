@@ -1,0 +1,1249 @@
+﻿ @charset "utf-8";
+body {
+	background: url("img/wptz_bg.gif") repeat scroll 0 0 #FFFFFF;
+	color: #323325;
+	font: 12px "Microsoft Yahei", Arial, Helvetica, sans-serif;
+}
+#main {
+	background: url("img/wptz01.gif") repeat-x scroll 0 0 transparent;
+	min-width: 1006px;
+	width: 100%;
+}
+#hdban {
+	background: url("img/wptz03.jpg") no-repeat scroll center top transparent;
+	height: 250px;
+	padding: 0 26px 0 0;
+	text-align: right;
+	width: 980px;
+}
+#hdban a {
+	color: #FFFFFF;
+	display: inline-block;
+	height: 18px;
+	line-height: 18px;
+	padding: 0 5px;
+}
+#hdcloud {
+	background: url("img/wptz21.png") no-repeat scroll 0 0 transparent;
+	height: 55px;
+	left: -87px;
+	position: absolute;
+	top: 90px;
+	width: 197px;
+}
+#topbg {
+	background: url("img/wptz02.jpg") repeat-x scroll center top transparent;
+	height: 200px;
+}
+.topbgcon {
+	background: url("img/wptz04.png") no-repeat scroll left top transparent;
+	height: 90px;
+	margin-left: 140px;
+	overflow: hidden;
+	padding-top: 110px;
+	position: relative;
+	width: 740px;
+}
+.topbgcon ul {
+	height: 80px;
+	left: 0;
+	padding: 5px 0;
+	position: relative;
+	top: 0;
+	width: 740px;
+}
+.topbgcon li {
+	float: left;
+	height: 80px;
+	margin: 0 3px 0 4px;
+	width: 60px;
+}
+.topbgcon li a {
+	float: left;
+	height: 80px;
+	width: 60px;
+}
+.topbgcon img {
+	float: left;
+	height: 80px;
+	width: 60px;
+}
+.topbgconL, .topbgconR {
+	background: url("img/cover4.png") no-repeat scroll 0 0 transparent;
+	overflow: hidden;
+	position: absolute;
+	z-index: 100;
+}
+.topbgconL {
+	background-position: 0 0;
+	height: 80px;
+	left: 0;
+	top: 115px;
+	width: 150px;
+}
+.topbgconR {
+	background-position: 0 -80px;
+	height: 80px;
+	right: 0;
+	top: 115px;
+	width: 150px;
+}
+#nrbox {
+	background: url("img/wptz05.gif") repeat-x scroll 0 0 transparent;
+	clear: both;
+	overflow: hidden;
+}
+.nrban {
+	height: 90px;
+	margin: 13px auto 0;
+	position: relative;
+	width: 1006px;
+}
+.nrbanL {
+	left: -75px;
+	position: absolute;
+	top: 3px;
+}
+.nrbanR {
+	position: absolute;
+	right: -75px;
+	top: 3px;
+}
+.nrbanC {
+	height: 87px;
+	left: 12px;
+	position: absolute;
+	width: 982px;
+}
+.nrbanC_line {
+	width: 982px;
+	border: 1px solid #b9371d;
+	border-left: none;
+	border-right: none;
+	height: 3px;
+	position: absolute;
+	left: 12px;
+	top: 43px;
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;
+}
+.nrbanC_nav {
+	float: left;
+	font-size: 18px;
+	height: 43px;
+	line-height: 43px;
+	width: 900px;
+}
+.nrbanC_nav li {
+	display: inline;
+	float: left;
+}
+.nrbanC_nav li a {
+	color: #FFFFFF;
+	display: inline-block;
+	padding: 0 22px 0 23px;
+	text-align: center;
+}
+.nrbanC_nav li a:hover {
+	background: url("img/wptz09.jpg") no-repeat scroll center top transparent;
+	color: #FFFFFF;
+}
+.nrbanC_nav li a.only {
+	padding: 0 18px;
+}
+.nrbanC_nav li a.only:hover {
+	background: url("img/wptz10.jpg") no-repeat scroll center top transparent;
+	color: #FFFFFF;
+}
+.nrbanC_nav .cur {
+	background: url("img/wptz09.jpg") no-repeat scroll 0 0 transparent;
+	text-decoration: none;
+}
+.subNav {
+	display: none;
+	height: 38px;
+	overflow: hidden;
+	position: absolute;
+	top: 44px;
+	z-index: 100;
+}
+.subNav .subL {
+	background: url("img/wptz11l.png") no-repeat scroll 0 0 transparent;
+}
+.subNav .subR {
+	background: url("img/wptz11l.png") no-repeat scroll -10px 0 transparent;
+}
+.subNav span {
+	display: inline-block;
+	float: left;
+	height: 38px;
+	width: 10px;
+}
+.subNav ul {
+	background: url("img/wptz11.png") repeat-x scroll 0 0 transparent;
+	float: left;
+	height: 38px;
+	line-height: 35px;
+	overflow: hidden;
+}
+.subNav li.last {
+	background: none repeat scroll 0 0 transparent;
+}
+.subNav li {
+	background: url("img/wptz14.png") no-repeat scroll right 11px transparent;
+	float: left;
+	height: 38px;
+	overflow: hidden;
+}
+.subNav li a {
+	color: #FDFF32;
+	display: inline-block;
+	font: bold 15px/35px "微软雅黑";
+	padding: 0 12px;
+}
+.subNav li a:hover {
+	background: none repeat scroll 0 0 transparent;
+	color: #FFFFFF;
+}
+.subNavL1 {
+	left: 0;
+}
+.subNavL2 {
+	left: 100px;
+}
+.subNavL3 {
+	left: 250px;
+}
+.subNavL4 {
+	right: 350px;
+}
+.subNavL5 {
+	right: 280px;
+}
+.english {
+	left: 60px;
+	top: 5px;
+	color: #FFFFFF;
+	font-size: 14;
+}
+.radio {
+	position: absolute;
+	right: 18px;
+	top: 57px;
+	z-index: 1;
+}
+.radio a {
+	color: #E57451;
+	font-size: 14px;
+	vertical-align: middle;
+}
+.ss {
+	height: 26px;
+	left: 18px;
+	line-height: 23px;
+	position: absolute;
+	top: 55px;
+	z-index: 1;
+}
+.ss input {
+	float: left;
+}
+.sstxtl {
+	background: url("img/wptz_ssl.gif") no-repeat scroll 0 0 transparent;
+	display: inline-block;
+	float: left;
+	height: 26px;
+	width: 12px;
+}
+.sstxt {
+	background: url("img/wptz_ssm.gif") repeat-x scroll 0 0 transparent;
+	border: medium none;
+	color: #E57451;
+	font-size: 14px;
+	height: 26px;
+	line-height: 26px;
+	padding: 0 10px;
+	width: 660px;
+}
+.ssbtn {
+	background: url("img/wptz_ssr.gif") no-repeat scroll 0 0 transparent;
+	border: medium none;
+	cursor: pointer;
+	height: 26px;
+	width: 26px;
+}
+.ssBoxC {
+	margin: 2px 0;
+	overflow: hidden;
+}
+.part_one {
+	background: url("img/wptz15.png") no-repeat scroll 0 0 transparent;
+	height: 299px;
+	margin: 0 auto;
+	padding: 0 10px;
+	position: relative;
+	width: 986px;
+}
+.part_oneBg {
+	background: none no-repeat scroll right top transparent;
+	float: left;
+	height: 274px;
+	margin-top: 25px;
+	width: 290px;
+}
+.ss01 {
+	background-image: url("img/1.jpg");
+}
+.part_oneT {
+	bottom: 10px;
+	color: #FFFFFF;
+	font-size: 18px;
+	height: 26px;
+	margin: 7px 0 0;
+	overflow: hidden;
+	position: absolute;
+	right: 20px;
+}
+.part_oneT .titC {
+	background: url("img/figureBarC.png") repeat-x scroll 0 0 transparent;
+	color: #FFFFFF;
+	float: left;
+	font-size: 14px;
+	height: 26px;
+	line-height: 24px;
+	padding: 0 0 0 3px;
+}
+.part_oneT .titL {
+	background: url("img/figureBar.png") no-repeat scroll 0 0 transparent;
+	float: left;
+	height: 26px;
+	width: 18px;
+}
+.part_oneT .titR {
+	background: url("img/figureBarR.png") no-repeat scroll 0 0 transparent;
+	float: left;
+	height: 26px;
+	width: 13px;
+}
+.part_oneBox {
+	float: left;
+	height: 260px;
+	overflow: hidden;
+	padding: 39px 0 0 37px;
+	width: 310px;
+}
+.part_oneBox .tit {
+	height: 30px;
+}
+.part_oneBox h2 {
+	color: #BF340B;
+	float: left;
+	font-size: 19px;
+}
+.part_oneBox span {
+	padding: 0 28px 0 10px;
+}
+.part_oneBox ul {
+	font-size: 14px;
+	padding-top: 15px;
+	width: 300px;
+}
+.part_oneBox li {
+	background: url("img/hd_line.png") repeat-x scroll 0 0 transparent;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.part_oneBox li a:hover {
+	color: #333330;
+	text-decoration: none;
+}
+.part_oneBox p {
+	color: #333330;
+	font-size: 14px;
+	line-height: 26px;
+	overflow: hidden;
+	padding: 10px 10px 13px 23px;
+}
+.part_stzq {
+	background: url("img/wptz16.png") no-repeat scroll 0 0 transparent;
+	height: 123px;
+	margin: 0 auto;
+	width: 1006px;
+}
+.part_stzqXq {
+	color: #FFFFFF;
+	font-size: 16px;
+	height: 40px;
+	padding: 15px 100px;
+	text-align: center;
+}
+.part_stzqXq a {
+	color: #FFED00;
+}
+.part_stzqT {
+	height: 33px;
+	padding: 20px 47px 0;
+}
+.part_stzq h2 {
+	color: #FFFFFF;
+	float: left;
+	font-size: 19px;
+}
+.part_stzq span {
+	padding: 0 28px 0 10px;
+}
+.part_stzqInf {
+	background: url("img/wptz18t.png") no-repeat scroll 0 0 transparent;
+	height: 230px;
+	margin: 0 auto;
+	padding: 22px 46px 0;
+	width: 916px;
+}
+.part_stzqInf .spScr {
+	float: left;
+	height: 230px;
+	overflow: hidden;
+	position: relative;
+	width: 310px;
+}
+.spScr .Cont {
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 310px;
+}
+.spScr .Cont li {
+	background: none repeat scroll 0 0 #FFFFFF;
+	display: inline;
+	float: left;
+	height: 230px;
+	width: 310px;
+}
+.spScr .Cont li dt {
+	height: 185px;
+	position: relative;
+	width: 310px;
+}
+.spScr .Cont li dt img {
+	height: 185px;
+	width: 310px;
+}
+.spScr .Cont li dt p {
+	border: 2px solid #A91E00;
+	bottom: 2px;
+	color: #FFFFFF;
+	display: inline-block;
+	font: bold 14px "微软雅黑";
+	height: 32px;
+	line-height: 32px;
+	left: 3px;
+	position: absolute;
+	width: 296px;
+	padding-left: 5px;
+	background: rgba(169, 60, 30, 0.6) !important; /* IE无效，FF有效 */
+	background: #a93c1e;
+	filter: alpha(opacity=60);
+ opacity=60
+}
+.spScr .Cont li dt p span {
+	position: relative;
+}
+.spScr .Cont li dt p a.openvedio {
+	background: url("img/wptz40.png") no-repeat scroll 0 0 transparent;
+	display: inline-block;
+	height: 26px;
+	position: absolute;
+	right: 5px;
+	top: 4px;
+	width: 26px;
+}
+.part_stzqInf .vspScr {
+	float: left;
+	height: 215px;
+	margin: 0 12px 0 24px;
+	overflow: hidden;
+	position: relative;
+	width: 200px;
+}
+.vspScr .Cont {
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 200px;
+}
+.vspScr .Cont li {
+	background: none repeat scroll 0 0 #FFFFFF;
+	display: inline;
+	float: left;
+	height: 215px;
+	width: 200px;
+}
+.vspScr .Cont li dt {
+	height: 185px;
+	position: relative;
+	width: 200px;
+}
+.vspScr .Cont li dt img {
+	height: 185px;
+	width: 200px;
+}
+.vspScr .Cont li dt p {
+	border: 2px solid #A91E00;
+	bottom: 2px;
+	color: #FFFFFF;
+	display: inline-block;
+	font: bold 14px "微软雅黑";
+	height: 32px;
+	line-height: 32px;
+	left: 2px;
+	position: absolute;
+	width: 186px;
+	padding-left: 5px;
+	background: rgba(169, 60, 30, 0.6) !important; /* IE无效，FF有效,兼容背景色透明，文字不透明 */
+	background: #a93c1e;
+	filter: alpha(opacity=60);
+ opacity=60
+}
+.vspScr .Cont li dt p span {
+	position: relative;
+}/* IE无效，FF有效,兼容背景色透明，文字不透明 */
+.vspScr .Cont li dt p a.openvedio {
+	background: url("img/wptz40.png") no-repeat scroll 0 0 transparent;
+	display: inline-block;
+	height: 26px;
+	position: absolute;
+	right: 5px;
+	top: 4px;
+	width: 26px;
+}
+.Cont li dd {
+	background: url("img/music_txtbg.gif") repeat-x scroll 0 1px transparent;
+	height:22px;
+	overflow: hidden;
+	padding:8px 0 5px 10px;
+}
+.Cont #List1, .Cont #List2 {
+	float: left;
+}
+.ContListR {
+	height:22px;
+	line-height:22px;
+	overflow: hidden;
+}
+.ContListR .byte {
+	color: #C34119;
+	display: block;
+	float: left;
+	height: 22px;
+	line-height: 20px;
+}
+.ContListR span {
+	padding: 0;
+}
+.ContListR .dl_btn {
+	background: url("img/dlBg.png") no-repeat scroll 0 0 transparent;
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	font-size: 14px;
+	height: 22px;
+	margin: 0px 0 0 -2px;
+	text-align: center;
+	width: 75px;
+}
+.ContListR .dl_btn a, .dl_btn a:hover {
+	color: #FFFFFF;
+}
+a.LeftBotton {
+	background: url("img/wptz44.png") no-repeat scroll 0 0 transparent;
+	cursor: pointer;
+	height: 41px;
+	left: 0;
+	position: absolute;
+	top: 66px;
+	width: 31px;
+	z-index: 100;
+}
+a.LeftBotton:hover {
+	background: url("img/wptz44_h.png") no-repeat scroll 0 0 transparent;
+	left: 0;
+	top: 66px;
+}
+a.RightBotton {
+	background: url("img/wptz44.png") no-repeat scroll -50px 0 transparent;
+	cursor: pointer;
+	height: 41px;
+	position: absolute;
+	right: 0;
+	top: 66px;
+	width: 31px;
+	z-index: 100;
+}
+a.RightBotton:hover {
+	background: url("img/wptz44_h.png") no-repeat scroll -50px 0 transparent;
+	right: 0;
+	top: 66px;
+}
+.part_stzqInf .spTab {
+	float: left;
+	height: 209px;
+	overflow: hidden;
+	width: 365px;
+	padding-top: 3px;
+}
+.spTabmenu {
+	float: left;
+	overflow: hidden;
+	padding: 0 5px;
+	width: 115px;
+}
+.spTabmenu ul {
+	height: 209px;
+	width: 114px;
+}
+.spTabmenu li {
+	background: url("img/hd_line.png") repeat-x;
+	color: #B63518;
+	cursor: pointer;
+	font: bold 14px/29px "微软雅黑";
+	height: 30px;
+	overflow: hidden;
+	padding: 0 0 0 14px;
+	width: 100px;
+}
+.spTabmenu li.hover {
+	background: url("img/wptz38.gif") no-repeat scroll 0 0 transparent;
+	color: #FFFFFF;
+	width: 100px;
+}
+.spTabcon {
+	background: url("img/music_spicbg.gif") no-repeat scroll 0 9px transparent;
+	float: left;
+	height: 209px;
+	position: relative;
+	width: 238px;
+}
+.spTabcon .spic img {
+	height: 90px;
+	margin: 52px 0 0 52px;
+	width: 70px;
+}
+.spTabcon .slist {
+	font-size: 14px;
+	height: 209px;
+	left: 0;
+	overflow-y: scroll;
+	padding: 0 10px 0 5px;
+	position: absolute;
+	text-align: left;
+	top: 0;
+	width: 223px;
+	z-index: 100;
+}
+.spTabcon .slist li {
+	background: url("img/hd_line.png") repeat-x;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	padding: 0 5px;
+}
+.spTabcon .slist li a {
+	color: #625E57;
+}
+.spTabcon .slist li a:hover {
+	color: #C34119;
+}
+#wzpart {
+	background: url("img/bd_selBg.png") repeat-y scroll 0 0 transparent;
+	clear: both;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	width: 1006px;
+}
+.wzpartRound {
+	background: url("img/bd_selTop.png") no-repeat scroll 0 0 transparent;
+	height: 61px;
+	margin: 0 auto;
+	width: 1006px;
+}
+.wzpartTop {
+	background: url("img/wptz22.gif") no-repeat scroll 0 0 transparent;
+	height: 31px;
+	margin: 0 auto;
+	width: 946px;
+}
+.wzpartFuo {
+	background: url("img/windex_ta.png") no-repeat scroll 52px 450px transparent;
+	width: 1006px;
+}
+.wzpartPic {
+	height: 204px;
+	padding: 0 0 20px 46px;
+	text-align: center;
+	width: 960px;
+}
+.wzpartPic li {
+	float: left;
+	margin-right: 24px;
+	overflow: hidden;
+	width: 162px;
+}
+.wzpartPic li p{
+	background: url("img/wptz26.gif") no-repeat scroll 0 0 transparent;
+	height: 136px;
+	padding: 13px;
+	width: 136px;
+	position:relative;
+}
+
+.wzpartPic li p img {
+	height: 136px;
+	width: 136px;
+}
+.wzpartPic li p a var.ztxt{color: #FFF;
+    height:24px;
+ 	position: absolute;	
+	left:13px;
+	bottom:13px;
+	background: rgba(34, 34, 34, 0.6) !important; /* IE无效，FF有效 */
+	background: #222;
+	filter: alpha(opacity=60);
+	opacity:60;
+	font-style:normal;
+	width:136px;
+	display:none;
+	overflow:hidden;
+}
+.wzpartPic li p a:hover var.ztxt{ display:block;}
+.wzpartPic li p a var.ztxt span{ position:relative;height:24px;line-height:24px;overflow:hidden; display:block}
+.wzpartPic li a.ztitle {
+	background: url("img/wptz32.gif") repeat-x scroll 0 0 transparent;
+	border: 1px solid #F9CDBA;
+	border-radius: 5px 5px 5px 5px;
+	color: #C34119;
+	display: inline-block;
+	font-size: 14px;
+	height: 21px;
+	margin: 7px auto;
+	overflow: hidden;
+	width: 105px;
+}
+.wzpartPic li a.ztitle:hover {
+	background: url("img/wptz33.gif") repeat-x scroll 0 0 transparent;
+	color: #FFFFFF;
+}
+.wzpartLeft {
+	display: inline;
+	float: left;
+	overflow: hidden;
+	padding: 0 34px 0 15px;
+	width: 686px;
+}
+.wzpartLeft .zxgx {
+	float: left;
+	padding: 0 0 0 33px;
+	width: 310px;
+}
+.zxgxBox {
+	display: inline-block;
+	margin-bottom: 55px;
+}
+.zxgxBox .tit {
+	height: 26px;
+}
+.zxgxBox h2 {
+	color: #C34119;
+	float: left;
+	font-size: 20px;
+}
+.zxgxBox span {
+	padding: 0 28px 0 10px;
+}
+.zxgxBox ul {
+	width: 310px;
+}
+.zxgxBox dl {
+	float: left;
+	font-size: 14px;
+	margin-right: 8px;
+	padding-top: 5px;
+	width: 200px;
+}
+.zxgxBox dt {
+	color: #981C00;
+	height: 21px;
+	padding: 13px 0 0 25px;
+}
+.zxgxBox dd {
+	background: url("img/hd_line.png") repeat-x scroll 0 0 transparent;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+}
+.zxgxBox dd a {
+	color: #333330;
+}
+.zxgxBox dd a:hover {
+	color: #333330;
+	text-decoration: none;
+}
+.zxclBox {
+	clear: both;
+	margin: 0 auto 55px;
+	overflow: hidden;
+	width: 912px;
+}
+.zxclBox .tit {
+	height: 30px;
+	margin: 0 0 4px;
+}
+.zxclBox h2 {
+	color: #BF340B;
+	float: left;
+	font-size: 19px;
+}
+.zxclBox span {
+	padding: 0 28px 0 10px;
+}
+.zxclBox .more_btn {
+	margin-right: 605px;
+}
+.zxclBox ul {
+	float: left;
+	font-size: 14px;
+	padding-top: 5px;
+}
+.zxclBox li a {
+	color: #333330;
+}
+.zxclBox li a:hover {
+	color: #333330;
+	text-decoration: none;
+}
+.zxclInf {
+	background: url("img/wbookrack.png") no-repeat scroll 0 54px transparent;
+	height: 100px;
+	padding-left: 17px;
+	width: 895px;
+}
+.zxclInf li {
+	display: inline;
+	float: left;
+	height: 74px;
+	width: 179px;
+}
+.zxclInf .bookpic {
+	background: url("img/wptz29.gif") no-repeat scroll 0 0 transparent;
+	float: left;
+	height: 70px;
+	padding: 5px 0 0 2px;
+	width: 58px;
+}
+.zxclInf .bookpic img {
+	height: 70px;
+	width: 50px;
+}
+.zxclInf .booktit {
+	float: left;
+	padding: 10px 7px 0 3px;
+	width: 109px;
+}
+.zxclInf h5 {
+	color: #BF350C;
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+}
+.zxclInf p {
+	color: #7F7F78;
+	font-size: 12px;
+	height: 28px;
+	line-height: 14px;
+	overflow: hidden;
+}
+.fzxyInf {
+	display: inline;
+	float: left;
+	margin: 9px 0 7px 21px;
+	position: relative;
+}
+.fzxyBord {
+	border: 1px solid #EBB59D;
+	color: #4C4C48;
+	font-size: 14px;
+	height: 36px;
+	line-height: 18px;
+	overflow: hidden;
+	padding: 6px 15px;
+	width: 254px;
+}
+.fzxyInf h6 {
+	color: #000000;
+	font-size: 14px;
+	height: 18px;
+	margin-top: 8px;
+	overflow: hidden;
+	width: 177px;
+}
+.fzxyIco {
+	background-position: 0 -177px;
+	height: 9px;
+	position: absolute;
+	top: 49px;
+	width: 8px;
+}
+.wzpartRight {
+	background: url("img/wptz24.png") no-repeat scroll 0 0 transparent;
+	display: inline;
+	float: left;
+	overflow: hidden;
+	padding: 0 35px 0 15px;
+	width: 203px;
+}
+.wzpartRightbg {
+	background-position: -1px 0;
+}
+.wzpartRightbo {
+	background: url("img/wptz30.png") no-repeat scroll -1px 0 transparent;
+	display: inline;
+	float: left;
+	overflow: hidden;
+	padding: 0 35px 0 15px;
+	width: 203px;
+}
+.wzpartRight .email {
+	padding-left: 21px;
+	width: 203px;
+}
+.wzpartRight .email h3 {
+	color: #BF340B;
+	font-size: 14px;
+	height: 25px;
+	padding: 7px 0 0;
+}
+.rightbar, .rightBo {
+	margin-bottom: 15px;
+	width: 203px;
+}
+.rightbar_more {
+	background: url("img/wptz23.png") no-repeat scroll 0 0 transparent;
+	cursor: pointer;
+	display: block;
+	float: right;
+	height: 15px;
+	margin-top: 5px;
+	width: 19px;
+}
+.rightbar p {
+	font-size: 13px;
+	line-height: 18px;
+	margin: 8px 0 16px 21px;
+	overflow: hidden;
+}
+.rightbar p.lbord {
+	background: url("img/hd_line.png") repeat-x scroll center bottom transparent;
+	display: block;
+	height: 1px;
+	margin: 0;
+	overflow: hidden;
+}
+.rightbar h2 {
+	font-size: 18px;
+}
+.rightbar h3 {
+	color: #BF350C;
+	font-size: 14px;
+	margin-left: 21px;
+}
+.rightBo p {
+	background: url("img/hd_line.png") repeat-x scroll center bottom transparent;
+	font-size: 13px;
+	line-height: 18px;
+	margin: 0 0 15px 21px;
+	padding: 2px 0 6px;
+}
+.rightBo h3 {
+	color: #BF350C;
+	font-size: 16px;
+	margin-left: 21px;
+}
+#dateBox {
+	margin: 0 auto;
+	position: relative;
+	width: 1006px;
+}
+.dateBoxTBg5 {
+	background: url("img/bottom_date5.png") no-repeat scroll 0 -50px transparent;
+	padding: 1px 11px 70px;
+	width: 984px;
+}
+.dateBoxTBg5 ul {
+	color: #A23117;
+	font: 18px/55px Arial;
+	height: 55px;
+	overflow: hidden;
+	padding: 0 29px 5px;
+	white-space: nowrap;
+	width: 926px;
+	word-break: break-all;
+}
+.dateBoxTBg5 li {
+	float: left;
+	height: 55px;
+	line-height: 55px;
+	padding: 4px 10px 0;
+	text-align: center;
+}
+.hd_height1 {
+	height: 438px;
+}
+.dateSmleft {
+	background-position: -9px -405px;
+	float: left;
+	height: 12px;
+	margin: 10px 10px 0 20px;
+	width: 8px;
+}
+.dateSmright {
+	background-position: -9px -447px;
+	float: right;
+	height: 12px;
+	margin: 10px 20px 0 10px;
+	width: 8px;
+}
+.dateSmL {
+	background: url("img/dataSmBarL.gif") no-repeat scroll 0 0 transparent;
+	display: block;
+	float: left;
+	height: 33px;
+	width: 20px;
+}
+.dateSmR {
+	background: url("img/dataSmBarR.gif") no-repeat scroll 0 0 transparent;
+	display: block;
+	float: right;
+	height: 33px;
+	width: 20px;
+}
+.dateSmTr {
+	background: url("img/dataSmBarC.gif") repeat-x scroll 0 0 transparent;
+	height: 33px;
+}
+.dateSmC {
+	font-size: 14px;
+	font-weight: bold;
+	height: 33px;
+	line-height: 33px;
+	margin: 0 10px;
+	text-align: center;
+}
+.dateSmC a {
+	color: #FFFEF1;
+}
+.dateSmC a:hover {
+	color: #FFFEF1;
+}
+.dateSmBox {
+	color: #FFFEF1;
+	display: table;
+	line-height: 33px;
+	margin: -2px auto 0;
+	position: relative;
+	text-align: center;
+}
+.dateStack .up {
+	background-position: -6px -304px;
+	bottom: 0;
+	height: 9px;
+	left: 485px;
+	position: absolute;
+	width: 13px;
+}
+.dateSmBox a {
+	color: #FFFEF1;
+}
+.dateSmBox a:hover {
+	color: #FFFEF1;
+	text-decoration: none;
+}
+.dateOpBox {
+	margin: -2px auto 0;
+	position: relative;
+	width: 950px;
+}
+.dateOpBox .down {
+	background-position: -6px -321px;
+	height: 9px;
+	left: 465px;
+	position: absolute;
+	top: 0;
+	width: 13px;
+}
+.dateOpBox .dateOpT {
+	background: url("img/dateOpT.gif") repeat-x scroll 0 0 #B75736;
+	padding: 25px 0;
+	width: 950px;
+}
+.dateOpBox .dateOpF {
+	background: url("img/dataOpF.png") no-repeat scroll 0 0 transparent;
+	height: 10px;
+	width: 950px;
+}
+.dateOpBar {
+	background: url("img/dataOpBar.png") no-repeat scroll 0 0 transparent;
+	color: #FFFEF1;
+	height: 33px;
+	line-height: 33px;
+	margin: -2px auto 0;
+	text-align: center;
+	width: 213px;
+}
+.dateOpBar span {
+	float: left;
+	text-align: center;
+	width: 134px;
+}
+.dateOpBar a {
+	color: #FFFEF1;
+}
+.dateOpBar a:hover {
+	color: #FFFEF1;
+	text-decoration: none;
+}
+.dateOpBox h3, .dateOpBox p {
+	color: #FFFFFF;
+	margin: 0 auto;
+	text-align: center;
+	width: 690px;
+}
+.dateOpBox h3 {
+	font-size: 18px;
+	line-height: 36px;
+}
+.dateOpBox p {
+	font-size: 14px;
+	line-height: 24px;
+}
+.a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.ggBox {
+	margin: 0 auto;
+	position: relative;
+	width: 654px;
+	z-index: 9999;
+}
+.notice {
+	color: #FFFFFF;
+	font-size: 14px;
+	height: 48px;
+	left: 11px;
+	line-height: 24px;
+	overflow: hidden;
+	padding: 8px 0 0;
+	position: absolute;
+	text-align: center;
+	top: 253px;
+	width: 654px;
+}
+.notice font {
+	font-size: 14px;
+	margin-right: 10px;
+}
+.notice a {
+	color: yellow;
+}
+.notice a:hover {
+	color: yellow;
+	text-decoration: underline;
+}
+.spBox2 {
+	float: left;
+	height: 120px;
+	overflow: hidden;
+	width: 580px;
+}
+.m_spzq_content {
+	height: 130px;
+	overflow: hidden;
+}
+.main_line {
+	background: url("img/bg_selLine1.png") no-repeat scroll 0 0 transparent;
+	float: left;
+	height: 679px;
+	width: 26px;
+}
+.bfqPlay {
+	background: url("img/play.png") no-repeat scroll 0 0 transparent;
+	cursor: pointer;
+	display: block;
+	height: 115px;
+	left: 4px;
+	position: absolute;
+	top: 4px;
+	width: 165px;
+}
+.round-links {
+	height: 10px;
+	margin: 0 auto;
+	padding-top: 10px;
+	width: 130px;
+}
+.round-links ul {
+	height: 10px;
+	line-height: 10px;
+	overflow: hidden;
+	width: 100%;
+}
+.round-links li {
+	background: url("img/index_ico.png") no-repeat scroll -8px -140px transparent;
+	cursor: pointer;
+	float: left;
+	height: 10px !important;
+	line-height: 10px;
+	list-style: none outside none;
+	overflow: hidden;
+	width: 10px !important;
+}
+.round-links li.active {
+	background-position: -8px -120px;
+}
+.mR1 {
+	display: inline;
+	margin-right: 300px;
+}
+.index_boxUl {
+	clear: both;
+	font-size: 14px;
+}
+.index_boxUl li {
+	background: url("img/hd_line.png") repeat-x scroll 0 0 transparent;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+}
+.index_boxUl li a {
+	color: #333330;
+}
+.index_boxUl li a:hover {
+	color: #333330;
+	text-decoration: none;
+}

@@ -1,0 +1,517 @@
+body {
+	margin: 0px; font-size: 12px;
+}
+a {
+	color: rgb(44, 44, 44); text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+img {
+	border: 0px currentColor;
+}
+#nav {
+	margin: auto; width: 960px; line-height: 30px; overflow: hidden; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#nav a {
+	padding: 0px 3px;
+}
+#nav_l {
+	width: 700px; float: left;
+}
+#nav_r {
+	width: 210px; float: right;
+}
+#nav_l_1 {
+	width: 550px; color: rgb(0, 0, 153); float: left;
+}
+#nav_l_1 a {
+	color: rgb(102, 102, 102);
+}
+#nav_r_1 {
+	padding: 0px 5px; width: 290px; float: right;
+}
+#home {
+	width: 100px; height: 29px; text-indent: -1000px; float: left; display: block;
+}
+#ad {
+	background: rgb(243, 241, 242); margin: 5px auto; border: 1px solid rgb(219, 219, 219); width: 960px; height: 116px;
+}
+#main {
+	margin: auto; width: 960px; overflow: hidden;
+}
+#news_nav {
+	background: url("../images/bg_news.gif"); width: 960px; color: rgb(0, 0, 153); line-height: 29px; overflow: hidden;
+}
+#news_nav a {
+	color: rgb(0, 0, 153);
+}
+#news_l {
+	width: 650px; overflow: hidden; float: left;
+}
+#news_r {
+	width: 300px; overflow: hidden; margin-left: 10px; float: left;
+}
+#news {
+	background: rgb(245, 248, 253); border: 1px solid rgb(200, 216, 242); width: 648px; padding-bottom: 10px;
+}
+#news_t {
+	width: 590px; text-align: center; overflow: hidden; margin-top: 7px; margin-bottom: 3px; margin-left: 30px;
+}
+#news_t h1 {
+	height: 35px; text-align: center; color: rgb(3, 0, 92); line-height: 35px; overflow: hidden; font-family: 黑体; font-size: 20px; border-bottom-color: rgb(200, 216, 242); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#news_t h1 a {
+	color: rgb(3, 0, 92);
+}
+#news_t p {
+	margin: 0px; padding: 0px;
+}
+#news_time {
+	width: 600px; text-align: center; color: rgb(0, 0, 0); overflow: hidden; float: left;
+}
+#news_t p span a {
+	color: rgb(204, 0, 0);
+}
+#bdshare {
+	width: 250px; overflow: hidden; padding-left: 30px; float: right;
+}
+#news_ad {
+	margin: auto; width: 618px; overflow: hidden;
+}
+#news_ad1 {
+	width: 300px; overflow: hidden; margin-top: 10px;
+}
+#news_main {
+	width: 578px; color: rgb(0, 0, 0); line-height: 170%; overflow: hidden; padding-top: 0px; padding-right: 35px; padding-left: 35px; font-size: 14px;
+}
+#news_news {
+	background: url("../images/bg_news.gif") no-repeat 0px -40px rgb(243, 248, 255); border: 1px solid rgb(216, 223, 233); width: 298px; color: rgb(11, 59, 140); overflow: hidden; margin-top: 10px;
+}
+#news_news a {
+	color: rgb(11, 59, 140);
+}
+#news_news h3 {
+	margin: 5px 0px 0px 10px; padding: 0px; width: 285px; height: 27px; line-height: 27px; overflow: hidden; font-size: 14px; white-space: nowrap; text-overflow: ellipsis; -moz-text-overflow: ellipsis;
+}
+#news_tt {
+	width: 288px; color: rgb(28, 44, 88); line-height: 27px; padding-left: 10px; font-size: 14px; border-bottom-color: rgb(216, 223, 233); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#news_news ul {
+	margin: 0px; padding: 0px;
+}
+#news_news ul li {
+	list-style: none; width: 285px; height: 25px; line-height: 21px; overflow: hidden; padding-left: 5px; white-space: nowrap; text-overflow: ellipsis; -moz-text-overflow: ellipsis;
+}
+#news_ad2 {
+	background: url("../images/bg_news.gif") no-repeat 0px -40px; border: 1px solid rgb(216, 223, 233); width: 298px; overflow: hidden; margin-top: 10px;
+}
+#news_pic {
+	background: url("../images/bg_news.gif") no-repeat 0px -40px; border: 1px solid rgb(216, 223, 233); width: 298px; overflow: hidden; margin-top: 10px;
+}
+.bd {
+	background: rgb(243, 248, 255); padding: 10px 0px 0px; overflow: hidden;
+}
+.bd ul {
+	margin: 0px; padding: 0px;
+}
+.bd ul li {
+	width: 149px; text-align: center; padding-top: 4px; padding-bottom: 4px; float: left;
+}
+.bd ul li a {
+	text-align: center; line-height: 28px; display: block;
+}
+#twtj {
+	width: 140px; height: 28px; text-align: center; line-height: 28px; overflow: hidden; display: block; white-space: nowrap; -moz-text-overflow: ellipsis;
+}
+#Tab1 {
+	background: rgb(243, 248, 255); padding: 0px; border: 1px solid rgb(204, 204, 204); width: 298px; margin-top: 10px;
+}
+.Menubox {
+	background: url("../images/bg_news.gif") no-repeat 0px -40px; width: 100%; height: 27px; line-height: 27px;
+}
+.Menubox ul {
+	margin: 0px; padding: 0px;
+}
+.Menubox li {
+	width: 54px; text-align: center; color: rgb(32, 32, 32); border-bottom-color: rgb(225, 225, 225); border-bottom-width: 1px; border-bottom-style: solid; float: left; display: block; cursor: pointer;
+}
+.Menubox li.hover {
+	background: rgb(249, 249, 249); padding: 0px; width: 52px; height: 27px; color: rgb(30, 30, 30); line-height: 27px; font-weight: bold; border-right-color: rgb(225, 225, 225); border-bottom-color: currentColor; border-left-color: rgb(225, 225, 225); border-right-width: 1px; border-bottom-width: medium; border-left-width: 1px; border-right-style: solid; border-bottom-style: none; border-left-style: solid;
+}
+.Contentbox {
+	height: 215px; padding-top: 8px; clear: both; margin-top: 0px;
+}
+.Contentbox ul {
+	background: url("../images/bg_news.gif") no-repeat -350px -80px; margin: 0px; padding: 0px;
+}
+.Contentbox ul li {
+	list-style: none; width: 260px; height: 21px; line-height: 21px; overflow: hidden; padding-left: 30px; text-overflow: ellipsis; -moz-text-overflow: ellipsis;
+}
+.page1 {
+	margin: 0px auto; padding: 5px; width: 608px; text-align: center; color: rgb(51, 51, 51); overflow: hidden; font-size: 14px;
+}
+.page1 a.up1 {
+	background: 0px 0px rgb(42, 87, 169); margin: 2px; padding: 3px 5px; border: 1px solid rgb(204, 204, 204); width: 23px; height: 21px; color: rgb(255, 255, 255); font-family: Arial,Helvetica,sans-serif; text-decoration: none;
+}
+.page1 a.up {
+	background: rgb(255, 255, 255); margin: 2px; padding: 3px 5px; border: 1px solid rgb(204, 204, 204); width: 23px; height: 21px; color: rgb(51, 51, 51); font-family: Arial,Helvetica,sans-serif; text-decoration: none;
+}
+.page1 a.up2 {
+	background: rgb(255, 255, 255); margin: 2px; padding: 3px 5px; border: 1px solid rgb(204, 204, 204); width: 23px; height: 21px; color: rgb(51, 51, 51); font-family: Arial,Helvetica,sans-serif; text-decoration: none;
+}
+.page1 a:hover {
+	background: 0px 0px rgb(42, 87, 169); color: rgb(255, 255, 255);
+}
+#zt_bd {
+	margin: auto auto 5px; width: 618px; height: 27px; text-align: right; color: rgb(61, 61, 61); line-height: 27px; overflow: hidden; font-size: 12px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#Related_n {
+	background: 0px 0px rgb(255, 255, 255); border: 1px solid rgb(216, 216, 216); width: 648px; overflow: hidden; margin-top: 10px;
+}
+#Related_t {
+	background: url("../images/bg_news.gif") no-repeat 0px -389px; width: 648px; height: 35px;
+}
+#Related_t span {
+	height: 35px; line-height: 35px; font-size: 12px; float: right;
+}
+#Related_t span a {
+	padding-left: 5px;
+}
+#Related_t span a:hover {
+	color: rgb(255, 0, 0); text-decoration: underline;
+}
+#Related_t1 {
+	background: url("../images/bg_news.gif") no-repeat 0px -425px; width: 648px; height: 35px;
+}
+#Related_tj {
+	padding: 10px; width: 190px; overflow: hidden; float: left;
+}
+#Related_tj img {
+	padding: 5px; border: 1px solid rgb(204, 204, 204);
+}
+#Related_tj p {
+	margin: 0px; padding: 5px; text-align: center;
+}
+#Related_tj p a {
+	color: rgb(51, 51, 51); line-height: 150%; font-size: 13px; text-decoration: none;
+}
+#Related_news {
+	width: 430px; overflow: hidden; padding-top: 5px; float: left;
+}
+#Related_nr {
+	width: 650px; overflow: hidden; padding-bottom: 5px;
+}
+#Related_news ul {
+	margin: 0px; padding: 0px;
+}
+#Related_news ul li {
+	background: url("../images/dot.gif") no-repeat 5px 8px; list-style: none; line-height: 25px; overflow: hidden; padding-left: 15px; _line-height: 25px;
+}
+#Related_news ul li span {
+	color: rgb(102, 102, 102); font-size: 13px; float: right;
+}
+#Related_news ul li a {
+	width: 335px; height: 21px; color: rgb(51, 51, 51); line-height: 21px; overflow: hidden; font-size: 13px; text-decoration: none; float: left; white-space: nowrap; text-overflow: ellipsis; -moz-text-overflow: ellipsis;
+}
+#Related_tp {
+	margin: 5px 0px 0px; padding: 5px 0px 0px 5px; width: 156px; overflow: hidden; float: left; display: inline;
+}
+#Related_tp img {
+	border: 1px solid rgb(225, 225, 225);
+}
+#Related_tp p {
+	margin: 0px; padding: 5px; width: 144px; height: 15px; line-height: 18px; overflow: hidden;
+}
+#foot_pic_in p {
+	margin: 0px; padding: 5px; width: 144px; height: 15px; line-height: 18px; overflow: hidden;
+}
+#Related_tp p a {
+	color: rgb(14, 71, 140); font-size: 12px; text-decoration: none;
+}
+#comment {
+	background: rgb(255, 255, 255); border-width: medium 1px 1px; border-style: none solid solid; border-color: currentColor rgb(204, 204, 204) rgb(204, 204, 204); width: 648px; overflow: hidden; font-size: 12px;
+}
+#comment_t {
+	width: 648px; height: 35px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#comment_list {
+	width: 648px; overflow: hidden;
+}
+#comment_n {
+	padding: 8px 8px 3px; width: 630px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+#comment_ip {
+	width: 630px; overflow: hidden;
+}
+#c_ip {
+	color: rgb(30, 80, 162); font-size: 14px; float: left;
+}
+#c_t {
+	font-size: 14px; float: right;
+}
+#comment_n p {
+	background: rgb(218, 218, 218); margin: 5px; padding: 5px; line-height: 150%;
+}
+#comment_tx {
+	padding: 8px; width: 630px; overflow: hidden;
+}
+#comment_tx p {
+	margin: 0px; padding: 0px;
+}
+#pl_tx {
+	margin: auto; border: 1px solid rgb(204, 204, 204); width: 620px; height: 80px; line-height: 30px; font-size: 12px; background-color: rgb(255, 255, 255);
+}
+#tj {
+	background: rgb(49, 90, 172); padding: 5px; border: 0px currentColor; color: rgb(255, 255, 255);
+}
+#commentlist img {
+	padding-left: 350px;
+}
+#commentlist ul {
+	margin: 0px; padding: 0px;
+}
+#commentlist li {
+	padding: 4px; width: 640px; text-align: left; line-height: 23px; overflow: hidden; float: left;
+}
+#commentlist span {
+	color: rgb(51, 51, 51); float: right;
+}
+#commentlist .title {
+	color: rgb(0, 102, 255);
+}
+#commentlist .content {
+	font-size: 12px; margin-bottom: 5px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+#commentlist .pages {
+	padding: 5px 0px; height: 20px; text-align: center; clear: both; font-family: Tahoma; margin-bottom: 10px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+#commentlist .pages a {
+	padding: 0px 0.4em; height: 18px; line-height: 18px; font-family: Tahoma; font-size: 12px; margin-left: 3px; min-width: 24px;
+}
+#commentlist .pages a {
+	background: rgb(240, 240, 240); border: 1px solid rgb(204, 204, 204); color: rgb(0, 0, 0);
+}
+#commentlist .pages a:hover {
+	background: rgb(255, 153, 0); border: 1px solid rgb(255, 153, 0); color: rgb(255, 255, 255);
+}
+#commentlist .pages .hav {
+	background: rgb(255, 153, 0); border: 1px solid rgb(255, 153, 0); color: rgb(255, 255, 255);
+}
+#commentlist .comuserzt {
+	line-height: 30px; padding-left: 10px; font-size: 12px; fwidth: 705px;
+}
+#commentlist .comuserzt a {
+	color: rgb(0, 0, 102);
+}
+.Write {
+	padding: 10px; width: 580px; line-height: 30px; font-size: 12px;
+}
+.Write textarea {
+	border: 1px solid rgb(204, 204, 204); width: 592px; line-height: 30px; font-size: 12px; background-color: rgb(255, 255, 255);
+}
+#f_leaveword {
+	margin: 0px; padding: 0px;
+}
+#foot_pic {
+	background: rgb(255, 255, 255); margin: 10px auto auto; border: 1px solid rgb(204, 204, 204); width: 960px; overflow: hidden;
+}
+#links {
+	background: rgb(255, 255, 255); margin: 10px auto auto; border: 1px solid rgb(204, 204, 204); width: 960px; overflow: hidden;
+}
+#foot_pic {
+	height: 122px;
+}
+#foot_pic_in {
+	margin: 4px 4px 0px; border: 1px solid rgb(204, 204, 204); width: 150px; overflow: hidden; float: left; display: inline;
+}
+#Tab2 {
+	margin: auto; width: 962px; overflow: hidden;
+}
+#links_t {
+	background: url("http://www.leiting001.com/images/bg_news.gif") no-repeat 0px -463px; width: 960px; height: 35px;
+}
+#links_t ul {
+	margin: 0px; padding: 0px 0px 0px 200px;
+}
+#links_t ul li {
+	list-style: none; width: 80px; height: 30px; text-align: center; line-height: 30px; border-right-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; float: left;
+}
+#links_t ul li.hover {
+	font-weight: bold; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#links a {
+	padding: 0px 5px; height: 27px; float: left; display: block; white-space: nowrap;
+}
+#con_two_1 {
+	padding: 5px; width: 950px;
+}
+#con_two_2 {
+	padding: 5px; width: 950px;
+}
+#footer {
+	margin: auto; padding: 5px 0px; width: 960px; text-align: center; color: rgb(51, 51, 51); font-size: 12px;
+}
+#footer { line-height:24px;}
+#footer a {
+	color: rgb(51, 51, 51); font-size: 12px; text-decoration: none;
+}
+#footer p {
+	margin: 0px; padding: 5px;
+}
+#news_xg {
+	margin: auto; padding: 0px 5px 5px; width: 620px; overflow: hidden;
+}
+#news_xg_t {
+	padding: 5px; font-size: 14px; font-weight: bold;
+}
+#news_xg_t a {
+	color: rgb(0, 51, 153); text-decoration: underline;
+}
+#news_xg ul {
+	margin: 0px; padding: 5px 0px 0px;
+}
+#news_xg ul li {
+	list-style: none; height: 27px; line-height: 27px; padding-left: 5px; font-size: 14px;
+}
+#news_xg ul li a {
+	color: rgb(14, 71, 140);
+}
+#news_xg ul li span {
+	color: rgb(102, 102, 102); padding-left: 15px; font-size: 12px;
+}
+#hot_news {
+	border: 1px solid rgb(204, 204, 204); width: 648px; overflow: hidden; margin-top: 5px;
+}
+#news_xgt {
+	margin: 5px auto auto; padding: 8px 5px 5px; width: 620px; overflow: hidden; border-top-color: rgb(200, 216, 242); border-top-width: 1px; border-top-style: solid;
+}
+#news_xgt_p {
+	width: 150px; overflow: hidden; margin-right: 5px; float: left;
+}
+#news_xgt_p img {
+	border: 1px solid rgb(225, 225, 225);
+}
+#news_xgt_p p {
+	margin: 2px 0px 0px; padding: 0px; width: 150px; height: 21px; line-height: 21px; overflow: hidden;
+}
+#news_xgt_p p a {
+	color: rgb(14, 71, 140);
+}
+#hot_news_t {
+	background: url("../images/bg_news.gif") no-repeat 0px -610px; width: 648px; height: 35px;
+}
+#hot_left {
+	width: 648px; overflow: hidden; float: left;
+}
+#hot_left ul {
+	margin: 0px; padding: 5px 0px 0px;
+}
+#hot_left ul li {
+	list-style: none; width: 314px; height: 21px; line-height: 21px; padding-left: 10px; float: left;
+}
+#hot_left ul li a {
+	color: rgb(14, 71, 140);
+}
+#hot_right {
+	width: 247px; overflow: hidden; padding-bottom: 5px; border-left-color: rgb(204, 204, 204); border-left-width: 1px; border-left-style: dotted; float: left;
+}
+#hot_right a {
+	margin: 10px auto auto; width: 227px; height: 178px; text-align: center; color: rgb(102, 102, 102); line-height: 1.6; overflow: hidden; display: block;
+}
+#hot_right img {
+	background: 0px 0px rgb(255, 255, 255); margin: 0px auto 8px; padding: 2px; border: 1px solid rgb(203, 203, 203); width: 220px; height: 145px; display: block;
+}
+#ss {
+	margin: 10px auto auto; padding: 5px; border: 1px solid rgb(204, 204, 204); width: 950px; overflow: hidden;
+}
+#s_in {
+	padding: 2px; width: 450px; overflow: hidden; float: left;
+}
+#s_k {
+	width: 490px; height: 35px; line-height: 35px; float: left;
+}
+.s_t {
+	background: 0px 0px rgb(255, 255, 255); font: 14px/29px arial; margin: 0px 5px 0px 0px; padding: 0px 5px; border: 1px solid rgb(204, 204, 204); width: 360px; height: 29px; color: rgb(102, 102, 102); float: left; font-size-adjust: none; font-stretch: normal;
+}
+.search_con_botton {
+	background: rgb(249, 249, 249); font: 700 14px/30px arial; margin: 0px; padding: 0px; border: 0px currentColor; width: 60px; height: 29px; text-align: center; color: rgb(102, 102, 102); float: left; cursor: pointer; font-size-adjust: none; font-stretch: normal;
+}
+#top_s {
+	width: 300px; overflow: hidden; margin-bottom: 10px;
+}
+.top_ss {
+	font: 12px/25px arial; margin: 0px 5px 0px 0px; padding: 0px 5px; border: 1px solid rgb(204, 204, 204); width: 223px; height: 25px; color: rgb(102, 102, 102); float: left; font-size-adjust: none; font-stretch: normal;
+}
+.top_s_botton {
+	background: rgb(42, 87, 169); font: 700 12px/27px arial; margin: 0px; padding: 0px; border: 0px currentColor; width: 60px; height: 26px; text-align: center; color: rgb(255, 255, 255); float: left; cursor: pointer; font-size-adjust: none; font-stretch: normal;
+}
+#news_an {
+	background: url("http://www.leiting001.com/images/news_an.PNG") no-repeat rgb(255, 255, 255); margin: auto auto 5px; border: 1px solid rgb(204, 204, 204); width: 360px; height: 33px; padding-left: 40px;
+}
+#news_an a {
+	height: 33px; color: rgb(51, 51, 51); line-height: 33px; padding-left: 6px; font-size: 14px; text-decoration: none;
+}
+#index_zt {
+	width: 234px; overflow: hidden; margin-top: 10px;
+}
+#zt_tj {
+	width: 234px; text-align: center; margin-bottom: 5px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#zt_tj p {
+	margin: 0px; padding: 0px; height: 27px; line-height: 27px; font-size: 14px;
+}
+#zt_tj p a {
+	color: rgb(51, 51, 51); text-decoration: none;
+}
+#zt_tj p a:hover {
+	text-decoration: underline;
+}
+#index_zt ul li a:hover {
+	text-decoration: underline;
+}
+#index_zt ul {
+	margin: 0px; padding: 0px;
+}
+#index_zt ul li {
+	list-style: none; padding: 0px 5px; height: 21px; line-height: 21px;
+}
+#index_zt ul li a {
+	color: rgb(51, 51, 51); text-decoration: none; float: left;
+}
+#index_zt ul li span {
+	color: rgb(102, 102, 102); float: right;
+}
+#news_an a:hover {
+	color: rgb(255, 0, 0); text-decoration: underline;
+}
+#ad3_tt {
+	background: url("../images/bg_news.gif") no-repeat 0px -676px; width: 648px; height: 35px;
+}
+#ad3_tt a {
+	text-decoration: none;
+}
+#ad2 {
+	margin: 10px auto auto; width: 650px; text-align: center; overflow: hidden;
+}
+#ad2_1 {
+	background: rgb(255, 255, 255); width: 300px; height: 250px; text-align: center; float: left;
+}
+#ad2_2 {
+	background: rgb(255, 255, 255); width: 335px; height: 250px; text-align: center; margin-left: 15px; float: left;
+}
+#ad3 {
+	border: 1px solid rgb(204, 204, 204); width: 648px; overflow: hidden; margin-top: 5px;
+}
+.hr10 {
+	margin-top: 10px;
+}
+.bdshare_t {
+	overflow: hidden; float: left; white-space: nowrap;
+}
+.lup {
+	line-height: 20px; float: left;
+}
+.shareandup {
+	padding: 5px 0px; width: 600px; margin-bottom: 10px; margin-left: 20px; border-top-color: rgb(200, 216, 242); border-bottom-color: rgb(200, 216, 242); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; float: left;
+}

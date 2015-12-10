@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title><?php echo $cfg_webname;?></title>
+  <meta name="description" content="<?php echo $cfg_description;?>">
+  <meta name="keywords" content="<?php echo $cfg_keywords;?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="icon" type="image/png" href="<?php echo $hostName; ?>/assets/i/favicon.png">
+  <link rel="stylesheet" href="<?php echo $hostName; ?>/assets/css/amazeui.min.css">
+  <style type="text/css">
+  .am-g > a{
+    max-height:100%;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;
+  }
+  </style>
+</head>
+<body>
+<script id="script_switch">
+	if(!/(mob)|(nexus)|(KFAPWI)/i.test(navigator.userAgent)){
+		var d=document.createElement("div");
+		d.id="switch2PC";
+		d.innerHTML="<table style='width:125%;text-align:center;' bgcolor=white>"+
+		"<tr><td><h1><a href='/index.html'> &nbsp; 进 入 电 脑 版 &nbsp; </a></h1></td></tr></table>"
+		document.body.insertBefore(d,document.getElementById("script_switch"));
+		}
+</script>
+<!-- Header -->
+<header data-am-widget="header" class="am-header am-header-default">
+  <h1 class="am-header-title">
+    <a href="#title-link"><?php echo $cfg_webname;?></a>
+  </h1>
+</header>
+
+<!-- Menu -->
+<nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
+  <a href="javascript: void(0)" class="am-menu-toggle">
+    <i class="am-menu-toggle-icon am-icon-bars"></i>
+  </a>
+  <div class="am-offcanvas">
+    <div class="am-offcanvas-bar">
+      <ul class="am-menu-nav sm-block-grid-1">
+        <?php echo $channellist; ?>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Slider -->
+<div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{"directionNav":true}'>
+  <ul class="am-slides">
+    <!-- ?php echo $newartlistSlide; ? -->
+	<!--?php echo preg_replace("/\.jpg(\'|\")/",".jpg?imageView2/1/w/320/q/75$1",$newartlistSlide); ?-->
+	<?php echo preg_replace("/\ssrc=[\'\"]\/([^\.]*\.(jpg|png))[\'\"]\s*(style=\"[^\"]*\")?/i",
+	" src=\"http://7xoc6v.com1.z0.glb.clouddn.com/$1?imageView2/1/h/320/q/90\"",$newartlistSlide); ?>
+
+  </ul>
+</div>
+
+<!-- List -->
+<div data-am-widget="list_news" class="am-list-news am-list-news-default">
+  <!--列表标题-->
+  <div class="am-list-news-hd am-cf">
+    <!--带更多链接-->
+    <a href="###">
+      <h2>最新更新</h2>
+    </a>
+  </div>
+  <div class="am-list-news-bd">
+    <ul class="am-list">
+      <?php echo $newartlist; ?>
+    </ul>
+  </div>
+  
+</div>
+
+<?php echo $newartlistHTML; ?>
+<!-- Gallery pic
+<ul data-am-widget="gallery" class="am-gallery am-avg-sm-2
+  am-avg-md-3 am-avg-lg-4 am-gallery-default" data-am-gallery="{ pureview: true }">
+    <?php echo $newartlistPic; ?>    
+</ul>
+-->
+
+
+
+<?php include($cfg_templets_dir."/mobile/footer.htm"); ?>
+<script src="<?php echo $hostName; ?>/assets/js/jquery.min.js"></script>
+<script src="<?php echo $hostName; ?>/assets/js/amazeui.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+document.writeln("<span class=\"site_navl\">百度搜一下<a href=\"http:\/\/www.baidu.com\/s?wd=%C0%D7%F6%AA%BE%FC%CA%C2%CD%F8&rsv_bp=0&rsv_spt=3&rsv_n=2&inputT=391\">雷霆军事网<\/a>就能快速找到本站 或者收藏本站网址：www.leiting001.com方便下次登录本站<\/span>");
+document.writeln("		<span class=\"site_navr\"><code id=\"fav\">加入收藏夹<\/code>-<a href=\"/url.php\">下载雷霆到桌面一键访问<\/a><\/span>")

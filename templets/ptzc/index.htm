@@ -1,0 +1,1333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta property="wb:webmaster" content="39a6665b0d5d3c1d" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link href="{dede:global.cfg_templets_skin/}/style/css.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="{dede:global.cfg_cmsurl/}/favicon.ico" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/Tab.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/foli.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/list_music.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/pic_scroll.js"></script>
+        
+<script language="javascript" type="text/javascript">
+<!--
+	$(function(){
+		$("a[_for]").mouseover(function(){
+			$(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
+			$(this).addClass("thisclass").blur();
+			$("#"+$(this).attr("_for")).show();
+		});
+		$("a[_for=uc_member]").mouseover();
+		$("a[_for=flink_1]").mouseover();
+	});
+	
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("{dede:global.cfg_cmspath/}/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+-->
+</script>
+
+<style type="text/css">
+.btn-top{
+	background-image:url(http://www.zhfgwh.com/a/gotop.png);
+    background-repeat:no-repeat;
+    cursor:pointer;
+    display:none;
+    height:50px;
+	width:50px;
+    overflow:hidden;
+    position:fixed; right:10px;bottom:10px;
+	_position: absolute; 
+	_right: auto
+   
+}
+.btn-top:hover{
+    background-position:-60px -0px;
+}
+
+</style>
+<script language=JavaScript>
+
+$(document).ready(function(){
+    var _goTop = document.getElementById("to_top");
+    if(_goTop){
+        if($(window).scrollTop() > 300){
+            $("#to_top").show();
+        }
+        $(window).scroll(function(){
+            $(window).scrollTop() > 300 ? $("#to_top").show() : $("#to_top").hide();
+        });
+        $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+        $('#to_top').click(function(){
+            $body.animate({scrollTop: $('.container').offset().top}, 300);
+            $("#to_top").hide();
+            return false;
+        });
+    }
+});
+</script>
+</head>
+<body>
+
+<div id="headertop">
+    <div class="h-top">
+	
+	 <span><a href="javascript:window.external.AddFavorite('{dede:global.cfg_basehost/}','{dede:global.cfg_webname/}')">加入收藏</a> | <a href=""onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('{dede:global.cfg_basehost/}');">设为首页</a> | <a href="{dede:global.cfg_cmsurl/}/data/sitemap.html" target="_blank">网站导航</a></span>
+    <ul>
+       <form name="userlogin" action="{dede:global.cfg_memberurl/}/index_do.php" method="post">
+        <input type="hidden" name="fmdo" value="login" />
+        <input type="hidden" name="dopost" value="login" />
+        <input type="hidden" name="keeptime" value="604800" />
+        <li>账号</li>
+        <li><input type="text" name="userid" size="20" class="input1" /></li>
+        <li>密码</li>
+        <li><input type="password" name="pwd" size="20" class="input1" /></li>
+        <li> <input name="" type="image" src="{dede:global.cfg_templets_skin/}/images/denglu_06.gif" style=" width:35px; height:17px; padding-top:3px;" /></li>
+        <li> <a href="{dede:global.cfg_memberurl/}/index_do.php?fmdo=user&dopost=regnew" >注册帐号</a></li> 
+        <li><a href="{dede:global.cfg_memberurl/}/resetpassword.php">忘记密码?</A><script src='plus/denglu/home.js'></script></li>
+       </form>
+     </ul>
+     <!-- /userlogin -->
+     <script language="javascript" type="text/javascript">CheckLogin();</script>
+    <!-- /uc_member -->
+    </div>
+	  
+</div>
+
+
+
+
+<div class="allbox">
+<div id="loginbox"><a href="{dede:global.cfg_basehost/}"><img src="{dede:global.cfg_templets_skin/}/images/logo_07.gif" border="0" /></a></div>
+<!--search start-->
+<div id="headtopsearch">
+
+	
+	<div class="topsearchtitle">
+	<ul>
+	   <li> <script language="javascript">
+				<!--
+				var today = new Date();
+				var ltoday = new Lunar(today);
+				document.write("佛历"+ltoday.byear+"年");
+				document.write("&nbsp;&nbsp;");
+				document.write(today.getFullYear()+"年"+(today.getMonth()+1)+"月"+today.getDate()+"日星期"+cDay[today.getDay()]);
+				document.write("&nbsp;&nbsp;");
+				-->
+				</script>
+			</li>
+      	
+	        <li> <span><SCRIPT>CalConv();</SCRIPT></span></li>
+            <li> | <a href="{dede:global.cfg_basehost/}member/article_add.php" class="h-botrighttopli">投稿邮箱</a></li>
+            <li> | <a class="h-botrighttopli" href='http://www.weibo.com/zhfgwh' target='_blank'>官方微博</a></li>
+            <li ><div  style="height:20px;" id="google_translate_element"></div></li>
+	</ul>
+	             
+
+	
+	</div>
+    <div class=topsearch>
+        <div class=hover id=con_six_1>
+      <form  name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+            <UL>
+			
+              <LI>
+			  
+			  <input type="hidden" name="kwtype" value="0" />
+           <input name="q" type="text" class="searchinput" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+			  
+			  
+			  
+			  
+			  
+			  
+		</LI>
+              <LI>
+			            <button type="submit" class="searchbuttom"></button>
+
+			  
+			  
+	</LI>
+             </UL>
+          </form>
+        </div>
+   </div> 
+</div>
+<!--search end-->
+</div>
+
+<div id="main">
+
+
+
+
+
+
+<div style="clear:both"></div>
+
+
+
+<div class="main_body">
+<div class="h-botrightbot2">
+          <dl style="width:180px; ">
+            <dd style="width:180px;">
+              <ul>
+                <li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=1" target="_blank">佛教新闻</a></li>
+                <li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=777" target="_blank">专题报道</a></li>
+
+              </ul>
+            </dd>
+            <dt  style="width:180px;">
+              <ul>
+	            <li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=24" target="_blank">高清图片</a></li>
+                <li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=23" target="_blank">精彩视频</a></li>
+				 </ul>
+            </dt>
+          </dl>
+		  
+          <dl>
+            <dd>
+              <ul>
+                <li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=5" target="_blank">高僧名录</a></li>
+				<li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=3" target="_blank">佛教艺术</a></li>
+
+
+
+              </ul>
+            </dd>
+            <dt>
+              <ul>
+                <li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=7" target="_blank">名山名寺</a></li>
+
+                <li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=6" target="_blank">慈善功德</a></li>
+              </ul>
+            </dt>
+          </dl>
+		  
+		  
+          <dl>
+            <dd>
+              <ul>
+	   <li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=2" target="_blank">佛学研究</a></li>
+             <li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=8" target="_blank">禅修实践</a></li>
+
+              </ul>
+            </dd>
+            <dt>
+              <ul>
+			  				 			  	<li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=14" target="_blank">佛教书店</a></li>
+<li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=4" target="_blank">佛教教育</a> </li>
+
+              </ul>
+            </dt>
+          </dl>
+          <dl >
+            <dd>
+              <ul>
+                 <li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=9" target="_blank">素食养生</a></li>
+
+                <li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=12" target="_blank">禅茶文化</a></li>
+
+
+
+              </ul>
+            </dd>
+            <dt>
+              <ul>
+				
+                <li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=10" target="_blank">佛教用品</a></li>
+
+                <li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=575" target="_blank">香道文化</a></li>
+
+              </ul>
+            </dt>
+          </dl>
+          <dl >
+            <dd>
+              <ul>
+                <li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=11" target="_blank">佛教音乐</a></li>
+
+
+                <li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=15" target="_blank">网上礼佛</a></li>
+              </ul>
+            </dd>
+
+            <dt>
+              <ul>
+                <li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=13" target="_blank">心灵家园</a></li>
+                <li><a href="{dede:global.cfg_basehost/}plus/list.php?tid=16" target="_blank">博客社区</a></li>
+              </ul>
+            </dt>
+          </dl>
+  </div>
+
+</div>
+   <!-- AD -->
+   <div style="margin:auto; width:1000px; margin-top:8px;"><a href="http://www.zhfgwh.com/zt/2014newyear/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/2014ny.png"/></a></div>
+
+
+
+<div style="clear:both">
+  <div class="main3">
+    <div class="main4">
+      <div class="pictxt2">
+	  
+	   <a href="{dede:global.cfg_basehost/}plus/list.php?tid=776" class="pic2" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/vw1.jpg" width="20" height="93"  border="0" /></a>
+
+<p>
+
+{dede:arclist row="1" typeid="776" addfields="body" channelid="1" flag='h'  orderby='id'} 
+[field:body function='cn_substr(html2text(@me),400)'/]...
+
+    ...<a href="[field:filename/]" class="xiangxi" target="_blank">[详细]</a> 
+
+{/dede:arclist}	
+</p>
+		
+  </div>
+    </div>
+    <div class="main4">
+      <div class="pictxt3"> <a href="{dede:global.cfg_basehost/}plus/list.php?tid=671" class="pic3" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/vw2.jpg" width="20" height="93" border="0" /></a>
+	  		{dede:arclist row='12'  titlelen='25' infolen='120'  imgwidth='82' imgheight='71'  orderby='pubdate' typeid='671' idlist='' type='' flag=''}    
+
+          <ul class="sub_Categorylist">
+		  
+            <li>    	·<a href="[field:filename/]" target="_blank">[field:shorttitle/]</a></li>
+
+          </ul>
+		  
+		  	  {/dede:arclist}   
+		  
+		  
+      </div>
+    </div>
+  </div>
+</div>
+  
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="index">
+
+    <!--div style="margin:auto; width:1000px; margin-top:8px;"><a href="http://www.zhfgwh.com/a/daluxinwen/63811.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/2013cg.jpg"/></a></div-->
+  
+  
+  
+<!--  <div class="con1">
+    <ul>
+		{dede:arclist row='1' titlelen='50' infolen='140'  imgwidth='133' imgheight='82'  orderby='pubdate' typeid='669' idlist='' type='' flag='h'}    
+      <h3><a href="[field:filename/]"target="_blank">[field:title/]</a></h3>
+ 		{/dede:arclist}  
+		{dede:arclist row='3' limit='3,3' titlelen='50' infolen='140'  imgwidth='133' imgheight='82'  orderby='pubdate' typeid='669' idlist='' type='' flag=''}    
+      <li><a href="[field:filename/]"target="_blank">[field:title/]</a></li>
+ 		{/dede:arclist}  
+    </ul>
+    <ul>
+		{dede:arclist row='1'  limit='1,1' titlelen='50' infolen='140'  imgwidth='133' imgheight='82'  orderby='pubdate' typeid='669' idlist='' type='' flag='h'}    
+      <h3><a href="[field:filename/]">[field:title/]</a></h3>
+ 		{/dede:arclist}   
+		{dede:arclist row='3' limit='6,3' titlelen='50' infolen='140'  imgwidth='133' imgheight='82'  orderby='pubdate' typeid='669' idlist='' type='' flag=''}    
+      <li><a href="[field:filename/]"target="_blank">[field:title/]</a></li>
+ 		{/dede:arclist}   
+    </ul>
+    <ul>
+		{dede:arclist row='1' limit='2,1' titlelen='50' infolen='140'  imgwidth='133' imgheight='82'  orderby='pubdate' typeid='669' idlist='' type='' flag='h'}    
+      <h3><a href="[field:filename/]"target="_blank"> [field:title/]</a></h3>
+ 		{/dede:arclist}         
+		{dede:arclist row='3' limit='9,3' titlelen='50' infolen='140'  imgwidth='133' imgheight='82'  orderby='pubdate' typeid='669' idlist='' type='' flag=''}    
+      <li><a href="[field:filename/]"target="_blank">[field:title/]</a></li>
+ 		{/dede:arclist}   
+    </ul>
+  </div>-->
+  
+  
+  <!--三图头条div class="con2">
+
+	{dede:arclist row='3'  titlelen='30' infolen='94'  imgwidth='101' imgheight='71'  orderby='pubdate' typeid='26' idlist='' type='' flag=''}    
+    <dl>
+      <dd><a href="[field:arcurl /]"target="_blank"><img src="[field:litpic/]" width="101" height="71" border="0" /></a></dd>
+      <dt>
+        <h3><a href="[field:filename/]"target="_blank"> [field:title/]</a></h3>
+        [field:info/]</dt>
+    </dl>
+    {/dede:arclist}   
+  </div-->
+  
+
+  <div class="con4">
+    <div class="con4left">
+      <div class="con4left1">
+        <div class="con4leftle">
+          <div class="con4leftletp">
+            <div class="con4leftletpti">
+              <ul>
+                <li><a id="ont1" onmouseover="setTab('ont',1,6)" class="current">新闻</a></li>
+                <li><a id="ont2"class="cBlue" onmouseover="setTab('ont',2,6)">高僧</a></li>
+                <li><a id="ont3"class="cBlue" onmouseover="setTab('ont',3,6)">山寺</a></li>
+                <li><a id="ont4"class="cBlue" onmouseover="setTab('ont',4,6)"> 素食</a></li>
+                <li><a id="ont5"class="cBlue" onmouseover="setTab('ont',5,6)"> 心灵</a></li>
+                <li><a id="ont6"class="cBlue" onmouseover="setTab('ont',6,6)">百科</a></li>
+              </ul>
+            </div>
+            <div class="con4leftlecon">
+				{dede:arclist row='6'  titlelen='60' infolen='120'  imgwidth='361' imgheight='244'  orderby='id' typeid='672' idlist='' type='' flag=''}    
+              <div class="con4leftlecon1" id="tab_ont_[field:global name=autoindex runphp="yes"]@me[/field:global]" style="[field:global name=autoindex runphp="yes"](@me==1)? @me="":@me="display:none";[/field:global]" >
+                <p><a href="[field:arcurl /]" target="_blank"><img src="[field:litpic/]"  width="361" height="244"/></a><a href="[field:filename/]" class="money_r">[field:title/]</a></p>
+              </div>
+	  		  {/dede:arclist}   
+              
+        
+            </div>
+          </div>
+          <div class="con4-editor">
+            <div class="con4-editortitl"><span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=673" target="_blank">更多</a>>></span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=673" target="_blank">编辑精选</a></div>
+            <div class="con4-editorcon">
+              <ul>
+				{dede:arclist row='6'  titlelen='48' infolen='120'  imgwidth='361' imgheight='244'  orderby='pubdate' typeid='673' idlist='' type='' flag=''}    
+                <li><span><a href="[field:filename/]" target="_blank">[field:writer /]</a></span><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	    {/dede:arclist}   
+              </ul>
+            </div>
+          </div>
+          <div class="con4-video">
+            <div class="con4-videotitl"><span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=23" target="_blank">更多</a>>></span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=23" target="_blank">视频播报</a></div>
+            <div class="con4-videocon">
+              <div class="con4-videocontu">
+                <ul>
+				{dede:arclist row='2' limit='0,2' titlelen='25' infolen='120'  imgwidth='361' imgheight='244'  orderby='id' typeid='23' idlist='' type='image' flag='h'}    
+                  <li>
+                    <p><a href="[field:arcurl /]" target="_blank"><img style="width:160px; height:90px ;"src="[field:litpic/]" /></a><a href="[field:filename/]"  target="_blank" class="money_r1">
+					
+					<img src="/templets/default/images/viw1.png">
+					[field:title/]</a>
+					
+					
+					</p>
+                  </li>
+	  	   	    {/dede:arclist}   
+                </ul>
+
+
+              </div>
+                      
+<div class="con4-videoconcon">
+                <ul>
+			  	  {dede:arclist row='4'  titlelen='60' infolen='120'  imgwidth='361' imgheight='244'  orderby='id' typeid='23' idlist='' type='' flag='c'}    
+                  <li><a href="[field:filename/]" target="_blank">[field:title/]</a> </li>
+	  	   	      {/dede:arclist}   
+                </ul>
+              </div>
+   </div>
+          </div>
+        </div>
+        <div class="con4-leftcent">
+          <div class="con4-leftcenttop">
+            <div class="con4-leftcenttoptitl"><span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=17" target="_blank">大陆</a>| <a href="{dede:global.cfg_basehost/}plus/list.php?tid=18" target="_blank">港澳台</a>|<a href="{dede:global.cfg_basehost/}plus/list.php?tid=19" target="_blank">国际</a></span><b><a href="{dede:global.cfg_basehost/}plus/list.php?tid=19" target="_blank">今日焦点</a></b></div>
+            <div class="con4-leftconttopcon">
+			  {dede:arclist row='1' titlelen='60' infolen='120'   orderby='pubdate'  typeid='674' idlist=''  flag='a'}    
+                <h3><a href="[field:filename/]" target="_blank">[field:title/]</a></h3>
+	  	   	  {/dede:arclist}   
+              <ul>
+			  {dede:arclist  row='6'  titlelen='60' infolen='120'  orderby='pubdate'  typeid='674' idlist='' flag='c'}    
+                <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	  {/dede:arclist}   
+              </ul>
+              <ul>
+			  {dede:arclist row='1'  limit='0,1'  titlelen='60' infolen='120' orderby='pubdate'  typeid='674' idlist=''  flag='h'}    
+                <li><a href="[field:filename/]" class="font14" target="_blank">[field:title/]</a></li>
+	  	   	  {/dede:arclist}   
+			  {dede:arclist row='4'  limit=''  titlelen='60' infolen='120' orderby='pubdate'  typeid='674' idlist='' noflag='a,c,h'}    
+                <li><a href="[field:filename/]" target="_blank"> [field:title/]</a></li>
+	  	   	  {/dede:arclist}   
+              </ul>
+              <ul>
+			  {dede:arclist row='1'  limit='1,1'  titlelen='60' infolen='120' orderby='pubdate'  typeid='674' idlist=''  flag='h'}    
+                <li><a href="[field:filename/]" class="font14" target="_blank">[field:title/]</a></li>
+	  	   	  {/dede:arclist}   
+			  {dede:arclist row='4'  limit='4,4'  titlelen='60' infolen='120'  imgwidth='361' imgheight='244'  orderby='pubdate'  typeid='674' idlist='' noflag='a,c,h'}    
+                <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	  {/dede:arclist}   
+              </ul>
+            </div>
+          </div>
+          <div class="con4-leftcontbot">
+            <div class="con4-leftcontbottitl">
+              <ul>
+                <li><a id="one1" onmouseover="setTab('one',1,3)" class="current">热 点</a></li>
+                <li><a id="one2" class="cBlue" onmouseover="setTab('one',2,3)">人 物</a></li>
+                <li><a id="one3" class="cBlue" onmouseover="setTab('one',3,3)">投稿专区</a></li>
+              </ul>
+            </div>
+            <div class="con4-leftcontbotcon">
+              <div class="con4-leftcontbotcon1" id="tab_one_1">
+				{dede:arclist  limit='0,1'  titlelen='40' infolen='180'  imgwidth='106' imgheight='92'  orderby='id' typeid='20' idlist='' type='image' flag='h,a'}    
+                <dl>
+                  <dd><a href="[field:arcurl /]" target="_blank"><img src="[field:litpic/]" width="106" height="92" border="0" /></a></dd>
+                  <dt>
+                    <h3><a href="[field:filename/]" class="font14" target="_blank">[field:title/]</a></h3>
+                    [field:info/]...<a href="[field:filename/]" class="xiangxi" target="_blank">[详细]</a> </dt>
+                </dl>
+	  	   	  {/dede:arclist}   
+                <ul>
+				  {dede:arclist  limit='0,3 '  titlelen='60'  orderby='id' typeid='20' idlist='' type='' flag='c'}
+				      
+					  
+					  
+                  <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+				  
+	  	   		  {/dede:arclist}   
+                </ul>
+              </div>
+              <div class="con4-leftcontbotcon1" id="tab_one_2" style="display:none;">
+				{dede:arclist  limit='0,1'  titlelen='40' infolen='180'  imgwidth='106' imgheight='92'  orderby='id' typeid='21' idlist='' type='image' flag='h,a'}    
+                <dl>
+                  <dd><a href="[field:arcurl /]" target="_blank"><img src="[field:litpic/]" border="0" /></a></dd>
+                  <dt>
+                    <h3><a href="[field:filename/]" class="font14" target="_blank">[field:title/]</a></h3>
+                    [field:info/]...<a href="[field:filename/]" class="xiangxi" target="_blank">[详细]</a> </dt>
+                </dl>
+	  	   	  {/dede:arclist}   
+                <ul>
+				  {dede:arclist limit='0,3 '  titlelen='60'   orderby='id' typeid='21' idlist='' type='' flag='c'}    
+                  <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   		  {/dede:arclist}   
+                </ul>
+              </div>
+              <div class="con4-leftcontbotcon1" id="tab_one_3" style="display:none;">
+				{dede:arclist limit='0,1'  titlelen='40' infolen='180'  imgwidth='106' imgheight='92'  orderby='pubdate' typeid='675' idlist='' type='image' flag='h,a'}    
+                <dl>
+                  <dd><a href="[field:arcurl /]" target="_blank"> <img src="[field:litpic/]" border="0" /></a></dd>
+                  <dt>
+                    <h3><a href="[field:filename/]" class="font14" target="_blank">[field:title/]</a></h3>
+                    [field:info/]... <a href="[field:filename/]" class="xiangxi" target="_blank">[详细]</a> </dt>
+                </dl>
+	  	   	  {/dede:arclist}   
+                <ul>
+				  {dede:arclist limit='0,3' titlelen='60'   orderby='id' typeid='675' idlist='' type='' flag='c'}    
+                  <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   		  {/dede:arclist}   
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="con5-left"><a target="_blank" href="http://www.buddhafair.com/">
+          <img width="741" height="91" border="0" src="/templets/default/images/2014fsz.gif"></a></div>
+      
+	  <div class="con6-left">
+
+        <div class="con6-lefttop">
+          <div class="con6-lefttople">
+            <div class="con6-lefttoplt"><span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=621" target="_blank">开示</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=21"target="_blank">高端访谈</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=626" target="_blank">高僧对话</a></span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=5" target="_blank">高僧名录</a></div>
+            <div class="con6-lefttoplc">
+			  {dede:arclist   limit='0,1'   titlelen='30' infolen='80'  imgwidth='135' imgheight='80'  orderby='id' typeid='5' idlist='' type='image' flag='h'}    
+              <dl>
+                <dd><a href="[field:arcurl/]" target="_blank"><img src="[field:litpic/]" width="135" height="80" border="0" /></a></dd>
+                <dt>
+                <h3><a href="[field:filename/]" class="font14" target="_blank">[field:shorttitle/]</a></h3>
+                [field:info/]...<a href="[field:filename/]" class="xiangxi" target="_blank">[详细]</a> </dt>
+              </dl>
+	  	   	 {/dede:arclist}   
+			        
+               <ul style=" padding-left:10px;">
+			  {dede:arclist  limit='0,4'  titlelen='30' orderby='id' typeid='5' idlist='' type='' flag='c'}    
+                <li style="float:left; width:160px; overflow:hidden; line-height:26px;  padding-left:0px; margin-left:0px;height:26px; background:none;"><a href="[field:filename/]" target="_blank">[field:shorttitle/]</a></li>
+	  	   	 {/dede:arclist}   
+              </ul>
+			 
+              <ul style="margin:0px; padding:0">
+			  {dede:arclist  limit='4,3'  titlelen='60' orderby='id' typeid='5' idlist='' type='' flag='c'}    
+                <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	 {/dede:arclist}    
+              </ul>
+            </div>
+          </div>
+
+
+
+          <div class="con6-lefttopre">
+            <div class="con6-lefttoprt"><span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=651" target="_blank">祖庭道场</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=644" target="_blank">山寺风景</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=650" target="_blank">寺院搜索</a> </span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=7" target="_blank">名山名寺</a></div>
+            <div class="con6-lefttoprc">
+			  {dede:arclist  limit='0,1'  titlelen='30' infolen='80'  imgwidth='135' imgheight='80'   orderby='id'  typeid='7' idlist='' type='' flag='h'}    
+              <dl>
+                <dd><a href="[field:arcurl/]" target="_blank"><img src="[field:litpic/]" width="135" height="80" border="0" /></a></dd>
+                <dt>
+                <h3><a href="[field:filename/]" class="font14" target="_blank">[field:shorttitle/]</a></h3>
+                [field:info/]...<a href="[field:filename/]" class="xiangxi" target="_blank">[详细]</a> </dt>
+              </dl>
+	  	   	 {/dede:arclist}  
+			 
+		
+			  <ul style=" padding-left:10px;">
+			  {dede:arclist  limit='0,4' titlelen='30'   orderby='id'  typeid='7' idlist='' type='' flag='c'}    
+                <li style="float:left; width:160px; overflow:hidden;line-height:26px;padding-left:0px; margin-left:0px; height:26px; background:none; "><a href="[field:filename/]" target="_blank">[field:shorttitle/]</a></li>
+	  	   	 {/dede:arclist}   
+              </ul>
+			  
+			  
+              <ul >
+			  {dede:arclist limit='4,3'  titlelen='60'   orderby='id'  typeid='7' idlist='' type='' flag='c'}    
+                <li><a href="[field:filename/]"target="_blank"> [field:title/]</a></li>
+	  	   	 {/dede:arclist}   
+              </ul>
+			  	  
+						  
+            </div>
+          </div>
+        </div>
+        <div class="con6-leftbot">
+          <div class="con6-leftbotle">
+            <div class="con6-leftbotlt"><span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=664" target="_blank">佛教学者</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=578" target="_blank">观点评论</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=580" target="_blank">佛学著作</a></span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=2" target="_blank">佛学研究</a></div>
+            <div class="con6-lefttoplc">
+			  {dede:arclist  limit='0,1' titlelen='30' infolen='80'  imgwidth='135' imgheight='80'  orderby='id' typeid='2' idlist='' type='' flag='h'}    
+              <dl>
+                  <dd><a href="[field:arcurl/]" target="_blank"><img src="[field:litpic/]" width="135" height="80" border="0" /></a></dd>
+                  <dt>
+                  <h3><a href="[field:filename/]" class="font14" target="_blank">[field:shorttitle/]</a></h3>
+                  [field:info/]...<a href="[field:filename/]" class="xiangxi" target="_blank">[详细]</a> </dt>
+              </dl>
+	  	   	 {/dede:arclist} 
+			 
+	
+			        <ul style=" padding-left:10px;">
+			  {dede:arclist limit='0,4'  titlelen='30'  orderby='pubdate' typeid='2' idlist='' type='' flag='c'}    
+                <li style="float:left; width:160px; overflow:hidden; line-height:26px; height:26px; padding-left:0px; margin-left:0px; background:none;
+				"><a href="[field:filename/]" target="_blank">[field:shorttitle/]</a></li>
+	  	   	 {/dede:arclist}   
+              </ul>
+			   
+                <ul style="margin:0px; padding:0">
+			  {dede:arclist  limit='4,3'  titlelen='60' orderby='pubdate' typeid='2' idlist='' type='' flag='c'}    
+                <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	 {/dede:arclist}   
+              </ul>
+			  
+			  
+			  
+            </div>
+          </div>
+          <div class="con6-leftbotre">
+            <div class="con6-leftbotrt"><span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=47" target="_blank">在线展厅</a>| <a href="{dede:global.cfg_basehost/}plus/list.php?tid=37" target="_blank"> 艺术家专访</a>|<a href="{dede:global.cfg_basehost/}plus/list.php?tid=45" target="_blank">收藏评论</a></span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=3" target="_blank">佛教艺术</a></div>
+            <div class="con6-leftbotrc">
+			  {dede:arclist  limit='0,1'   titlelen='30' infolen='80'  imgwidth='135' imgheight='80'  orderby='id' typeid='3' idlist='' type='' flag='h,a'}    
+              <dl>
+                <dd><a href="[field:arcurl/]" target="_blank"><img src="[field:litpic/]" width="135" height="80" border="0" /></a></dd>
+                <dt>
+                  <h3><a href="[field:filename/]" class="font14" target="_blank">[field:shorttitle/]</a></h3>
+                  [field:info/]...<a href="[field:filename/]" class="xiangxi" target="_blank">[详细]</a> </dt>
+              </dl>
+	  	   	 {/dede:arclist}  
+			 
+			        <ul style=" padding-left:10px;">
+			  {dede:arclist  limit='0,4'  titlelen='30'  orderby='id' typeid='3' idlist='' type='' flag='c'}    
+                <li style="float:left; width:160px; overflow:hidden; line-height:26px; height:26px; padding-left:0px; margin-left:0px;  background:none;
+				"><a href="[field:filename/]" target="_blank">[field:shorttitle/]</a></li>
+	  	   	 {/dede:arclist}   
+              </ul>
+			  			  
+               <ul style="margin:0px; padding:0">
+			  {dede:arclist  limit='4,3'  titlelen='60'   orderby='id' typeid='3' idlist='' type='' flag='c'}    
+                <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	 {/dede:arclist}   
+              </ul>
+			  
+			  
+			  
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="con7-left"><a href="http://www.zhfgwh.com/a/daluxinwen/63811.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/cgwh.jpg" width="740" height="90" border="0" /></a></div>
+      <div class="con8-left">
+        <div class="con8-lefttop">
+          <div class="con8-lefttople">
+            <div class="con8-lefttoplt"><span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=592" target="_blank">佛教慈善组织</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=601" target="_blank">爱心项目</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=589" target="_blank">慈善访谈</a></span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=6" target="_blank">慈善功德</a></div>
+            <div class="con8-lefttoplc">
+			  {dede:arclist  limit='0,1'  titlelen='60' infolen='180'  imgwidth='135' imgheight='80'  orderby='id' typeid='6' idlist='' type='' flag='h,a'}    
+              <h3><a href="[field:filename/]" class="font14" target="_blank">[field:title/]</a></h3>
+              <dl>
+                <dd><a href="[field:arcurl /]" target="_blank"><img src="[field:litpic/]" width="135" height="80" border="0" /></a></dd>
+                <dt>[field:info/]...<a href="[field:filename/]" class="xiangxi" target="_blank">[详细]</a> </dt>
+              </dl>
+	  	   	 {/dede:arclist}  
+			 
+			 
+			        <ul style=" padding-left:10px;">
+			  {dede:arclist limit='0,4'  titlelen='30'  orderby='id' typeid='6' idlist='' type='' flag='c'}    
+                <li style=" float:left; width:160px; overflow:hidden; line-height:26px; height:26px; padding-left:0px; margin-left:0px;  background:none;
+				"><a href="[field:filename/]" target="_blank">[field:shorttitle/]</a></li>
+	  	   	 {/dede:arclist}   
+              </ul>
+			  
+	
+			  
+                    <ul style="margin:0px; padding:0">
+			  {dede:arclist limit='4,3'   titlelen='60'   orderby='id' typeid='6' idlist='' type='' flag='c'}    
+                <li><a href="[field:filename/]" target="_blank"> [field:title/]</a></li>
+	  	   	 {/dede:arclist}   
+              </ul>
+			  
+
+			  
+			  
+            </div>
+          </div>
+          <div class="con8-lefttopre">
+            <div class="con8-lefttoprt"><span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=583" target="_blank">佛学院</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=582" target="_blank">招生信息</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=56" target="_blank">学僧博客</a></span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=4" target="_blank">佛教教育</a></div>
+            <div class="con8-lefttoprc">
+			  {dede:arclist limit='0,1'  titlelen='60' infolen='180'  imgwidth='135' imgheight='80'  orderby='id' typeid='4' idlist='' type='' flag='h,a'}    
+              <h3><a href="[field:filename/]" class="font14" target="_blank">[field:title/]</a></h3>
+              <dl>
+                <dd><a href="[field:arcurl /]" target="_blank"><img src="[field:litpic/]" width="135" height="80" border="0" /></a></dd>
+                <dt>[field:info/]...<a href="[field:filename/]" class="xiangxi" target="_blank">[详细]</a> </dt>
+              </dl>
+	  	   	 {/dede:arclist} 
+			 
+			        <ul style=" padding-left:10px;">
+			  {dede:arclist  limit='0,4'   titlelen='30' orderby='id' typeid='4' idlist='' type='' flag='c'}    
+                <li style="float:left; width:160px; overflow:hidden; line-height:26px; height:26px;  padding-left:0px; margin-left:0px; background:none;
+				 "><a href="[field:filename/]" target="_blank">[field:shorttitle/]</a></li>
+	  	   	 {/dede:arclist}   
+              </ul> 
+			 
+			 
+			 
+			   
+               <ul style="margin:0px; padding:0">
+			  {dede:arclist limit='4,3'  titlelen='60'  orderby='id' typeid='4' idlist='' type='' flag='c'}    
+                <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	 {/dede:arclist}   
+              </ul>
+			  
+			  
+			  
+            </div>
+          </div>
+        </div>
+        <div class="con8-leftbot">
+          <div class="con8-leftbotle">
+            <div class="con8-leftbotlt"><span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=604" target="_blank">素食餐厅</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=606" target="_blank">精彩视频</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=608" target="_blank">素食达人团</a></span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=9" target="_blank">素食养生</a></div>
+            <div class="con8-leftbotlc">
+			  {dede:arclist  limit='0,1'   titlelen='60' imgwidth='135' imgheight='80'   orderby='id' typeid='9' idlist='' type='' flag='h,a'}    
+              <h3><a href="[field:filename/]" class="font14" target="_blank">[field:title/]</a></h3>
+              <dl>
+                <dd><a href="[field:arcurl /]" target="_blank"><img src="[field:litpic/]" width="135" height="80" border="0" /></a></dd>
+                <dt>[field:info/]...<a href="[field:filename/]" class="xiangxi" target="_blank">[详细]</a> </dt>
+              </dl>
+	  	   	 {/dede:arclist}  
+			 
+		
+			        <ul style=" padding-left:10px;">
+			  {dede:arclist limit='0,4'   titlelen='30'   orderby='id' typeid='9' idlist='' type='' flag='c'}    
+                <li style=" float:left; width:160px; overflow:hidden; line-height:26px; height:26px;  padding-left:0px; margin-left:0px; background:none;
+				 "><a href="[field:filename/]" target="_blank">[field:shorttitle/]</a></li>
+	  	   	 {/dede:arclist}   
+              </ul>
+		
+		
+			 
+			  
+               <ul style="margin:0px; padding:0">
+			  {dede:arclist limit='4,3'  titlelen='60'   orderby='id' typeid='9' idlist='' type='' flag='c'}    
+                <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	 {/dede:arclist}   
+              </ul>
+			  
+			  
+			  
+			  
+            </div>
+          </div>
+          <div class="con8-leftbotre">
+            <div class="con8-leftbotrt"><span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=613" target="_blank">佛教百科</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=616" target="_blank">品牌厂商</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=617" target="_blank">佛具精品</a></span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=10" target="_blank">佛教用品</a></div>
+            <div class="con8-leftbotrc">
+			  {dede:arclist limit='0,1'  titlelen='60' infolen='180'  imgwidth='135' imgheight='80'  orderby='id' typeid='10' idlist='' type='' flag='h,a'}    
+              <h3><a href="[field:filename/]" class="font14" target="_blank">[field:title/]</a></h3>
+              <dl>
+                <dd><a href="[field:arcurl /]" target="_blank"><img src="[field:litpic/]" width="135" height="80" border="0" /></a></dd>
+                <dt>[field:info/]...<a href="[field:filename/]" class="xiangxi" target="_blank">[详细]</a> </dt>
+              </dl>
+	  	   	 {/dede:arclist} 
+			 
+	
+	
+			        <ul style=" padding-left:10px;">
+			  {dede:arclist limit='0,4'  titlelen='30'  orderby='id' typeid='10' idlist='' type='' flag='c'}    
+                <li style="float:left; width:160px; overflow:hidden; line-height:26px; height:26px;  padding-left:0px; margin-left:0px;  background:none;
+				"><a href="[field:filename/]" target="_blank">[field:shorttitle/]</a></li>
+	  	   	 {/dede:arclist}   
+              </ul>
+			  		   
+             <ul style="margin:0px; padding:0">
+			  {dede:arclist  limit='4,3'  titlelen='60'  orderby='id' typeid='10' idlist='' type='' flag='c'}    
+                <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	 {/dede:arclist}   
+              </ul>
+			  
+			  
+			  
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="con9-left">
+	  	<!--dl>
+			<dd><a href="#"><img src="{dede:global.cfg_templets_skin/}/images/index-tu_146.gif" border="0" /></a></dd>
+			<dt><a href="#"><img src="{dede:global.cfg_templets_skin/}/images/index-tu_149.gif" border="0" /></a></dt>
+		</dl-->
+		<a target="_blank" href="http://www.zhfgwh.com/a/lifo/putuo.html">
+          <img width="741" height="91" border="0" src="/templets/default/images/pts.png"></a>
+	  </div>
+      <div class="con10-left">
+        <div class="con10-lefttop">
+          <div class="con10-lefttople">
+            <div class="con10-lefttoplt"><span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=692" target="_blank">茶活动</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=691" target="_blank">禅茶一味</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=687" target="_blank">茶道茗人堂</a></span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=12" target="_blank">禅茶文化</a></div>
+            <div class="con10-lefttoplc">
+			  {dede:arclist limit='0,1'  titlelen='30' infolen='80'  imgwidth='135' imgheight='80'  orderby='id' typeid='12' idlist='' type='' flag='h,a'}    
+              <dl>
+                <dd><a href="[field:filename/]" target="_blank"><img src="[field:litpic/]" width="135" height="80" border="0" /></a></dd>
+                <dt>
+                  <h3><a href="[field:filename/]" class="font14" target="_blank">[field:shorttitle/]</a></h3>
+                  [field:info/]...<a href="[field:filename/]" class="xiangxi" target="_blank">[详细]</a> </dt>
+              </dl>
+	  	   	 {/dede:arclist}  
+			 
+			 
+			 
+			        <ul style=" padding-left:10px;">
+			  {dede:arclist limit='0,4' titlelen='30'   orderby='id' typeid='12' idlist='' type='' flag='c'}    
+               <li style="float:left; width:160px; overflow:hidden; line-height:26px; height:26px;  padding-left:0px; margin-left:0px; background:none;
+				"><a href="[field:filename/]" target="_blank">[field:shorttitle/]</a></li>
+	  	   	 {/dede:arclist}
+			    
+              </ul>
+			 
+			 
+			 
+			  
+                      <ul style="margin:0px; padding:0">
+			  {dede:arclist  limit='4,3' titlelen='60'  orderby='id' typeid='12' idlist='' type='' flag='c'}    
+               <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	 {/dede:arclist}
+			    
+              </ul>
+			  
+			  
+            </div>
+          </div>
+          <div class="con10-lefttopre">
+            <div class="con10-lefttoprt"><span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=700" target="_blank">香道用具</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=701" target="_blank">品香堂</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=698" target="_blank">香道与生活</a></span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=575" target="_blank">香道文化</a></div>
+            <div class="con10-lefttoprc">
+			  {dede:arclist limit='0,1'  titlelen='30' infolen='80'  imgwidth='135' imgheight='80'  orderby='id' typeid='575' idlist='' type='' flag='h,a'}    
+              <dl>
+                <dd><a href="[field:filename/]" target="_blank"><img src="[field:litpic/]" width="135" height="80" border="0" /></a></dd>
+                <dt>
+                  <h3><a href="[field:filename/]" class="font14" target="_blank">[field:shorttitle/]</a></h3>
+                  [field:info/]...<a href="[field:filename/]" class="xiangxi" target="_blank">[详细]</a> </dt>
+              </dl>
+	  	   	 {/dede:arclist} 
+			 
+		
+			        <ul style=" padding-left:10px;">
+			  {dede:arclist limit='0,4'  titlelen='30'   orderby='id' typeid='575' idlist='' type='' flag='c'}    
+               <li style="float:left; width:160px; overflow:hidden; line-height:26px; height:26px;  padding-left:0px; margin-left:0px; background:none;
+
+				"><a href="[field:filename/]" target="_blank">[field:shorttitle/]</a>
+
+				</li>
+	  	   	 {/dede:arclist}   
+              </ul>
+			 
+			   
+                 <ul style="margin:0px; padding:0">
+			  {dede:arclist limit='4,3'  titlelen='60' orderby='id' typeid='575' idlist='' type='' flag='c'}    
+               <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	 {/dede:arclist}   
+              </ul>
+			  
+			  
+			  
+            </div>
+          </div>
+        </div>
+        <div class="con10-leftbot">
+          <div class="con10-leftbotle">
+            <div class="con10-leftbotlt"><span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=709"target="_blank">禅修课程</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=708" target="_blank">禅修导师</a> | <a href="{dede:global.cfg_basehost/}plus/list.php?tid=712" target="_blank">修学感悟</a></span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=8" target="_blank">禅修实践</a></div>
+            <div class="con10-lefttoplc">
+			  {dede:arclist limit='0,1'  titlelen='30' infolen='80'  imgwidth='135' imgheight='80'  orderby='id' typeid='8' idlist='' type='' flag='h,a'}    
+              <dl>
+                <dd><a href="[field:filename/]" target="_blank"><img src="[field:litpic/]" width="135" height="80" border="0" /></a></dd>
+                <dt>
+                  <h3><a href="[field:filename/]" class="font14" target="_blank">[field:shorttitle/]</a></h3>
+                  [field:info/]...<a href="[field:filename/]" class="xiangxi" target="_blank">[详细]</a> </dt>
+              </dl>
+
+	  	   	 {/dede:arclist} 
+			 
+		
+		
+					   
+			        <ul style=" padding-left:10px;">
+			  {dede:arclist limit='0,4'  titlelen='30'   orderby='id' typeid='8' idlist='' type='' flag='c'}    
+               <li style="float:left; width:160px; overflow:hidden; line-height:26px; height:26px; padding-left:0px; margin-left:0px;  background:none;
+				"><a href="[field:filename/]"target="_blank"> [field:shorttitle/]</a></li>
+	  	   	 {/dede:arclist}   
+              </ul>
+			  
+			 
+			 
+			   
+               <ul style="margin:0px; padding:0">
+			  {dede:arclist limit='4,3'  titlelen='60'   orderby='id' typeid='8' idlist='' type='' flag='c'}    
+               <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+	  	   	 {/dede:arclist}   
+              </ul>
+			  
+			  
+			  
+            </div>
+          </div>
+          <div class="con10-leftbotre">
+            <div class="con10-leftbotrt"><span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=653"target="_blank">新书推荐</a>| <a href="{dede:global.cfg_basehost/}plus/list.php?tid=655" target="_blank">佛光读书会</a>| <a href="{dede:global.cfg_basehost/}plus/list.php?tid=660" target="_blank">佛光文摘</a></span><a href="{dede:global.cfg_basehost/}plus/list.php?tid=14" target="_blank">佛教书店</a></div>
+            <div class="con10-leftbotrc">
+			  {dede:arclist  limit='0,1'  titlelen='30' infolen='80'  imgwidth='135' imgheight='80'  orderby='id' typeid='14' idlist='' type='' flag='h,a'}    
+              <dl>
+                <dd><a href="[field:filename/]" target="_blank"><img src="[field:litpic/]" width="135" height="80" border="0" /></a></dd>
+                <dt>
+                  <h3><a href="[field:filename/]" class="font14" target="_blank">[field:shorttitle/]</a></h3>
+                  [field:info/]...<a href="[field:filename/]" class="xiangxi" target="_blank">[详细]</a> </dt>
+              </dl>
+	  	   	 {/dede:arclist}  
+			 
+					  
+			        <ul style=" padding-left:10px;">
+			  {dede:arclist limit='0,4' titlelen='30'   orderby='id' typeid='14' idlist='' type='' flag='c'}    
+               <li style="float:left; width:160px;   overflow:hidden; line-height:26px; height:26px; padding-left:0px; margin-left:0px; background:none;
+				"><a href="[field:filename/]" target="_blank">[field:shorttitle/]</a>
+				
+				
+				
+				
+				</li>
+	  	   	 {/dede:arclist}   
+              </ul>
+			  
+		
+		
+			 
+			 
+			  
+               <ul style="margin:0px; padding:0">
+			  {dede:arclist limit='4,3'  titlelen='60'   orderby='id' typeid='14' idlist='' type='' flag='c'}    
+               <li><a href="[field:filename/]" target="_blank">[field:title/]</a>
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   </li>
+	  	   	 {/dede:arclist}   
+              </ul>
+			  
+			  
+			  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="con4-right">
+      <div class="con4-righttop">
+        <div class="con4-righttoptitl"><a href="{dede:global.cfg_basehost/}plus/list.php?tid=676" target="_blank">重点推荐</a></div>
+        <div class="con4-righttopcont">
+          <ul>
+			{dede:arclist row='1' titlelen='40' infolen='140'  imgwidth='206' imgheight='103'  orderby='pubdate' typeid='676' idlist='' type='image' flag='h'}         
+            <h3><a href="[field:arcurl /]" target="_blank"><img src="[field:litpic/]" width="206" height="103" border="0" /></a></h3>
+ 			{/dede:arclist}    
+			{dede:arclist row='4' limit='0,4' titlelen='40' infolen='140'  imgwidth='206' imgheight='103'  orderby='pubdate' typeid='676' idlist='' type='' noflag='h' }         
+            <li><a href="[field:filename/]" target="_blank"> [field:title/]</a> </li>
+ 			{/dede:arclist}    
+          </ul>
+          <ul>
+
+			{dede:arclist row='1' limit='1,1' titlelen='40' infolen='140'  imgwidth='206' imgheight='103'  orderby='pubdate' typeid='676' idlist='' type='image' flag='h'}         
+            <h3><a href="[field:arcurl /]" target="_blank"><img src="[field:litpic/]" width="206" height="103" border="0" /></a></h3>
+ 			{/dede:arclist}    
+			{dede:arclist row='4' limit='4,4' titlelen='40' infolen='140'  imgwidth='206' imgheight='103'  orderby='pubdate' typeid='676' idlist='' type='' noflag='h'}         
+            <li><a href="[field:filename/]" target="_blank">[field:title/]</a> </li>
+ 			{/dede:arclist}    
+          </ul>
+          <ul style="border-bottom:none;">
+			{dede:arclist row='1' limit='2,1' titlelen='40' infolen='140'  imgwidth='206' imgheight='103'  orderby='pubdate' typeid='676' idlist='' type='image' flag='h'}         
+            <h3><a href="[field:arcurl /]" target="_blank"><img src="[field:litpic/]" width="206" height="103" border="0" /></a></h3>
+ 			{/dede:arclist}    
+			{dede:arclist row='4' limit='8,4' titlelen='40' infolen='140'  imgwidth='206' imgheight='103'  orderby='pubdate' typeid='676' idlist='' type='' noflag='h'}         
+            <li><a href="[field:filename/]" target="_blank">[field:title/]</a> </li>
+ 			{/dede:arclist}    
+          </ul>
+        </div>
+        <div class="con4-righttopbot"><a href="{dede:global.cfg_basehost/}plus/list.php?tid=676" target="_blank">更多</a>>></div>
+      </div>
+      <div class="con5-right"><a href="http://www.zhfgwh.com/a/huodongyugao/67054.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/2014cx.png" width="228" height="90" border="0" /></a></div>
+      <div class="con6-right">
+        <div class="con6-righttitl"><a href="{dede:global.cfg_basehost/}plus/list.php?tid=777" target="_blank">专题报道</a></div>
+        <div class="con6-rightcont">
+			{dede:arclist  limit='0,1' titlelen='40' infolen='88'  imgwidth='100' imgheight='90'  orderby='pubdate' typeid='777' idlist='' type='image' flag='h,a'}         
+          <h3><a href="[field:filename/]" class="font14" target="_blank">[field:title/]</a></h3>
+          <dl>
+            <dd><a href="[field:arcurl /]"><img src="[field:litpic/]" width="100" height="90" border="0" /></a></dd>
+            <dt>[field:info/]...<a href="[field:filename/]" class="xiangxi" target="_blank">[详细]</a> </dt>
+          </dl>
+ 			{/dede:arclist}    
+          <ul>
+		  
+		  
+			{dede:arclist limit='0,5' titlelen='40' infolen='140'  imgwidth='100' imgheight='90'  orderby='pubdate' typeid='777' idlist='' type='image' flag='c'}         
+            <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+ 			{/dede:arclist}    
+          </ul>
+          <h2><a href="{dede:global.cfg_basehost/}plus/list.php?tid=777">更多</a>>></h2>
+        </div>
+      </div>
+      <div class="con7-right">
+        <div class="con7-righttitl"><a href="{dede:global.cfg_basehost/}plus/list.php?tid=13" target="_blank">心灵家园</a></div>
+        <div class="con7-rightcont">
+          <dl>
+			{dede:arclist limit='0,2'  titlelen='21' infolen='140'  imgwidth='100' imgheight='90'  orderby='id' typeid='13' idlist='' type='image' flag='h,a'}         
+            <dd><a href="[field:arcurl/]" target="_blank">[field:image/]<span class="title"target="_blank">[field:title/]</span></a></dd>
+ 			{/dede:arclist}    
+          </dl>
+          <ul>
+			{dede:arclist limit='0,5' titlelen='48' infolen='140'  imgwidth='100' imgheight='90'  orderby='id' typeid='13' idlist='' type='image' flag='c'}         
+            <li><a href="[field:filename/]" target="_blank"> [field:title/]</a></li>
+ 			{/dede:arclist}    
+          </ul>
+        </div>
+        <div class="con7-righttopbot"><a href="{dede:global.cfg_basehost/}plus/list.php?tid=13" target="_blank">更多</a>>></div>
+      </div>
+      <div class="con8-right">
+        <div class="con8-righttitl"><a href="{dede:global.cfg_basehost/}plus/list.php?tid=11" target="_blank">佛教音乐</a></div>
+       		<form id="musiclist" name="musiclist" method="get">
+        <div class="con8-rightcont">
+          <ul>
+            <li class="con8-rightcontli1">排名</li>
+            <li class="con8-rightcontli2">歌曲名</li>
+            <li class="con8-rightcontli3">演唱者</li>
+            <li class="con8-rightcontli4">试听</li>
+          </ul>
+		  {dede:arclist row='8' infolen='40'  limit='' titlelen='10'   imgwidth='81' imgheight='76'  orderby='id' typeid='730' flag='c' type=''}	
+          <ul>
+            <li class="con8-rightcontli1"><img src="templets/default/images/right-img[field:global name=autoindex runphp="yes"]@me;[/field:global].gif" width="17" height="16" /></li>
+            <li class="con8-rightcontli2"><a href="javascript:void(0);" title="点击试听：[field:title /]" class="title" onclick="OnRun('[field:id /]', '[field:channel /]');">[field:title/]</a></li>
+            <li class="con8-rightcontli3"><a href="javascript:void(0);" title="点击试听：[field:title /]" class="title" onclick="OnRun('[field:id /]', '[field:channel /]');">[field:writer/]</a></li>
+            <li class="con8-rightcontli4"><a href="javascript:void(0);" title="点击试听：[field:title /]" class="title" onclick="OnRun('[field:id /]', '[field:channel /]');"><img src="templets/default/images/right-img_117.gif" /></a></li>
+          </ul>
+ 		  {/dede:arclist}      
+        </div>
+        </form>
+        <div class="con8-righttopbot"><a href="{dede:global.cfg_basehost/}plus/list.php?tid=11" target="_blank">更多</a>>></div>
+      </div>
+      <div class="con5-right"><a href="http://www.zhfgwh.com/a/daluxinwen/55171.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/2014zp.png" width="228" height="87" /></a></div>
+      <div class="con6-right">
+
+        <div class="con6-righttitl"><a href="{dede:global.cfg_basehost/}plus/list.php?tid=16" target="_blank">博客社区</a></div>
+        <div class="con6-rightcont">
+		  {dede:arclist row='1' infolen='92'  limit='' titlelen='35'   imgwidth='100' imgheight='90'  orderby='id' typeid='780' flag='c' type='image'}	
+          <h3><a href="[field:filename/]" class="font14" target="_blank">[field:title/]</a></h3>
+          <dl>
+            <dd><a href="[field:filename/]" target="_blank"><img src="[field:litpic/]" width="100" height="90" border="0" /></a></dd>
+            <dt>[field:info/]…<a href="[field:filename/]" class="xiangxi" target="_blank">[详细]</a> </dt>
+          </dl>
+ 		  {/dede:arclist}      
+          <ul>
+		  {dede:arclist row='5' infolen='40'  limit='' titlelen='45'   imgwidth='100' imgheight='90'  orderby='id' typeid='780' noflag='c' type=''}	
+            <li> <a href="[field:filename/]">[field:title/]</a></li>
+ 		  {/dede:arclist}      
+          </ul>
+          
+          <h2><a href="{dede:global.cfg_basehost/}plus/list.php?tid=16">更多</a>>></h2>
+        </div>
+      </div>
+      <div class="con5-right"><a href="#"><img src="{dede:global.cfg_templets_skin/}/images/tougao.png" width="228" height="87" border="0" /></a></div>
+      <div class="con10-right">
+        <div class="con10-righttitl"> <span>
+
+          <ul>
+            <li><a id="onw1" onClick="setTab('onw',1,3)" class="current">文章</a></li>
+            <li><a id="onw2"class="cBlue" onClick="setTab('onw',2,3)">视频</a></li>
+            <li><a id="onw3"class="cBlue" onClick="setTab('onw',3,3)">图片</a></li>
+          </ul>
+          </span>点击排行</div>
+        <div class="con10-rightcont1" id="tab_onw_1">
+          <div class="con10-rightcont">
+            <ul>
+ 			{dede:arclist   row='10' titlelen='35'  infolen='100'    subday='7'    orderby='click' typeid=''  }         
+             <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+  			{/dede:arclist}             
+            </ul>
+          </div>
+        </div>
+        <div class="con10-rightcont1" id="tab_onw_2" style="display:none;">
+          <div class="con10-rightcont">
+            <ul>
+ 			{dede:arclist   row='10' titlelen='40'  infolen='100'    subday='7'    orderby='click' typeid='23'  }         
+             <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+  			{/dede:arclist}             
+            </ul>
+          </div>
+        </div>
+        <div class="con10-rightcont1" id="tab_onw_3" style="display:none;">
+          <div class="con10-rightcont">
+            <ul>
+ 			{dede:arclist   row='10' titlelen='40'  infolen='100'    subday='7'    orderby='click' typeid='24,638'  }         
+             <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+  			{/dede:arclist}             
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="con11-right">
+        <div class="con11-righttitl"><a href="{dede:global.cfg_basehost/}plus/list.php?tid=677" target="_blank">佛光文化大事记</a></div>
+        <div class="con11-rightcont">
+          <ul>
+ 			{dede:arclist  typeid='677' row='10' titlelen='35'  infolen='100'        orderby='pubdate'   type=''}         
+            <li><a href="[field:filename/]" target="_blank">[field:title/]</a></li>
+  			{/dede:arclist}             
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ <!-- AD -->
+   <div style="margin:0 auto; width:1000px; margin-top:8px;"><a href="http://www.zhfgwh.com/a/fuguangxinwen/fuguangdashiji/59719.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/weixin.png"/></a></div>
+
+  <div class="links">
+    <div class="linkstitl"> 
+      <ul>
+        <li><a id="ona1" onClick="setTab('ona',1,2)" class="current">友情链接</a></li>
+        <li><a id="ona2"class="cBlue" onClick="setTab('ona',2,2)">合作伙伴</a></li>
+        <!--<li><a id="ona3"class="cBlue" onClick="setTab('ona',3,3)">联系我们</a></li>
+        -->
+      </ul>
+    </div>
+    <div class="linkscon">
+      <div class="linkscon1" id="tab_ona_1">
+        <ul>
+		  {dede:flink   typeid='1'  row='29'/}
+		</ul>
+      </div>
+      <div class="linkscon2" id="tab_ona_2" style="display:none;">
+        <ul>
+          {dede:flink   typeid='2'  row='29'/}
+        </ul>
+      </div>
+      <!-- <div class="linkscon3" id="tab_ona_3" style="display:none;">
+        <ul>
+            <li><a href="#"><img src="images/chan-img_146.gif" /></a></li>
+        </ul>
+      </div>-->
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="foot"><span>{dede:global.cfg_powerby/}  {dede:global.cfg_beian/}</span></div>
+  
+  <div style="clear:both"></div>
+  
+  <div class="tousu">
+  <img src="{dede:global.cfg_templets_skin/}/images/tousu_160.gif" />
+  <img src="{dede:global.cfg_templets_skin/}/images/tousu_162.gif" />
+  <img src="{dede:global.cfg_templets_skin/}/images/tousu_164.gif" />
+  </div>
+  
+    <div><a href="javascript:;" class="btn-top" id="to_top"></a></div>
+
+</div>
+
+</div>
+
+
+
+<SCRIPT language=javascript>function T(n){document.getElementById("ArticleCnt").style.fontSize=n+"px";}</SCRIPT>
+<SCRIPT>  
+function srcMarquee(){
+this.ID = document.getElementById(arguments[0]);
+if(!this.ID){this.ID = -1;return;}
+this.Direction = this.Width = this.Height = this.DelayTime = this.WaitTime = this.Correct = this.CTL = this.StartID = this.Stop = this.MouseOver = 0;
+this.Step = 1;
+this.Timer = 30;
+this.DirectionArray = {"top":0 , "bottom":1 , "left":2 , "right":3};
+if(typeof arguments[1] == "number")this.Direction = arguments[1];
+if(typeof arguments[2] == "number")this.Step = arguments[2];
+if(typeof arguments[3] == "number")this.Width = arguments[3];
+if(typeof arguments[4] == "number")this.Height = arguments[4];
+if(typeof arguments[5] == "number")this.Timer = arguments[5];
+if(typeof arguments[6] == "number")this.DelayTime = arguments[6];
+if(typeof arguments[7] == "number")this.WaitTime = arguments[7];
+if(typeof arguments[8] == "number")this.ScrollStep = arguments[8]
+this.ID.style.overflow = this.ID.style.overflowX = this.ID.style.overflowY = "hidden";
+this.ID.noWrap = true;
+this.IsNotOpera = (navigator.userAgent.toLowerCase().indexOf("opera") == -1);
+if(arguments.length >= 7)this.Start();
+}
+
+
+srcMarquee.prototype.Start = function(){
+if(this.ID == -1)return;
+if(this.WaitTime < 800)this.WaitTime = 800;
+if(this.Timer < 20)this.Timer = 20;
+
+if(this.Width == 0)this.Width = parseInt(this.ID.style.width);
+if(this.Height == 0)this.Height = parseInt(this.ID.style.height);
+if(typeof this.Direction == "string")this.Direction = this.DirectionArray[this.Direction.toString().toLowerCase()];
+this.HalfWidth = Math.round(this.Width / 2);
+this.BakStep = this.Step;
+this.ID.style.width = this.Width;
+this.ID.style.height = this.Height;
+if(typeof this.ScrollStep != "number")this.ScrollStep = this.Direction > 1 ? this.Width : this.Height;
+var msobj = this;
+var timer = this.Timer;
+var delaytime = this.DelayTime;
+var waittime = this.WaitTime;
+msobj.StartID = function(){msobj.Scroll()}
+msobj.Continue = function(){
+if(msobj.MouseOver == 1){
+setTimeout(msobj.Continue,delaytime);
+     }
+     else{ clearInterval(msobj.TimerID);
+msobj.CTL = msobj.Stop = 0;
+msobj.TimerID = setInterval(msobj.StartID,timer);
+     }
+    }
+msobj.Pause = function(){
+msobj.Stop = 1;
+clearInterval(msobj.TimerID);
+setTimeout(msobj.Continue,delaytime);
+    }
+msobj.Begin = function(){
+   msobj.ClientScroll = msobj.Direction > 1 ? msobj.ID.scrollWidth : msobj.ID.scrollHeight;
+   if((msobj.Direction <= 1 && msobj.ClientScroll <msobj.Height) || (msobj.Direction > 1 && msobj.ClientScroll <msobj.Width))return;
+   msobj.ID.innerHTML += msobj.ID.innerHTML;
+   msobj.TimerID = setInterval(msobj.StartID,timer);
+   if(msobj.ScrollStep < 0)return;
+   msobj.ID.onmousemove = function(event){
+       if(msobj.ScrollStep == 0 && msobj.Direction > 1){
+var event = event || window.event;
+if(window.event){
+if(msobj.IsNotOpera){msobj.EventLeft = event.srcElement.id == msobj.ID.id ? event.offsetX - msobj.ID.scrollLeft : event.srcElement.offsetLeft - msobj.ID.scrollLeft + event.offsetX;}
+else{msobj.ScrollStep = null;return;}
+}
+else{msobj.EventLeft = event.layerX - msobj.ID.scrollLeft;}
+msobj.Direction = msobj.EventLeft > msobj.HalfWidth ? 3 : 2;
+msobj.AbsCenter = Math.abs(msobj.HalfWidth - msobj.EventLeft);
+msobj.Step = Math.round(msobj.AbsCenter * (msobj.BakStep*2) / msobj.HalfWidth);
+}
+
+}
+msobj.ID.onmouseover = function(){
+if(msobj.ScrollStep == 0)return;
+msobj.MouseOver = 1;
+clearInterval(msobj.TimerID);
+}
+msobj.ID.onmouseout = function(){
+if(msobj.ScrollStep == 0){
+if(msobj.Step == 0)msobj.Step = 1;
+return;
+
+}
+msobj.MouseOver = 0;
+if(msobj.Stop == 0){
+clearInterval(msobj.TimerID);
+msobj.TimerID = setInterval(msobj.StartID,timer);
+}}}
+setTimeout(msobj.Begin,waittime);
+
+}
+srcMarquee.prototype.Scroll = function(){
+switch(this.Direction){
+case 0:
+this.CTL += this.Step;
+if(this.CTL >= this.ScrollStep && this.DelayTime > 0){
+this.ID.scrollTop += this.ScrollStep + this.Step - this.CTL;
+this.Pause();
+return;
+}
+else{
+if(this.ID.scrollTop >= this.ClientScroll){this.ID.scrollTop -= this.ClientScroll;}
+this.ID.scrollTop += this.Step;
+}
+break;
+case 1:
+this.CTL += this.Step;
+if(this.CTL >= this.ScrollStep && this.DelayTime > 0){
+this.ID.scrollTop -= this.ScrollStep + this.Step - this.CTL;
+this.Pause();
+return;
+}
+else{
+if(this.ID.scrollTop <= 0){this.ID.scrollTop += this.ClientScroll;}
+this.ID.scrollTop -= this.Step;
+}
+break;
+case 2:
+this.CTL += this.Step;
+if(this.CTL >= this.ScrollStep && this.DelayTime > 0){
+this.ID.scrollLeft += this.ScrollStep + this.Step - this.CTL;
+this.Pause();
+return;
+}
+else{
+if(this.ID.scrollLeft >= this.ClientScroll){this.ID.scrollLeft -= this.ClientScroll;}
+this.ID.scrollLeft += this.Step;
+}
+break;
+case 3:
+this.CTL += this.Step;
+if(this.CTL >= this.ScrollStep && this.DelayTime > 0){
+this.ID.scrollLeft -= this.ScrollStep + this.Step - this.CTL;
+this.Pause();
+return;
+}
+else{
+if(this.ID.scrollLeft <= 0){this.ID.scrollLeft += this.ClientScroll;}
+this.ID.scrollLeft -= this.Step;
+}
+break;
+}
+} 
+</SCRIPT>
+<SCRIPT>new srcMarquee("ScrollMe",0,1,808,27,30,3000,3000,27)</SCRIPT>
+
+
+
+</body>
+</html>

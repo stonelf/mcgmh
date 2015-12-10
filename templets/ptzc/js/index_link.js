@@ -1,0 +1,1 @@
+document.writeln("<li><a href=\"http:\/\/finance.stockstar.com\/SS2012032900001422.shtml\" target=\"_blank\">曝光下个将被中国修理的国家<\/a><\/li>")
