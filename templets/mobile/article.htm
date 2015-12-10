@@ -56,11 +56,19 @@
 
   <div class="am-article-bd am-u-md-9 am-u-md-push-3">
     <!--?php echo $body; ?-->
-    <!-- 用七牛的图片按需压缩服务 -->
-	<?php 
-	echo preg_replace("/\ssrc=[\'\"](http:\/\/acc\.mcgmh\.com)?\/([^\.]*\.(jpg|png))[\'\"]\s*(style=\"[^\"]*\")?/i",
-	" src=\"http://acc.mcgmh.com/$2?imageView2/1/w/640/q/75\"",$body); 
+    <!-- 图片按需压缩服务 -->
+    <?php 	
+    	$imageRegex="/\ssrc=[\'\"](http:\/\/acc\.mcgmh\.com)?\/([^\.]*\.(jpg|png))[\'\"]\s*(style=\"[^\"]*\")?/i";
+    	$tempBodyString = preg_replace($imageRegex," src=\"http://acc.mcgmh.com/$2?imageView2/1/w/640/q/75\"",$body); //图片按需压缩服务
+	$mediaRegex = "/<embed[^>]*><\/embed>/i";
+	$mediaString = (substr($yplj,-4)==".mp3")?("<audio controls src=\"".$yplj."\"></audio>"):(substr($yplj,-4)==".mp4"?"<video controls src=\"".$yplj."\"></video>":"");
+	 $tempBodyString = preg_replace($mediaRegex, $mediaString,$tempBodyString);
+	echo $tempBodyString; 
+	?>
 
+	
+	<?php
+		echo $yplj;
 	?>
       </div>
 </article>

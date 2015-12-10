@@ -193,7 +193,7 @@ else if($action=='article')
         exit('Article Error!');
     }
     //文档信息
-    $query = "Select tp.typename,tp.ishidden,arc.typeid,arc.title,arc. keywords,arc. description,arc.arcrank,arc.pubdate,arc.writer,arc.click,addon.body From `#@__archives` arc 
+    $query = "Select tp.typename,tp.ishidden,arc.typeid,arc.title,arc. keywords,arc. description,arc.arcrank,arc.pubdate,arc.writer,arc.click,addon.body,addon.yplj From `#@__archives` arc 
       left join `#@__arctype` tp on tp.id=arc.typeid
       left join `#@__addonarticle` addon on addon.aid=arc.id
       where arc.id='$id' ";
@@ -208,6 +208,7 @@ else if($action=='article')
     $title = ConvertStr($title);
     $keywords = ConvertStr($keywords);
     $description = ConvertStr($description);
+	$yplj = ConvertStr($yplj);
 
     if ($ishidden==1)
     {
@@ -268,7 +269,7 @@ else if($action=='allArticle')
 
     for($i=$id;$i<($id + 20);$i++){
         //文档信息
-        $query = "Select tp.typename,tp.ishidden,arc.typeid,arc.title,arc. keywords,arc. description,arc.arcrank,arc.pubdate,arc.writer,arc.click,addon.body From `#@__archives` arc 
+        $query = "Select tp.typename,tp.ishidden,arc.typeid,arc.title,arc. keywords,arc. description,arc.arcrank,arc.pubdate,arc.writer,arc.click,addon.body,addon.yplj From `#@__archives` arc 
           left join `#@__arctype` tp on tp.id=arc.typeid
           left join `#@__addonarticle` addon on addon.aid=arc.id
           where arc.id='$i' ";
@@ -282,6 +283,7 @@ else if($action=='allArticle')
         $title = ConvertStr($title);
         $keywords = ConvertStr($keywords);
         $description = ConvertStr($description);
+        $yplj = ConvertStr($yplj);
         $dsql->Close();
 
         //判断文章分页开始
