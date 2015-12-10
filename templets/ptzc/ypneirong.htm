@@ -71,12 +71,14 @@
 				<div id="clear"></div>
 			</div>
 			<div id="yinpin_neirong_neirong">
-				<div id="yinpin_neirong_neirong_title"><a href="#">法王如意宝美国念诵的《佛子行》传送</a></div>
+				<div id="yinpin_neirong_neirong_title">{dede:field.title/}</div>
 				<div id="yinpin_neirong_neirong_txt">
 					若本站音频视频文件在线不能流畅播放，建议您下载文件后播放<a href="{dede:field.ypxz/}"><img src="/images/shipin_03.jpg" border="0" /></a>
 				</div>
 				<div id="yinpin_neirong_neirong_mp3">
-					<embed src="{dede:field.yplj/}" autostart="false" loop="true" width="912" height="89"></embed>			
+				<audio src="{dede:field.yplj/}" controls>
+					<embed src="{dede:field.yplj/}" autostart="false" loop="true" width="912" height="89"></embed>
+					</audio>	
 				</div>
 			</div>
 		</div>
