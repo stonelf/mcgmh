@@ -11,7 +11,7 @@ $channellist = '';
 $newartlist = '';
 $channellistnext = '';
 
-$hostName = 'http://www.mcgmh.com/m';
+$hostName = '/m';
 //$hostName = 'http://7xoc6v.com1.z0.glb.clouddn.com';
 if (empty($action))
 {
