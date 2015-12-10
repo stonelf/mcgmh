@@ -42,7 +42,7 @@ if ($action=='index')
 {
 
     //最新文章10篇
-    $dsql->SetQuery("Select id,title,pubdate From `#@__archives` where channel=1 And arcrank = 0 order by id desc limit 0,10");
+    $dsql->SetQuery("Select id,title,pubdate From `#@__archives` where channel=1 And arcrank = 0 order by pubdate desc limit 0,10");
     $dsql->Execute();
     while ($row=$dsql->GetObject())
     {
@@ -50,8 +50,8 @@ if ($action=='index')
     }
 
 
-	$types=array(142=>"微言博义",102=>"信息发布",120=>"弘法纪事",122=>"大德开示",131=>"慈善新闻",138=>"佛学入门",141=>"上师教言",130=>"港澳台新闻",129=>"国际新闻",111=>"大圆满传承上师简介",128=>"国内新闻");
-$moreTypes=array(105=>"卡昂学堂",132=>"般若讲坛",114=>"佛教观察",1=>"弘法足迹",2=>"传承上师",3=>"护生乐园",4=>"视听专区",5=>"显密文库",6=>"佛子心语");
+	$types=array(102=>"信息发布",120=>"弘法纪事",1=>"弘法足迹",138=>"佛学入门",141=>"上师教言",29=>"法王念诵",31=>"上师念诵",36=>"网站直播");
+$moreTypes=array(142=>"微言博义",105=>"卡昂学堂",132=>"般若讲坛",122=>"大德开示",111=>"大圆满传承上师简介",114=>"佛教观察",2=>"传承上师",3=>"护生乐园",5=>"显密文库",6=>"佛子心语",131=>"慈善新闻",130=>"港澳台新闻",129=>"国际新闻",128=>"国内新闻");
 	$newartlistHTML="";
     foreach ($types as $typeId=>$typeTitle)
     {
@@ -71,7 +71,7 @@ $moreTypes=array(105=>"卡昂学堂",132=>"般若讲坛",114=>"佛教观察",1=>
     }
 
     //找4张幻灯片flag=f的文章
-    $dsql->SetQuery("Select id,title,litpic From `#@__archives` where channel=1 And FIND_IN_SET('f',flag) order by id desc limit 0,4");
+    $dsql->SetQuery("Select id,title,litpic From `#@__archives` where channel=1 And FIND_IN_SET('f',flag) order by id desc limit 0,5");
     $dsql->Execute();
     while ($row=$dsql->GetObject())
     {

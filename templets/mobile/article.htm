@@ -57,19 +57,36 @@
   <div class="am-article-bd am-u-md-9 am-u-md-push-3">
     <!--?php echo $body; ?-->
     <!-- 图片按需压缩服务 -->
-    <?php 	
-    	$imageRegex="/\ssrc=[\'\"](http:\/\/acc\.mcgmh\.com)?\/([^\.]*\.(jpg|png))[\'\"]\s*(style=\"[^\"]*\")?/i";
-    	$tempBodyString = preg_replace($imageRegex," src=\"http://acc.mcgmh.com/$2?imageView2/1/w/640/q/75\"",$body); //图片按需压缩服务
-	$mediaRegex = "/<embed[^>]*><\/embed>/i";
-	$mediaString = (substr($yplj,-4)==".mp3")?("<audio controls src=\"".$yplj."\"></audio>"):(substr($yplj,-4)==".mp4"?"<video controls src=\"".$yplj."\"></video>":"");
-	 $tempBodyString = preg_replace($mediaRegex, $mediaString,$tempBodyString);
+  <?php 	
+  	switch ($typeid){
+		case 22:
+		case 29:
+		case 30:
+		case 31:
+		case 32:
+		case 123:
+			if(substr($yplj,-4)==".mp3"){
+				$tempBodyString = "<audio controls src=\"".$yplj."\"></audio><br><br><a href=\"".$yplj."\">点击下载</a>";
+			}
+			break;
+		case 23:
+		case 36:
+		case 37:
+		case 38:
+		case 39:
+		case 40:
+			if(substr($yplj,-4)==".mp4"){
+				$tempBodyString = "<video controls src=\"".$yplj."\"></video><br><br><a href=\"".$yplj."\">点击下载</a>";
+			}
+			break;
+		default:
+		    	$imageRegex="/\ssrc=[\'\"](http:\/\/acc\.mcgmh\.com)?\/([^\.]*\.(jpg|png))[\'\"]\s*(style=\"[^\"]*\")?/i";
+			$tempBodyString = preg_replace($imageRegex," src=\"http://acc.mcgmh.com/$2?imageView2/1/w/640/q/75\"",$body); //图片按需压缩服务
+	}
+
 	echo $tempBodyString; 
 	?>
 
-	
-	<?php
-		echo $yplj;
-	?>
       </div>
 </article>
 
