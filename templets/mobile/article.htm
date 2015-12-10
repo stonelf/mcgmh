@@ -58,6 +58,8 @@
     <!--?php echo $body; ?-->
     <!-- 图片按需压缩服务 -->
   <?php 	
+		    	$imageRegex="/\ssrc=[\'\"](http:\/\/acc\.mcgmh\.com)?\/([^\.]*\.(jpg|png))[\'\"]\s*(style=\"[^\"]*\")?/i";
+			$tempBodyString = preg_replace($imageRegex," src=\"http://acc.mcgmh.com/$2?imageView2/1/w/640/q/75\"",$body); //图片按需压缩服务
   	switch ($typeid){
 		case 22:
 		case 29:
@@ -80,8 +82,7 @@
 			}
 			break;
 		default:
-		    	$imageRegex="/\ssrc=[\'\"](http:\/\/acc\.mcgmh\.com)?\/([^\.]*\.(jpg|png))[\'\"]\s*(style=\"[^\"]*\")?/i";
-			$tempBodyString = preg_replace($imageRegex," src=\"http://acc.mcgmh.com/$2?imageView2/1/w/640/q/75\"",$body); //图片按需压缩服务
+
 	}
 
 	echo $tempBodyString; 
