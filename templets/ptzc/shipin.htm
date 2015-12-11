@@ -7,7 +7,7 @@
 <meta name="description" content="{dede:field.description  function='html2text(@me)'/}" />
 <link href="/css/shipin.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/foli.js"></script>
-<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_jq_path/}"></script>
 <script type="text/javascript" language="javascript">
 	function g(o){return document.getElementById(o);}
 	function HoverLi(n){
@@ -99,13 +99,11 @@
 					<div align="center">
 						<video controls src="{dede:field.yplj/}" onerror="if(/\.flv$/.test(src)){src=src.replace('.flv','.mp4')}else{$('#snn_flv')[0].style.display='block';$('#snn_mp4')[0].style.display='none';}">
 						</video>
-					  </embed>
 					</div>  
 				</div>
 				<div id="snn_flv" style="display:none">
 					<div align="center">
-					  <embed src="/player.swf" allowfullscreen="true" flashvars="controlbar=over&image=1-14011PUUW36.JPG&file={dede:field.yplj/}&LogoText=www.mcgmh.com&BufferTime=3&IsAutoPlay=1" width="912" height="650"/>
-					  </embed>
+					{dede:field.body/}
 					</div>  
 				</div>
 			</div>
