@@ -93,6 +93,7 @@ function ReturnValue(reimg)
 $dh = dir($inpath);
 $ty1="";
 $ty2="";
+$qiniudomain = 'http://upload.mcgmh.com';//七牛云存储域名请自行修改 by CMS资源网www.dedejs.com
 while($file = $dh->read()) {
     //-----计算文件大小和创建时间
     if($file!="." && $file!=".." && !is_dir("$inpath/$file")){
@@ -144,7 +145,7 @@ while($file = $dh->read()) {
          {
            $reurl  = $remoteupUrl.$reurl;
         }else{
-            $reurl = $reurl;
+            $reurl = $qiniudomain.$reurl;
         }
 
         if($file==$comeback) $lstyle = " style='color:red' ";
@@ -152,7 +153,7 @@ while($file = $dh->read()) {
 
         $line = "\n<tr>
    <td class='linerow' bgcolor='#F9FBF0'>
-     <a href=\"javascript:ReturnValue('$reurl');\"><img src=img/flash.gif border=0 width=16 height=16 align=absmiddle>$file</a>
+     <a href=\"javascript:ReturnValue('$reurl');\" $lstyle><img src=img/flash.gif border=0 width=16 height=16 align=absmiddle>$file</a>
    </td>
    <td class='linerow'>$filesize KB</td>
    <td align='center' class='linerow' bgcolor='#F9FBF0'>$filetime</td>
@@ -167,7 +168,7 @@ while($file = $dh->read()) {
         {
             $reurl  = $remoteupUrl.$reurl;
         } else {
-            $reurl = $reurl;
+            $reurl = $qiniudomain.$reurl;
         }
 
         if($file==$comeback) $lstyle = " style='color:red' ";
@@ -175,7 +176,7 @@ while($file = $dh->read()) {
 
         $line = "\n<tr>
    <td class='linerow' bgcolor='#F9FBF0'>
-     <a href=\"javascript:ReturnValue('$reurl');\"><img src=img/wmv.gif border=0 width=16 height=16 align=absmiddle>$file</a>
+     <a href=\"javascript:ReturnValue('$reurl');\" $lstyle><img src=img/wmv.gif border=0 width=16 height=16 align=absmiddle>$file</a>
    </td>
    <td class='linerow'>$filesize KB</td>
    <td align='center' class='linerow' bgcolor='#F9FBF0'>$filetime</td>
@@ -190,7 +191,7 @@ while($file = $dh->read()) {
         {
            $reurl  = $remoteupUrl.$reurl;
         } else {
-            $reurl = $reurl;
+            $reurl = $qiniudomain.$reurl;
         }
 
         if($file==$comeback) $lstyle = " style='color:red' ";
@@ -213,7 +214,7 @@ while($file = $dh->read()) {
         {
             $reurl  = $remoteupUrl.$reurl;
         }else{
-            $reurl = $reurl;
+            $reurl = $qiniudomain.$reurl;
         }
 
         if($file==$comeback) $lstyle = " style='color:red' ";

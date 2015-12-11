@@ -15,7 +15,7 @@ if(!isset($cfg_basedir))
 if(empty($uploadfile)) $uploadfile = '';
 if(empty($uploadmbtype)) $uploadmbtype = '软件类型';
 if(empty($bkurl)) $bkurl = 'select_soft.php';
-$CKEditorFuncNum = (isset($CKEditorFuncNum))? $CKEditorFuncNum : 1;
+$CKEditorFuncNum = (isset($CKEditorFuncNum))? $CKEditorFuncNum : 2;
 $newname = ( empty($newname) ? '' : preg_replace("#[\\ \"\*\?\t\r\n<>':\/|]#", "", $newname) );
 
 if(!is_uploaded_file($uploadfile))
@@ -83,6 +83,23 @@ if($cfg_remote_site=='Y' && $remoteuploads == 1)
     $ftp->rmkdir($remotedir);
     $ftp->upload($localfile, $remotefile);
 }
+//上传到七牛云存储start
+require_once(dirname(__FILE__)."/../qiniu/io.php");
+require_once(dirname(__FILE__)."/../qiniu/rs.php");
+$qiniupath = substr($activepath,1);
+$bucket = 'mcgmh-upload';
+$qiniudomain = 'http://upload.mcgmh.com';//七牛云存储域名请自行修改 by CMS资源网www.dedejs.com
+$key = $qiniupath."/".$filename;
+$client = new Qiniu_MacHttpClient(null);
+$putPolicy = new Qiniu_RS_PutPolicy("$bucket:$key");
+
+$upToken = $putPolicy->Token(null);
+
+$putExtra = new Qiniu_PutExtra();
+$s = time();
+list($ret, $err) = Qiniu_PutFile($upToken, $key, $fullfilename, $putExtra);
+
+//上传到七牛云存储end
 
 if($uploadfile_type == 'application/x-shockwave-flash')
 {

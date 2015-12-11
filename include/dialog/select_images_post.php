@@ -10,8 +10,6 @@
  */
 require_once(dirname(__FILE__)."/config.php");
 require_once(dirname(__FILE__)."/../image.func.php");
-
-
 if(empty($activepath))
 {
     $activepath ='';
@@ -71,6 +69,9 @@ if($cfg_remote_site=='Y' && $remoteuploads == 1)
     $ftp->rmkdir($remotedir);
     $ftp->upload($localfile, $remotefile);
 }
+
+
+
 @unlink($imgfile);
 if(empty($resize))
 {
@@ -90,7 +91,22 @@ else
         WaterImg($fullfilename, 'up');
     }
 }
+//上传到七牛云存储start   by CMS资源网www.dedejs.com
+require_once(dirname(__FILE__)."/../qiniu/io.php");
+require_once(dirname(__FILE__)."/../qiniu/rs.php");
+$qiniupath = substr($activepath,1);
+$bucket = 'mcgmh-upload';
+$qiniudomain = 'http://upload.mcgmh.com';//七牛云存储域名请自行修改 by CMS资源网www.dedejs.com
+$key = $qiniupath."/".$filename;
+$client = new Qiniu_MacHttpClient(null);
+$putPolicy = new Qiniu_RS_PutPolicy("$bucket:$key");
 
+$upToken = $putPolicy->Token(null);
+
+$putExtra = new Qiniu_PutExtra();
+$s = time();
+list($ret, $err) = Qiniu_PutFile($upToken, $key, $fullfilename, $putExtra);
+//上传到七牛云存储end
 $info = '';
 $sizes[0] = 0; $sizes[1] = 0;
 $sizes = getimagesize($fullfilename, $info);
@@ -108,7 +124,7 @@ if ($GLOBALS['cfg_html_editor']=='ckeditor' && $CKUpload)
     $fileurl = $activepath.'/'.$filename;
     $message = '';
     
-    $str='<script type="text/javascript">window.parent.CKEDITOR.tools.callFunction('.$CKEditorFuncNum.', \''.$fileurl.'\', \''.$message.'\');</script>';
+    $str='<script type="text/javascript">window.parent.CKEDITOR.tools.callFunction('.$CKEditorFuncNum.', \''.$qiniudomain.$fileurl.'\', \''.$message.'\');</script>';
     exit($str);
 }
 

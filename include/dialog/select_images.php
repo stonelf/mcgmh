@@ -146,6 +146,7 @@ function ReturnImg(reimg)
 $dh = dir($inpath);
 $ty1="";
 $ty2="";
+$qiniudomain = 'upload.mcgmh.com';//七牛云存储域名请自行修改 by CMS资源网www.dedejs.com
 while($file = $dh->read()) {
 
     //-----计算文件大小和创建时间
@@ -198,7 +199,7 @@ while($file = $dh->read()) {
          {
            $reurl  = $remoteupUrl.$reurl;
         }else{
-            $reurl = $reurl;
+            $reurl = $qiniudomain.$reurl;//路径加上七牛域名
         }
 
         if($file==$comeback) $lstyle = " style='color:red' ";
@@ -223,7 +224,7 @@ while($file = $dh->read()) {
          {
            $reurl  = $remoteupUrl.$reurl;
         }else{
-            $reurl = $reurl;
+            $reurl = $qiniudomain.$reurl;//路径加上七牛域名
         }
 
         if($file==$comeback) $lstyle = " style='color:red' ";
