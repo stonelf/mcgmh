@@ -23,7 +23,7 @@ if($dopost=="upload")
     $uptime = time();
     $adminid = $cuserLogin->getUserID();
     $width = $height = '';
-    
+
     for($i=0; $i<=40; $i++)
     {
         if(isset(${"upfile".$i}) && is_uploaded_file(${"upfile".$i}))
@@ -32,7 +32,6 @@ if($dopost=="upload")
             $upfile_type = ${"upfile".$i."_type"};
             $upfile_name = ${"upfile".$i."_name"};
             $dpath = MyDate("ymd", $uptime);
-
             if(in_array($upfile_type, $sparr_image))
             {
                 $mediatype = 1;
@@ -63,7 +62,9 @@ if($dopost=="upload")
             $filename = $savePath."/".$filename;
             if(!is_dir($cfg_basedir.$savePath))
             {
-                MkdirAll($cfg_basedir.$savePath,777);
+//                MkdirAll($cfg_basedir.$savePath,777);
+//	加上cfg_basedir后创建目录会失败并且错误的返回成功 ——stone
+                MkdirAll($savePath,777);
                 CloseFtp();
             }
             $fullfilename = $cfg_basedir.$filename;
@@ -74,7 +75,8 @@ if($dopost=="upload")
                 $data = getImagesize($fullfilename, $info);
                 $width = $data[0];
                 $height = $data[1];
-                if(in_array($upfile_type, $cfg_photo_typenames)) WaterImg($fullfilename, 'up');
+                // 开启打水印有的时候会导致程序500错误，禁止掉 ——stone
+                //if(in_array($upfile_type, $cfg_photo_typenames)) WaterImg($fullfilename, 'up');
             }else
             {
                 @move_uploaded_file(${"upfile".$i}, $fullfilename);
