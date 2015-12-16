@@ -312,7 +312,10 @@ document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static
           {dede:field name='imgurls' alt='图片输出区'}
           [field:pagestyle runphp='yes'] @me= (@me==3 ? '
           <li>' : '');[/field:pagestyle]
+          <!--	
           <li><a href="[field:imgsrc/]" width="600px" height="400px" /><img src="[field:imgsrc/]" width="120px" height="90px" class="image0" alt="[field:alttext /]" title="[field:title /]"></a></li>
+          -->
+          <li><a href="[field:imgsrc/]" target="_blank"><img src="http://acc.mcgmh.com[field:imgsrc/]?imageView2/1/w/120/h/90/q/50" width="120px" height="90px" class="image0" alt="[field:alttext /]" title="[field:title /]"></a></li>
           [field:pagestyle runphp='yes'] @me = (@me==3 ? '
           </li>
           ' : ''); [/field:pagestyle]
