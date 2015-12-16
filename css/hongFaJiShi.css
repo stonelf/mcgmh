@@ -319,10 +319,13 @@ a{
 .manu .thisclass {
 	BORDER-RIGHT: #036cb4 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #036cb4 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #036cb4 1px solid; COLOR: #fff; PADDING-TOP: 2px; BORDER-BOTTOM: #036cb4 1px solid; BACKGROUND-COLOR: #036cb4
 }
+
 .manu .disabled {
 	font-size:12px BORDER-RIGHT: #f6e9e3 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #f6e9e3 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #f6e9e3 1px solid; COLOR: #999999; PADDING-TOP: 2px; BORDER-BOTTOM: #f6e9e3 1px solid
 }
-
+.manu .disabled li{
+	display:inline;
+}
 
 
 /************************footer************************/

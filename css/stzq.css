@@ -370,7 +370,9 @@ a{
 	font-size:12px BORDER-RIGHT: #f6e9e3 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #f6e9e3 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #f6e9e3 1px solid; COLOR: #999999; PADDING-TOP: 2px; BORDER-BOTTOM: #f6e9e3 1px solid
 }
 
-
+.manu .disabled li{
+	display:inline;
+}
 
 /************************footer************************/
 #footer_bg{

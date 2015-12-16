@@ -347,11 +347,12 @@ a{
 .textContent p{margin:15px 0px;/*text-indent:2em;*/}
 
 .pager{padding:5px 0 10px;text-align:center;}
-.pager a,.pager strong.pager-current{border:1px solid #FFF;margin:0 2px;padding:3px 6px;color:#999999;background:#FFF;font-size:12px;blr:expression(this.onFocus=this.blur());}
+.pager a,.pager strong.pager-current{border:1px solid #FFF;margin:0 2px;padding:3px 6px;color:#999999;background:#FFF;font-size:12px;}
 .pager a:visited{border:solid 1px #FFF;background:#fff;}
 .pager a:hover{border:solid 1px #841c19;background:#841c19;color:#fff;text-decoration:none;}
 .pager a:active {text-decoration:none;}
 .pager strong.pager-current{border:solid 1px #009cc0;color:#fff;background:#ff9100;font-weight:bold;}
+.pager li{display:inline;}
 
 .dateBoxTBg2{background:url(img/bottom_date5.png) 0 -92px no-repeat;padding:40px 11px 65px;width:912px;_height:0px}
 .dateBoxTBg3{background:url(img/bottom_date2.png) 0 -3px no-repeat;padding:40px 11px 45px;width:912px}
