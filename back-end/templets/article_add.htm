@@ -392,7 +392,7 @@ function delAlbPicOld(picfile, pid){
           <tr>
             <td width="90">&nbsp;附加选项：</td>
             <td>
-            	<input name="remote" type="checkbox" class="np" id="remote" value="1"<?php if($cfg_rm_remote=='Y') echo ' checked="1" '; ?> />
+            	<input name="remote" type="checkbox" class="np" id="remote" value="1"<?php if($cfg_rm_remote=='Y') echo ' '; ?> />
               下载远程图片和资源
               <input name="dellink" type="checkbox" class="np" id="dellink" value="1"<?php if($cfg_arc_dellink=='Y') echo ' checked="1" '; ?> />
               删除非站内链接 <a href="javascript:OpenMyWin('article_allowurl_edit.php');">[设置]</a>
