@@ -62,9 +62,9 @@ if($dopost=="upload")
             $filename = $savePath."/".$filename;
             if(!is_dir($cfg_basedir.$savePath))
             {
-//                MkdirAll($cfg_basedir.$savePath,777);
+                MkdirAll($cfg_basedir.$savePath,777);
 //	加上cfg_basedir后创建目录会失败并且错误的返回成功 ——stone
-                MkdirAll($savePath,777);
+//                MkdirAll($savePath,777);
                 CloseFtp();
             }
             $fullfilename = $cfg_basedir.$filename;

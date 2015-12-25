@@ -51,8 +51,9 @@ if(!in_array($imgfile_type, $sparr))
 $mdir = MyDate($cfg_addon_savetype, $nowtme);
 if(!is_dir($cfg_basedir.$activepath."/$mdir"))
 {
-//    MkdirAll($cfg_basedir.$activepath."/$mdir",$cfg_dir_purview); //ftp不能采用绝对路径创建目录
-    MkdirAll($activepath."/$mdir",$cfg_dir_purview);
+	MkdirAll($cfg_basedir.$activepath."/$mdir",$cfg_dir_purview); 
+	//ftp不能采用绝对路径创建目录
+    //MkdirAll($activepath."/$mdir",$cfg_dir_purview);
     CloseFtp();
 }
 $filename_name = $cuserLogin->getUserID().'-'.dd2char(MyDate("ymdHis", $nowtme).mt_rand(100,999));
