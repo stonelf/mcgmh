@@ -58,7 +58,17 @@ if($action == 'post')
 
         if(!empty($dede_fields))
         {
+        	//增加验证码
 
+				$validate = empty($validate) ? '' : strtolower(trim($validate));            
+				$svali = strtolower(GetCkVdValue());              
+				if(($validate=='' || $validate != $svali) && preg_match("/6/",$safe_gdopen))
+				{
+					ResetVdValue();
+					ShowMsg('验证码不正确!',$dede_add,0,1000);
+					exit;
+				}
+				
             $fieldarr = explode(';', $dede_fields);
             if(is_array($fieldarr))
             {
