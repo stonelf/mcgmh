@@ -16,3 +16,4 @@ Disallow: /plus/stow.php
 Disallow: /plus/count.php
 Disallow: /include
 Disallow: /templets
+Sitemap：/sitemap.xml

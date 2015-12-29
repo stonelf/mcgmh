@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.9">
+<url>
+  <loc>http://www.mcgmh.com/</loc>
+  <lastmod>{dede:arclist row=1 titlelen=24 orderby=pubdate}[field:pubdate function=strftime('%Y-%m-%d',@me)/]{/dede:arclist}</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.0</priority>
+</url>
+{dede:channel row='200' type='top'}
+<url>
+  <loc>http://www.mcgmh.com[field:typeurl/]</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>http://www.mcgmh.com/m/list/[field:id/].html</loc>
+  <mobile:mobile type="mobile"/>
+  <changefreq>daily</changefreq>
+  <priority>0.8</priority>
+</url>
+
+{/dede:channel}
+{dede:arclist row=20000 orderby=pubdate}
+<url>
+   <loc>http://www.mcgmh.com[field:arcurl/]</loc>
+   <lastmod>[field:pubdate function=strftime('%Y-%m-%d',@me)/]</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5</priority>
+</url>
+<url>
+   <loc>http://www.mcgmh.com/m/article/[field:id/].html</loc>
+   <mobile:mobile type="mobile"/>
+   <lastmod>[field:pubdate function=strftime('%Y-%m-%d',@me)/]</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5</priority>
+</url>
+
+
+{/dede:arclist}
+</urlset>
