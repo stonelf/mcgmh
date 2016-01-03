@@ -12,7 +12,6 @@ $newartlist = '';
 $channellistnext = '';
 
 $hostName = '/m';
-//$hostName = 'http://7xoc6v.com1.z0.glb.clouddn.com';
 if (empty($action))
 {
     $action = 'index';
@@ -57,13 +56,13 @@ $moreTypes=array(142=>"微言博义",105=>"卡昂学堂",132=>"般若讲坛",122
     {
     	$dsql->SetQuery("Select id,title,pubdate From `#@__archives` where channel=1 And arcrank = 0 And typeid=".$typeId." order by id desc limit 0,5");
     	$dsql->Execute();
-    	$newartlist="";
+    	$_newartlist="";
     	while ($row=$dsql->GetObject())
     	{
-        	$newartlist .= "<li class='am-g'><a href='{$hostName}/article/{$row->id}.html' class='am-list-item-hd'>".ConvertStr($row->title)."</a></li>";
+        	$_newartlist .= "<li class='am-g'><a href='{$hostName}/article/{$row->id}.html' class='am-list-item-hd'>".ConvertStr($row->title)."</a></li>";
 
     	}
-        $newartlistHTML .='<div data-am-widget="list_news" class="am-list-news am-list-news-default"><div class="am-list-news-hd am-cf"><a href="'.$hostName.'/list/'.$typeId.'.html"><h2>'.$typeTitle.'</h2></a></div><div class="am-list-news-bd"><ul class="am-list">'.$newartlist.'</ul></div><div class="am-list-news-ft"><a class="am-list-news-more am-btn am-btn-default" href="'.$hostName.'/list/'.$typeId.'.html">查看更多 &raquo;</a></div></div>';
+        $newartlistHTML .='<div data-am-widget="list_news" class="am-list-news am-list-news-default"><div class="am-list-news-hd am-cf"><a href="'.$hostName.'/list/'.$typeId.'.html"><h2>'.$typeTitle.'</h2></a></div><div class="am-list-news-bd"><ul class="am-list">'.$_newartlist.'</ul></div><div class="am-list-news-ft"><a class="am-list-news-more am-btn am-btn-default" href="'.$hostName.'/list/'.$typeId.'.html">查看更多 &raquo;</a></div></div>';
     }
 	
     foreach ($moreTypes as $typeId=>$typeTitle){

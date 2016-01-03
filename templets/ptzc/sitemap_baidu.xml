@@ -12,14 +12,6 @@
   <changefreq>daily</changefreq>
   <priority>0.8</priority>
 </url>
-
-<url>
-  <loc>http://www.mcgmh.com/m/list/[field:id/].html</loc>
-  <mobile:mobile type="mobile"/>
-  <changefreq>daily</changefreq>
-  <priority>0.8</priority>
-</url>
-
 {/dede:channel}
 {dede:arclist row=20000 orderby=pubdate}
 <url>
@@ -28,14 +20,5 @@
    <changefreq>monthly</changefreq>
    <priority>0.5</priority>
 </url>
-<url>
-   <loc>http://www.mcgmh.com/m/article/[field:id/].html</loc>
-   <mobile:mobile type="mobile"/>
-   <lastmod>[field:pubdate function=strftime('%Y-%m-%d',@me)/]</lastmod>
-   <changefreq>monthly</changefreq>
-   <priority>0.5</priority>
-</url>
-
-
 {/dede:arclist}
 </urlset>

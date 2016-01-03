@@ -1,0 +1,3 @@
+http://www.mcgmh.com/ http://www.mcgmh.com/m/
+{dede:channel row='200' type='top'}http://www.mcgmh.com[field:typeurl/] http://www.mcgmh.com/m/list/[field:id/].html{/dede:channel}
+{dede:arclist row=20000 orderby=pubdate}http://www.mcgmh.com[field:arcurl/] http://www.mcgmh.com/m/article/[field:id/].html{/dede:arclist}
