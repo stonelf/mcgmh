@@ -11,7 +11,6 @@ $channellist = '';
 $newartlist = '';
 $channellistnext = '';
 
-$hostName = '/m';
 if (empty($action))
 {
     $action = 'index';
@@ -21,6 +20,8 @@ elseif ($action !='list' && $action != 'index' && $action != 'article' && $actio
     die('action error');
 }
 
+//$hostName = '/m';
+$hostName = $action=='index'?'.':'..';//用相对地址
 
 //顶级导航列表
 $dsql->SetQuery("Select id,typename From `#@__arctype` where reid=0 And channeltype=1 And ishidden=0 And ispart<>2 order by sortrank limit 0,10");
