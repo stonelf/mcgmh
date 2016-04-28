@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>藏历转换测试</title>
+		<script src="zangli.js" charset="UTF-8"></script>
+	</head>
+	<body>
+<script>
+	var d=new Date();
+	var lunar=LunarCalendar.solarToLunar(d.getFullYear(),d.getMonth()+1,d.getDate());
+	var result="佛历";//佛历按4月初八过一年
+	if(
+		(   //如果没有闰月，活着闰月发生在4月之后，或者闰四月，那么可以直接算4月初八
+			(lunar.lunarLeapMonth==0 || lunar.lunarLeapMonth>=4) &&
+			(lunar.lunarMonth>4 || 4==lunar.lunarMonth && lunar.lunarDay>=8)
+		)||(//如果闰月出现在前3个月，那么判断规则要往后移一个月）
+			(lunar.lunarLeapMonth>0 && lunar.lunarLeapMonth<=4) &&
+			(lunar.lunarMonth>5 || 5==lunar.lunarMonth && lunar.lunarDay>=8)
+		)
+	){ 
+		result+=(lunar.lunarYear+544)+"年 ";
+	}else{
+		result+=(lunar.lunarYear+543)+"年 ";		
+	}
+	
+	result += lunar.GanZhiYear+"("+lunar.zodiac+")年"+lunar.lunarMonthName+lunar.lunarDayName; //农历
+	result += " 藏历"+getZangli(d,1);
+	
+
+document.body.innerHTML =result;
+</script>
+</body>
+</html>
